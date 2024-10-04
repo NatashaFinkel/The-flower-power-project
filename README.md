@@ -14,15 +14,14 @@ npm run dev
 ```
 
 ## Outils utilisés :
-
-* React.js
 * npm, Vite
-* Redux, Redux-Toolkit
 * Jest
+* React.js
+* Redux, Redux-Toolkit
 * Git, GitHub
 
 ## Contact
 
 Email - nfinkelsztajn@gmail.com
 
-Linkedin Link: [www.linkedin.com/in/natasha-finkelsztajn](www.linkedin.com/in/natasha-finkelsztajn)
+Linkedin : [www.linkedin.com/in/natasha-finkelsztajn](www.linkedin.com/in/natasha-finkelsztajn)
