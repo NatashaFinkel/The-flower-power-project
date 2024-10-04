@@ -1,12 +1,10 @@
 # The-flower-power-project
 
 ## Description
-
 The-flower-power-project est un projet développé en parallèle de la formation OpenClassRooms :
 "Développeur intégrateur web".
 
 ## Installation
-
 ```bash
 cd the-flower-power-project
 npm install
@@ -21,7 +19,6 @@ npm run dev
 * Git, GitHub
 
 ## Contact
-
 Email - nfinkelsztajn@gmail.com
 
 Linkedin : [www.linkedin.com/in/natasha-finkelsztajn](www.linkedin.com/in/natasha-finkelsztajn)
