@@ -23,6 +23,6 @@ npm run dev
 
 ## Contact
 
-Natasha Finkelsztajn - nfinkelsztajn@gmail.com
+Email - nfinkelsztajn@gmail.com
 
 Linkedin Link: [www.linkedin.com/in/natasha-finkelsztajn](www.linkedin.com/in/natasha-finkelsztajn)
