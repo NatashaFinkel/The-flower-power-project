@@ -82,9 +82,57 @@ body {
   margin-top: 70px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo-div {
   display: flex;
   justify-content: center;
   height: 200px;
   margin-bottom: 70px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  background-color: rgba(90, 122, 30, 0.315);
+  padding: 0px 50px;
+  box-shadow: 0px 7px 200px yellow;
+}
+
+.footer div {
+  font-size: 20px;
+}
+
+.footer-contact-shop-div,
+.footer-shop-div,
+.footer-legal-infos-div {
+  padding: 25px;
+}
+
+.footer-contact-shop-div {
+  width: 25%;
+}
+
+.footer-telephone-div,
+.footer-contact-form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-title {
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.brand-name {
+  text-decoration: underline;
+  padding-bottom: 5px;
+  font-size: 21px;
+}
+
+.footer-contact-form a {
+  color: black;
 }
