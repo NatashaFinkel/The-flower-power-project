@@ -1,12 +1,11 @@
-import LogoImage from './assets/logo-3.png';
-import './App.css';
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      <div className="logo-div">
-      <img src={LogoImage} className="logo" alt="Logo de l'application" />
-      </div>
+     <Header />
     </div>
   )
 }
