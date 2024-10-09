@@ -93,6 +93,50 @@ a {
   margin-bottom: 70px;
 }
 
+.nav-bar-div {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 61%;
+  height: auto;
+  margin-bottom: 5%;
+  box-shadow: 0px 22px 50px yellow;
+  background-color: rgba(127, 255, 212, 0.35);
+}
+
+ul {
+  display: flex;
+  margin: 6px 0px;
+  justify-content: center;
+  gap: 10%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-bar-icon {
+  color: black;
+  font-size: 70px;
+}
+
+.icon-display-none {
+  display: none;
+}
+
+a p {
+  font-size: 20px;
+  color: black;
+}
+
+.active {
+  p {
+    font-weight: 900;
+  }
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
