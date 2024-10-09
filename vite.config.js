@@ -6,4 +6,9 @@ export default defineConfig({
   plugins: [
     react({ jsxRuntime: 'classic' }),
   ],
+  test: {
+    environment: 'node',
+    globals: true,
+    setupFiles: './setupTests.js',
+  },
 });
