@@ -134,6 +134,7 @@ a p {
 .active {
   p {
     font-weight: 900;
+    font-size: 19px;
   }
 }
 
