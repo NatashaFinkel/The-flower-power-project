@@ -7,8 +7,7 @@ export default defineConfig({
     react({ jsxRuntime: 'classic' }),
   ],
   test: {
-    environment: 'node',
+    environment: 'jsdom',
     globals: true,
-    setupFiles: './setupTests.js',
   },
 });
