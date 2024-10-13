@@ -138,6 +138,12 @@ a p {
   }
 }
 
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -180,4 +186,52 @@ a p {
 
 .footer-contact-form a {
   color: black;
+}
+
+/* Page Contact */
+
+.form-input {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  margin-bottom: 30px;
+}
+
+
+.contact-icon {
+  font-size: 40px;
+}
+
+#client-name,
+#client-email,
+#password,
+#user-name {
+  height: 40px;
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.message-div {
+  align-items: center;
+  flex-direction: column;
+}
+
+#client-message {
+  margin-top: 0px;
+  padding: 25px;
+}
+
+.form-btn-div,
+.message-div {
+  display: flex;
+  justify-content: center;
+}
+
+.form-btn-div {
+  height: 50px;
+  margin-top: 50px;
+}
+
+input[type="submit"] {
+  padding: 0px 15px;
 }
