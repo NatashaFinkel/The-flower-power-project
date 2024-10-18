@@ -82,23 +82,32 @@ body {
   margin-top: 70px;
 }
 
-h1{
-font-size: 28px;
+h1 {
+  font-size: 28px;
   margin-bottom: 20%;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 a {
   text-decoration: none;
 }
 
-.logo-div, .nav-bar-div, ul, .form-btn-div,
-.message-div, .gallery {
+.logo-div,
+.nav-bar-div,
+ul,
+.form-btn-div,
+.message-div,
+.gallery,
+.modal-title-div {
   display: flex;
   justify-content: center;
 }
 
 .logo-div {
- 
+
   height: 200px;
   margin-bottom: 70px;
 }
@@ -265,10 +274,10 @@ a p {
 
 .modal-title-div {
   align-items: center;
+  gap: 1%;
 }
 
 .modal-title {
-  font-size: 22px;
   margin: 25px 0px;
 }
 
