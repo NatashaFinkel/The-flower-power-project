@@ -214,6 +214,7 @@ a p {
   width: 120px;
   object-fit: cover;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 
@@ -236,7 +237,7 @@ a p {
   padding: 40px;
   padding-top: 30px;
   border: 1px solid #888;
-  width: 30%;
+  width: 25%;
   height: fit-content;
 }
 
@@ -268,9 +269,8 @@ a p {
   position: relative;
   width: 100%;
   object-fit: cover;
-  max-height: 200px;
+  max-height: 100px;
 }
-
 
 .modal-title-div {
   align-items: center;
