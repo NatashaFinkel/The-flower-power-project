@@ -8,8 +8,16 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
         let closeModal = document.getElementById("close-modal");
         closeModal.onclick = function () {
             let modalContent = document.getElementsByClassName("modal-content")[0];
+            let modalImg = document.getElementById("modal-img-src");
+            let modalTitle = document.getElementById("modal-title");
+            let modalDescription = document.getElementById("modal-description");
             let modal = document.getElementById("bouquet-modal");
+
             modalContent.id = "";
+            modalImg.src = "";
+            modalImg.alt = "";
+            modalTitle.textContent = "";
+            modalDescription.textContent = "";
             modal.style.display = "none";
         };
     });
@@ -39,11 +47,11 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
                     <span className="close-modal" id="close-modal">&times;</span>
                 </div>
                 <div className="modal-img-div">
-                    <img src={modalImgSrc} alt={modalImgAlt} id="modal-img-src" className="modal-img"></img>
+                    <img src={modalImgSrc} alt={modalImgAlt} id="modal-img-src" data-testid="modal-img-test-id" className="modal-img"></img>
                 </div>
 
                 <div className="modal-title-div">
-                    <h2 id="modal-title" className="modal-title">{modalTitle}</h2>
+                    <h2 id="modal-title" data-testid="modal-title-test-id" className="modal-title">{modalTitle}</h2>
 
                     <div className="heart-icon-div">
                         <i id="heart" className={`fa-solid fa-heart heart-icon`} onClick={handleAddBouquet}
@@ -51,7 +59,7 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
                     </div>
                 </div>
                 <div className="modal-description-div">
-                    <p id="modal-description">{modalDescription}</p>
+                    <p id="modal-description" data-testid="modal-description-test-id">{modalDescription}</p>
                 </div>
             </div>
         </div>
