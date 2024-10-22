@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import PropTypes from 'prop-types';
 
-function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
+function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
 
     const getModalElements = () => {
         return {
@@ -10,35 +10,33 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
             modalContent: document.getElementsByClassName("modal-content")[0],
             modalImg: document.getElementById("modal-img-src"),
             modalTitle: document.getElementById("modal-title"),
-            modalContentDescription: document.getElementById("modal-description"),
+            modalDescription: document.getElementById("modal-description"),
             modal: document.getElementById("bouquet-modal"),
             heartIcon: document.getElementById("heart"),
         };
     };
 
     useEffect(() => {
-        const { closeModal, modalContent, modalImg, modalTitle, modalContentDescription, modal } = getModalElements();
+        const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modal } = getModalElements();
         closeModal.onclick = function () {
             modalContent.id = "";
             modalImg.src = "";
             modalImg.alt = "";
             modalTitle.textContent = "";
-            modalContentDescription.textContent = "";
+            modalDescription.textContent = "";
             modal.style.display = "none";
         };
     });
 
     const handleAddBouquet = () => {
-        const { modalContent, modalTitle, modalImg } = getModalElements();
+        const { modalContent, modalTitle, modalImg, modalDescription } = getModalElements();
         let modalContentId = modalContent.id;
         let modalContentTitleTxtContent = modalTitle.textContent;
         let modalContentImgSrc = modalImg.src;
         let modalContentAlt = modalImg.alt;
+        let modalDescriptionTxtContent = modalDescription.textContent;
 
-        let modalContentDescription = document.getElementById("modal-description");
-        let modalContentDescriptionTxtContent = modalContentDescription.textContent;
-
-        const bouquet = { id: modalContentId, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalContentDescriptionTxtContent };
+        const bouquet = { id: modalContentId, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent };
 
         console.log(bouquet);
     };
@@ -51,11 +49,11 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
                     <span className="close-modal" id="close-modal">&times;</span>
                 </div>
                 <div className="modal-img-div">
-                    <img src={modalImgSrc} alt={modalImgAlt} id="modal-img-src" data-testid="modal-img-test-id" className="modal-img"></img>
+                    <img src={mImgSrc} alt={mImgAlt} id="modal-img-src" data-testid="modal-img-test-id" className="modal-img"></img>
                 </div>
 
                 <div className="modal-title-div">
-                    <h2 id="modal-title" data-testid="modal-title-test-id" className="modal-title">{modalTitle}</h2>
+                    <h2 id="modal-title" data-testid="modal-title-test-id" className="modal-title">{mTitle}</h2>
 
                     <div className="heart-icon-div">
                         <i id="heart" className={`fa-solid fa-heart heart-icon`} onClick={handleAddBouquet}
@@ -63,7 +61,7 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
                     </div>
                 </div>
                 <div className="modal-description-div">
-                    <p id="modal-description" data-testid="modal-description-test-id">{modalDescription}</p>
+                    <p id="modal-description" data-testid="modal-description-test-id">{mDescription}</p>
                 </div>
             </div>
         </div>
@@ -71,10 +69,10 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
 }
 
 Modal.propTypes = {
-    modalImgSrc: PropTypes.string,
-    modalImgAlt: PropTypes.string,
-    modalTitle: PropTypes.string,
-    modalDescription: PropTypes.string,
+    mImgSrc: PropTypes.string,
+    mImgAlt: PropTypes.string,
+    mTitle: PropTypes.string,
+    mDescription: PropTypes.string,
 }
 
 export default Modal;
