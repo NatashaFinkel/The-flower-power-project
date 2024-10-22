@@ -36,15 +36,15 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
         let modalContentAlt = modalImg.alt;
         let modalDescriptionTxtContent = modalDescription.textContent;
 
-        const bouquet = { id: modalContentId, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent };
+        const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent };
 
         console.log(bouquet);
     };
 
     return (
         <div id="bouquet-modal" className="modal">
-
-            <div className="modal-content" id="modal-content">
+            
+           <div className="modal-content"  id="modal-content">
                 <div className="close-modal-div">
                     <span className="close-modal" id="close-modal">&times;</span>
                 </div>
