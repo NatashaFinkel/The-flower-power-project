@@ -29,13 +29,11 @@ function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
     });
 
     const handleAddBouquet = () => {
-        let modalContent = document.getElementsByClassName("modal-content")[0];
+        const { modalContent, modalTitle, modalImg } = getModalElements();
         let modalContentId = modalContent.id;
-        let modalContentTitle = document.getElementById("modal-title");
-        let modalContentTitleTxtContent = modalContentTitle.textContent;
-        let modalContentImg = document.getElementById("modal-img-src");
-        let modalContentImgSrc = modalContentImg.src;
-        let modalContentAlt = modalContentImg.alt;
+        let modalContentTitleTxtContent = modalTitle.textContent;
+        let modalContentImgSrc = modalImg.src;
+        let modalContentAlt = modalImg.alt;
 
         let modalContentDescription = document.getElementById("modal-description");
         let modalContentDescriptionTxtContent = modalContentDescription.textContent;
