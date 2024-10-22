@@ -4,20 +4,26 @@ import PropTypes from 'prop-types';
 
 function Modal({ modalImgSrc, modalImgAlt, modalTitle, modalDescription }) {
 
-    useEffect(() => {
-        let closeModal = document.getElementById("close-modal");
-        closeModal.onclick = function () {
-            let modalContent = document.getElementsByClassName("modal-content")[0];
-            let modalImg = document.getElementById("modal-img-src");
-            let modalTitle = document.getElementById("modal-title");
-            let modalDescription = document.getElementById("modal-description");
-            let modal = document.getElementById("bouquet-modal");
+    const getModalElements = () => {
+        return {
+            closeModal: document.getElementById("close-modal"),
+            modalContent: document.getElementsByClassName("modal-content")[0],
+            modalImg: document.getElementById("modal-img-src"),
+            modalTitle: document.getElementById("modal-title"),
+            modalContentDescription: document.getElementById("modal-description"),
+            modal: document.getElementById("bouquet-modal"),
+            heartIcon: document.getElementById("heart"),
+        };
+    };
 
+    useEffect(() => {
+        const { closeModal, modalContent, modalImg, modalTitle, modalContentDescription, modal } = getModalElements();
+        closeModal.onclick = function () {
             modalContent.id = "";
             modalImg.src = "";
             modalImg.alt = "";
             modalTitle.textContent = "";
-            modalDescription.textContent = "";
+            modalContentDescription.textContent = "";
             modal.style.display = "none";
         };
     });
