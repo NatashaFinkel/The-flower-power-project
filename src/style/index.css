@@ -82,9 +82,18 @@ body {
   margin-top: 70px;
 }
 
+header {
+  bottom: 50px;
+  position: relative;
+}
+
+.logo {
+  height: 150px;
+}
+
 h1 {
-  font-size: 28px;
-  margin-bottom: 20%;
+  font-size: 22px;
+  margin-bottom: 15%;
 }
 
 h2 {
@@ -106,16 +115,10 @@ ul,
   justify-content: center;
 }
 
-.logo-div {
-
-  height: 200px;
-  margin-bottom: 70px;
-}
-
 nav {
   width: 61%;
   height: auto;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   box-shadow: 0px 22px 50px yellow;
   background-color: rgba(127, 255, 212, 0.35);
 }
@@ -154,6 +157,17 @@ a p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.intro-div {
+  width: 60%;
+  padding: 0px 25px;
+  bottom: 20px;
+  position: relative;
+
+  p {
+    margin: 10px 0px;
+  }
 }
 
 .footer {
@@ -204,14 +218,14 @@ a p {
 
 .card-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   gap: 50px;
   margin-top: 50px;
 }
 
 .gallery-img {
   aspect-ratio: 1 / 1;
-  width: 120px;
+  width: 100px;
   object-fit: cover;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -237,7 +251,7 @@ a p {
   padding: 40px;
   padding-top: 30px;
   border: 1px solid #888;
-  width: 25%;
+  width: 20%;
   height: fit-content;
 }
 
@@ -303,31 +317,33 @@ a p {
 }
 
 .contact-icon {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #client-name,
 #client-email,
 #password,
 #user-name {
-  height: 40px;
+  height: 30px;
   width: 100%;
   padding: 0px 30px;
+
 }
 
 .message-div {
   align-items: center;
   flex-direction: column;
+  color: red;
 }
 
 #client-message {
   margin-top: 0px;
-  padding: 25px;
+  padding: 10px;
 }
 
 .form-btn-div {
   height: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 input[type="submit"] {
