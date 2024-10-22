@@ -223,12 +223,19 @@ a p {
   margin-top: 50px;
 }
 
+.gallery-img,
+.close-modal,
+.heart-icon,
+input[type="submit"] {
+  cursor: pointer;
+}
+
 .gallery-img {
   aspect-ratio: 1 / 1;
   width: 100px;
   object-fit: cover;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+
 }
 
 
@@ -265,7 +272,6 @@ a p {
   float: right;
   font-size: 29px;
   font-weight: bold;
-  cursor: pointer;
   height: 17px;
   display: flex;
   align-items: center;
@@ -276,7 +282,6 @@ a p {
 .close-modal:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .modal-img {
@@ -301,9 +306,7 @@ a p {
 
 .heart-icon {
   font-size: 22px;
-  cursor: pointer;
   color: rgba(179, 179, 179, 0.355);
-
 }
 
 
@@ -348,4 +351,9 @@ a p {
 
 input[type="submit"] {
   padding: 0px 15px;
+  /*  background: -webkit-linear-gradient(top,rgb(27 196 213),rgb(123 207 164), rgb(245 222 94)); */
+
+  background: -webkit-linear-gradient(top, rgb(0 172 255 / 70%), rgb(0 253 255/ 80%), yellow);
+  font-weight: 900;
+  border: 1px solid black;
 }
