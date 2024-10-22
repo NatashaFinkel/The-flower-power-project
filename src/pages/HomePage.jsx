@@ -11,7 +11,7 @@ function HomePage() {
             </div>
             <div className="intro-div">
                 <p>Imaginez son sourire. Ce sourire qui éclaire son visage alors que la surprise succède à la joie.<br></br>Nul besoin d’attendre une occasion particulière pour voir ce sourire fleurir sur le visage de la personne que vous aimez !</p>
-                <p>Chacune de nos créations est unique et inspirée par la nature, pour offrir à vos proches un moment unique.</p>
+                <p>Chacune de nos créations est unique et inspirée par la nature, pour offrir à vos proches un moment qui restera gravé à jamais.</p>
             </div>
             <div className="gallery">
                 <Card />
