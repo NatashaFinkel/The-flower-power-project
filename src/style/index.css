@@ -351,8 +351,6 @@ input[type="submit"] {
 
 input[type="submit"] {
   padding: 0px 15px;
-  /*  background: -webkit-linear-gradient(top,rgb(27 196 213),rgb(123 207 164), rgb(245 222 94)); */
-
   background: -webkit-linear-gradient(top, rgb(0 172 255 / 70%), rgb(0 253 255/ 80%), yellow);
   font-weight: 900;
   border: 1px solid black;
