@@ -24,7 +24,7 @@ function Footer() {
                     <p className="footer-title">Contactez-nous : </p><br></br>
                     <div className="footer-telephone-div">
                         <i className="fa-solid fa-phone telephone"></i>
-                        <p itemProp="telephone">06 28 01 19 92</p><br></br>
+                        <p itemProp="telephone">01 28 01 19 92</p><br></br>
                     </div><br></br>
                     <div className="footer-contact-form">
                         <i className="fa-solid fa-envelope enveloppe"></i>
