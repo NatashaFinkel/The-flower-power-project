@@ -1,8 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addBouquetToShoppingList } from "../redux/shoppingListSlice";
 import PropTypes from 'prop-types';
 
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
+    const dispatch = useDispatch();
+    const array = useSelector(state => state.addToShoppingList.array);
 
     const getModalElements = () => {
         return {
@@ -38,8 +42,12 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
 
         const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent };
 
-        console.log(bouquet);
+        dispatch(addBouquetToShoppingList(bouquet));
     };
+
+    useEffect(() => {
+        localStorage.setItem("shoppingList", JSON.stringify(array));
+    }, [array]);
 
     return (
         <div id="bouquet-modal" className="modal">
