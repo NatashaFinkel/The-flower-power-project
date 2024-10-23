@@ -234,7 +234,7 @@ input[type="submit"] {
   aspect-ratio: 1 / 1;
   width: 100px;
   object-fit: cover;
-  box-shadow: 16px 16px  11px rgba(0, 0, 0, 0.5);
+  box-shadow: 16px 16px 11px rgba(0, 0, 0, 0.5);
 }
 
 .modal {
@@ -353,4 +353,33 @@ input[type="submit"] {
   font-weight: 900;
   border: solid 2px white;
   box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
+}
+
+/* Page savedBouquets */
+.ZZZ {
+  width: 40%;
+}
+
+.AAA {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+
+  .trash-can-icon,
+  p {
+    padding: 10px 10px 0px 0px;
+  }
+}
+
+.shopping-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.saved-bouquet-img {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
