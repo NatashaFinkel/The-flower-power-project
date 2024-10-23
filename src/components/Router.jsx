@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar.jsx";
 import HomePage from "../pages/HomePage.jsx";
-import SavedBouquetsPage from "../pages/SavedBouquetsPage.jsx";
+import ShoppingCartPage from "../pages/ShoppingCartPage.jsx";
 import ConnexionPage from "../pages/ConnexionPage.jsx";
 import ContactPage from "../pages/ContactPage.jsx";
 import ErrorPage from "../pages/ErrorPage.jsx";
@@ -14,7 +14,7 @@ const AppRouter = () => {
             <NavBar />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/bouquets-sauvegardés" element={<SavedBouquetsPage />} />
+                <Route path="/bouquets-sauvegardés" element={<ShoppingCartPage />} />
                 <Route path="/connexion" element={<ConnexionPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="*" element={<ErrorPage />} />
