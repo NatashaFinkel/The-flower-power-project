@@ -10,6 +10,4 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
   },
-  base:
-    '/The-flower-power-project/',
 });
