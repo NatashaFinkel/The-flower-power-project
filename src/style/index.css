@@ -234,10 +234,8 @@ input[type="submit"] {
   aspect-ratio: 1 / 1;
   width: 100px;
   object-fit: cover;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-
+  box-shadow: 16px 16px  11px rgba(0, 0, 0, 0.5);
 }
-
 
 .modal {
   display: none;
