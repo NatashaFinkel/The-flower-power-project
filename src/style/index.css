@@ -367,7 +367,10 @@ input[type="submit"] {
 
   .trash-can-icon,
   p {
-    padding: 10px 10px 0px 0px;
+    padding-top: 15px;
+  }
+  .trash-can-icon{
+    padding-right: 15px;
   }
 }
 
