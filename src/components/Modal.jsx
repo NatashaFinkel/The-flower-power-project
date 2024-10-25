@@ -17,6 +17,9 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
             modalDescription: document.getElementById("modal-description"),
             modal: document.getElementById("bouquet-modal"),
             heartIcon: document.getElementById("heart"),
+            // TODO: manque bouquet.status (Modal.jsx)
+
+            // TODO: manque prix + dans .json (Modal.jsx)
         };
     };
 
@@ -48,6 +51,15 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
     useEffect(() => {
         localStorage.setItem("shoppingList", JSON.stringify(array));
     }, [array]);
+
+    // HACK: useEffect bouquetStatus (Modal.jsx) 
+    /*  useEffect(() => { let bouquetStatus = bouquet.status;
+            if (status === true) {
+                console.log("true");
+            } else {
+                console.log("false");
+            }
+        }, [status]); */
 
     return (
         <div id="bouquet-modal" className="modal">

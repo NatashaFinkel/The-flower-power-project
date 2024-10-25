@@ -17,6 +17,9 @@ function ShoppingItem() {
                                     <p>{bouquet.title}</p>
                                 </div>
                                 <div>
+                                    {/*  
+                                   // TODO: manque prix (ShoppinItem.jsx)     
+                                    */}
                                     <p>prix</p>
                                 </div>
                                 <div>
