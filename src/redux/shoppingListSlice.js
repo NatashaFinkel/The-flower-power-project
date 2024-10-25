@@ -10,7 +10,7 @@ const shoppingListSlice = createSlice({
     name: 'addToShoppingList',
     initialState,
     reducers: {
-        addBouquetToShoppingList: (state, action) => {
+        addToShoppingList: (state, action) => {
             const bouquetExists = state.array.some(
                 bouquet => bouquet.id === action.payload.id
             );
@@ -24,5 +24,5 @@ const shoppingListSlice = createSlice({
         }
     },
 })
-export const { addBouquetToShoppingList } = shoppingListSlice.actions;
+export const { addToShoppingList } = shoppingListSlice.actions;
 export default shoppingListSlice.reducer;
