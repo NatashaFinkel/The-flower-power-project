@@ -8,6 +8,7 @@ function ShoppingCartPage() {
             <div className="title-div">
                 <h1>Mon panier</h1>
             </div>
+            {/* // FIXME: changer nom classe  */}
             <div className="ZZZ">
                 <ShoppingItem />
             </div>

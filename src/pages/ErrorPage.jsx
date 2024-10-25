@@ -2,6 +2,9 @@
 import React from 'react';
 
 function ErrorPage() {
+
+    // TODO: faire la page d'erreur
+    
     return (
         <div>
             <h1>Page Erreur</h1>
