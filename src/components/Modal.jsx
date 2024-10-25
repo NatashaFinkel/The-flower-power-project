@@ -42,7 +42,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
 
         const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent };
 
-        dispatch(addBouquetToShoppingList(bouquet));
+        dispatch(addToShoppingList(bouquet));
     };
 
     useEffect(() => {
