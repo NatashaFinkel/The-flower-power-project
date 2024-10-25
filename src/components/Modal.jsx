@@ -41,7 +41,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
         let modalDescriptionTxtContent = modalDescription.textContent;
 
         const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent };
-
+        console.log(bouquet);
         dispatch(addToShoppingList(bouquet));
     };
 
@@ -66,7 +66,6 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
                     <div className="heart-icon-div">
                         <i id="heart" data-testid="heart-test-id" className={`fa-solid fa-heart heart-icon`} onClick={handleAddBouquet}
                         ></i>
-                        <span className="tooltiptext">Ajouter au panier !</span>
                     </div>
                 </div>
                 <div className="modal-description-div">
