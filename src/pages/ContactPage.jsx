@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-import FormLabel from "../components/FormLabel";
-import FormInput from "../components/FormInput";
+import React from 'react';
+import FormLabel from '../components/FormLabel';
+import FormInput from '../components/FormInput';
 
 function ContactPage() {
     return (

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React from 'react';
 import Card from '../components/Card';
-import Modal from "../components/Modal";
+import Modal from '../components/Modal';
 
 function HomePage() {
     return (
