@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { addToShoppingList } from "../redux/shoppingListSlice";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToShoppingList } from '../redux/shoppingListSlice';
 import PropTypes from 'prop-types';
 
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {

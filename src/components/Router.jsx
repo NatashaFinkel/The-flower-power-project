@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NavBar from "./NavBar.jsx";
-import HomePage from "../pages/HomePage.jsx";
-import ShoppingCartPage from "../pages/ShoppingCartPage.jsx";
-import ConnexionPage from "../pages/ConnexionPage.jsx";
-import ContactPage from "../pages/ContactPage.jsx";
-import ErrorPage from "../pages/ErrorPage.jsx";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './NavBar.jsx';
+import HomePage from '../pages/HomePage.jsx';
+import ShoppingCartPage from '../pages/ShoppingCartPage.jsx';
+import ConnexionPage from '../pages/ConnexionPage.jsx';
+import ContactPage from '../pages/ContactPage.jsx';
+import ErrorPage from '../pages/ErrorPage.jsx';
 
 const AppRouter = () => {
     return (
