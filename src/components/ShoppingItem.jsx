@@ -17,7 +17,7 @@ function ShoppingItem() {
                                     <p>{bouquet.title}</p>
                                 </div>
                                 <div>
-                                    <p>prix ici</p>
+                                    <p>prix</p>
                                 </div>
                                 <div>
                                     <i className="fa-solid fa-trash-can trash-can-icon"></i>
