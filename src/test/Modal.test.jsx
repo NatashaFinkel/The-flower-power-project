@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React from 'react';
 import { describe, test, expect } from 'vitest';
 import { render } from '@testing-library/react';
-import { Provider } from "react-redux";
-import { store } from "../redux/store";
-import { screen } from "@testing-library/react";
+import { Provider } from 'react-redux';
+import { store } from '../redux/store';
+import { screen } from '@testing-library/react';
 import Modal from '../components/Modal';
 
 describe('Modal component', () => {
