@@ -63,8 +63,8 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
                 <div className="modal-title-div">
                     <h2 id="modal-title" data-testid="modal-title-test-id" className="modal-title">{mTitle}</h2>
 
-                    <div className="heart-icon-div tooltip">
-                        <i id="heart" className={`fa-solid fa-heart heart-icon`} onClick={handleAddBouquet}
+                    <div className="heart-icon-div">
+                        <i id="heart" data-testid="heart-test-id" className={`fa-solid fa-heart heart-icon`} onClick={handleAddBouquet}
                         ></i>
                         <span className="tooltiptext">Ajouter au panier !</span>
                     </div>
