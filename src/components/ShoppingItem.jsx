@@ -14,8 +14,7 @@ function ShoppingItem() {
                                     className="saved-bouquet-img" key={bouquet.imgSrc}
                                 />
                                 <div>
-                                    <p>titre ici</p>
-                                    <p>description ici</p>
+                                    <p>{bouquet.title}</p>
                                 </div>
                                 <div>
                                     <p>prix ici</p>
