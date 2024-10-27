@@ -1,8 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addColorToHeartIcon } from '../redux/shoppingListSlice';
 import flowers from '../../flowers.json';
 
 function Card() {
+    const dispatch = useDispatch();
 
     function showModal(event) {
         let selectedBouquet = event.target;
@@ -21,6 +24,7 @@ function Card() {
         let parentDiv = selectedBouquet.closest("div");
         let parentDivId = parentDiv.id;
         modalContent.id = `${parentDivId}-modal`;
+        dispatch(addColorToHeartIcon({ id: `${modalContent.id}-modal` }));
     }
 
     return (
