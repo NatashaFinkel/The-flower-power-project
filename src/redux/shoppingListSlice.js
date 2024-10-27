@@ -4,12 +4,19 @@ const initialState = {
     array: JSON.parse(localStorage.getItem("shoppingList")) || JSON.parse(sessionStorage.getItem("shoppingList")) || [],
     isThisBouquetSaved: false,
     isThereAnError: false,
-}
+    iconColor: "",
+};
 
 const shoppingListSlice = createSlice({
     name: 'addToShoppingList',
     initialState,
     reducers: {
+        addColorToHeartIcon: (state, action) => {
+            const bouquetExists = state.array.some(
+                bouquet => bouquet.id === action.payload.id
+            );
+            state.iconColor = bouquetExists ? "red" : "grey";
+        },
         addToShoppingList: (state, action) => {
             const bouquetExists = state.array.some(
                 bouquet => bouquet.id === action.payload.id
@@ -21,8 +28,9 @@ const shoppingListSlice = createSlice({
                 state.array = state.array.filter(bouquet => bouquet.id !== action.payload.id);
                 state.isThisBouquetSaved = false;
             }
-        }
+        },
     },
-})
-export const { addToShoppingList } = shoppingListSlice.actions;
+});
+
+export const { addToShoppingList, addColorToHeartIcon } = shoppingListSlice.actions;
 export default shoppingListSlice.reducer;
