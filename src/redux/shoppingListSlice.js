@@ -13,7 +13,7 @@ const shoppingListSlice = createSlice({
             const bouquetExists = state.array.some(
                 bouquet => bouquet.id === action.payload.id
             );
-            state.iconColor = bouquetExists ? "red" : "grey";
+            state.iconColor = bouquetExists ? "rgb(223, 27, 138)" : "rgba(179, 179, 179, 0.355)";
         },
         addToShoppingList: (state, action) => {
             const bouquetExists = state.array.some(

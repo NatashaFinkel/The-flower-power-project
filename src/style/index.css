@@ -304,6 +304,7 @@ input[type="submit"] {
 
 .heart-icon {
   font-size: 22px;
+  transition: color 1000ms linear;
 }
 
 /* Page Contact */
