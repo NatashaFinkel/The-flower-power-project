@@ -12,7 +12,7 @@
         "id": "wild-flowers",
         "imgSrc": "../../flowers/composition-1.jpeg",
         "imgAlt": "bouquet composition fleurs des champs",
-        "imgTitle": "Bouquet de fleurs des champs",
+        "imgTitle": "Fleurs des champs",
         "imgDescription": "Abiecto tamquam imitatus pertinacius superbiam."
     },
     {
@@ -20,7 +20,7 @@
         "id": "pink-roses",
         "imgSrc": "../../flowers/pink-1-roses.jpeg",
         "imgAlt": "Roses rose pâle bordé de fuchsia",
-        "imgTitle": "Roses pâles bordées de fuschia",
+        "imgTitle": "Roses fuschia",
         "imgDescription": "Aeternam intentum urbem modum ad praefecti."
     },
     {
@@ -57,10 +57,10 @@
     },
     {
         "index": 8,
-        "id": "red-chrysanthemums",
+        "id": "chrysanthemums",
         "imgSrc": "../../flowers/red-3-chrysanthemum.jpeg",
-        "imgAlt": "Chrysanthèmes rouges",
-        "imgTitle": "Chrysanthèmes rouges",
+        "imgAlt": "Chrysanthèmes",
+        "imgTitle": "Chrysanthèmes",
         "imgDescription": "Aliquem virum exoptatus si tenuem ut ideo."
     },
     {
@@ -75,8 +75,8 @@
         "index": 10,
         "id": "light-rose-roses",
         "imgSrc": "../../flowers/pink-4-roses.webp",
-        "imgAlt": "Roses de couleur rose dragée",
-        "imgTitle": "Roses de couleur rose dragée",
+        "imgAlt": "Roses pâles",
+        "imgTitle": "Roses pâles",
         "imgDescription": "Amoris primumsit ita magis."
     },
     {
@@ -100,7 +100,7 @@
         "id": "orange-roses",
         "imgSrc": "../../flowers/orange-2-roses-2.jpeg",
         "imgAlt": "Roses de couleur orange",
-        "imgTitle": "Roses de couleur orange",
+        "imgTitle": "Roses oranges",
         "imgDescription": "El Honoratus orientis ordinis Honoratus."
     },
     {
@@ -113,10 +113,10 @@
     },
     {
         "index": 15,
-        "id": "blooming-love",
+        "id": "wedding-bouquet",
         "imgSrc": "../../flowers/composition-11.jpeg",
-        "imgAlt": "bouquet composition fleurs d'amour",
-        "imgTitle": "Bouquet Fleurs d'amour",
+        "imgAlt": "bouquet de mariage",
+        "imgTitle": "Mariage heureux",
         "imgDescription": "Aerario et stipe cum inops ille subsidiis est."
     },
     {
@@ -164,7 +164,7 @@
         "id": "pearls-and-amethysts",
         "imgSrc": "../../flowers/composition-8-2.jpeg",
         "imgAlt": "bouquet composition perles et améthystes",
-        "imgTitle": "Bouquet perles et améthystes",
+        "imgTitle": "Perles et améthystes",
         "imgDescription": "Opulentis quae spatio Seres priscorum."
     },
     {
@@ -172,15 +172,15 @@
         "id": "fairy-garden",
         "imgSrc": "../../flowers/composition-2.jpeg",
         "imgAlt": "bouquet composition jardin des fées",
-        "imgTitle": "Bouquet Jardin des fées",
+        "imgTitle": "Jardin des fées",
         "imgDescription": "Omnium Montium termino tribunos adminicula."
     },
     {
         "index": 23,
         "id": "purple-lilac",
         "imgSrc": "../../flowers/purple-3-lilac.jpeg",
-        "imgAlt": "Lilas mauve et blanc",
-        "imgTitle": "Lilas mauve et blanc",
+        "imgAlt": "Lilas mauve",
+        "imgTitle": "Lilas mauve",
         "imgDescription": "Dicat Latinas quis virtutum delectari."
     },
     {
@@ -196,7 +196,7 @@
         "id": "autumn-sighs",
         "imgSrc": "../../flowers/composition-5-optimised.webp",
         "imgAlt": "bouquet composition Soupirs d'automne",
-        "imgTitle": "Bouquet Soupirs d'automne",
+        "imgTitle": "Soupirs d'automne",
         "imgDescription": "Isauri  Isaurus inediae quidem."
     },
     {
@@ -236,23 +236,23 @@
         "id": "dreams-of-sweetness",
         "imgSrc": "../../flowers/composition-7-2.jpeg",
         "imgAlt": "bouquet composition rêves de douceur",
-        "imgTitle": "Bouquet rêves de douceur",
+        "imgTitle": "Rêves de douceur",
         "imgDescription": " Comicus metu quod quidam."
     },
     {
         "index": 31,
-        "id": "salmon-pink-roses",
-        "imgSrc": "../../flowers/pink-3-roses.webp",
-        "imgAlt": "Roses couleur rose saumon",
-        "imgTitle": "Roses de couleur rose saumon",
+        "id": "orange-dahlia",
+        "imgSrc": "../../flowers/orange-6-dahlia.jpg",
+        "imgAlt": "Dahlia jaune",
+        "imgTitle": "Dahlia jaune",
         "imgDescription": "Ferocissimas Mesopotamiam versabili."
     },
     {
         "index": 32,
         "id": "blue-hortensias",
         "imgSrc": "../../flowers/purple-6-hortensias.jpeg",
-        "imgAlt": "Hortensias bleus",
-        "imgTitle": "Hortensias bleus",
+        "imgAlt": "Hortensias",
+        "imgTitle": "Hortensias",
         "imgDescription": "Celebritati effectu ante celebritati proditus."
     },
     {
