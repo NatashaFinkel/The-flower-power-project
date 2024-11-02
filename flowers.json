@@ -5,7 +5,8 @@
         "imgSrc": "../../flowers/white-1-jasmine.jpeg",
         "imgAlt": "Jasmin blanc",
         "imgTitle": "Jasmin blanc",
-        "imgDescription": "Memoratur referens Mopsi errore nobilis Mopsuestia."
+        "imgDescription": "Memoratur referens Mopsi errore nobilis Mopsuestia.",
+        "price": "25"
     },
     {
         "index": 2,
@@ -13,7 +14,8 @@
         "imgSrc": "../../flowers/composition-1.jpeg",
         "imgAlt": "bouquet composition fleurs des champs",
         "imgTitle": "Fleurs des champs",
-        "imgDescription": "Abiecto tamquam imitatus pertinacius superbiam."
+        "imgDescription": "Abiecto tamquam imitatus pertinacius superbiam.",
+        "price": "40"
     },
     {
         "index": 3,
@@ -21,7 +23,8 @@
         "imgSrc": "../../flowers/pink-1-roses.jpeg",
         "imgAlt": "Roses rose pâle bordé de fuchsia",
         "imgTitle": "Roses fuschia",
-        "imgDescription": "Aeternam intentum urbem modum ad praefecti."
+        "imgDescription": "Aeternam intentum urbem modum ad praefecti.",
+        "price": "70"
     },
     {
         "index": 4,
@@ -29,7 +32,8 @@
         "imgSrc": "../../flowers/purple-5-pensees.jpeg",
         "imgAlt": "bouquet de pensées",
         "imgTitle": "Pensées",
-        "imgDescription": "Viderit celeberrimos in ob ad suspicentur."
+        "imgDescription": "Viderit celeberrimos in ob ad suspicentur.",
+        "price": "25"
     },
     {
         "index": 5,
@@ -37,7 +41,8 @@
         "imgSrc": "../../flowers/pink-5-dahlia.jpeg",
         "imgAlt": "dahlia de couleur rose hollywood",
         "imgTitle": "Dahlia rose",
-        "imgDescription": "libertate istarum existiment ut velit est."
+        "imgDescription": "libertate istarum existiment ut velit est.",
+        "price": "40"
     },
     {
         "index": 6,
@@ -45,7 +50,8 @@
         "imgSrc": "../../flowers/orange-3-tulips.webp",
         "imgAlt": "Tulipes oranges",
         "imgTitle": "Tulipes oranges",
-        "imgDescription": "Ne Syriam sollicitari quem conspiraret se Caesare."
+        "imgDescription": "Ne Syriam sollicitari quem conspiraret se Caesare.",
+        "price": "15"
     },
     {
         "index": 7,
@@ -53,7 +59,8 @@
         "imgSrc": "../../flowers/orange-1-sunflowers-2.jpeg",
         "imgAlt": "Tournesols",
         "imgTitle": "Tournesols",
-        "imgDescription": "Nefariis expediendum Luscus heiulans homines ad."
+        "imgDescription": "Nefariis expediendum Luscus heiulans homines ad.",
+        "price": "45"
     },
     {
         "index": 8,
@@ -61,7 +68,8 @@
         "imgSrc": "../../flowers/red-3-chrysanthemum.jpeg",
         "imgAlt": "Chrysanthèmes",
         "imgTitle": "Chrysanthèmes",
-        "imgDescription": "Aliquem virum exoptatus si tenuem ut ideo."
+        "imgDescription": "Aliquem virum exoptatus si tenuem ut ideo.",
+        "price": "30"
     },
     {
         "index": 9,
@@ -69,7 +77,8 @@
         "imgSrc": "../../flowers/white-4-tulips-2.jpeg",
         "imgAlt": "Tulipes blanches",
         "imgTitle": "Tulipes blanches",
-        "imgDescription": "Divites Caesaris divites his in et noscere circulis."
+        "imgDescription": "Divites Caesaris divites his in et noscere circulis.",
+        "price": "90"
     },
     {
         "index": 10,
@@ -77,7 +86,8 @@
         "imgSrc": "../../flowers/pink-4-roses.webp",
         "imgAlt": "Roses pâles",
         "imgTitle": "Roses pâles",
-        "imgDescription": "Amoris primumsit ita magis."
+        "imgDescription": "Amoris primumsit ita magis.",
+        "price": "25"
     },
     {
         "index": 11,
@@ -85,7 +95,8 @@
         "imgSrc": "../../flowers/white-5-lilies-of-the-valley.jpeg",
         "imgAlt": "Muguet",
         "imgTitle": "Muguet",
-        "imgDescription": "Amicitias frui sed ne sua rerum satis."
+        "imgDescription": "Amicitias frui sed ne sua rerum satis.",
+        "price": "10"
     },
     {
         "index": 12,
@@ -93,7 +104,8 @@
         "imgSrc": "../../flowers/purple-1-opti.jpeg",
         "imgAlt": "Myosotis",
         "imgTitle": "Myosotis",
-        "imgDescription": "Natus e aetatis et vicensimo sorore aetatis."
+        "imgDescription": "Natus e aetatis et vicensimo sorore aetatis.",
+        "price": "75"
     },
     {
         "index": 13,
@@ -101,7 +113,8 @@
         "imgSrc": "../../flowers/orange-2-roses-2.jpeg",
         "imgAlt": "Roses de couleur orange",
         "imgTitle": "Roses oranges",
-        "imgDescription": "El Honoratus orientis ordinis Honoratus."
+        "imgDescription": "El Honoratus orientis ordinis Honoratus.",
+        "price": "15"
     },
     {
         "index": 14,
@@ -109,7 +122,8 @@
         "imgSrc": "../../flowers/cactus.webp",
         "imgAlt": "Cactus",
         "imgTitle": "Cactus",
-        "imgDescription": "Perspicere aliquod quasi natura amoris."
+        "imgDescription": "Perspicere aliquod quasi natura amoris.",
+        "price": "5"
     },
     {
         "index": 15,
@@ -117,7 +131,8 @@
         "imgSrc": "../../flowers/composition-11.jpeg",
         "imgAlt": "bouquet de mariage",
         "imgTitle": "Mariage heureux",
-        "imgDescription": "Aerario et stipe cum inops ille subsidiis est."
+        "imgDescription": "Aerario et stipe cum inops ille subsidiis est.",
+        "price": "90"
     },
     {
         "index": 16,
@@ -125,7 +140,8 @@
         "imgSrc": "../../flowers/purple-2-hyacinths-copie.jpeg",
         "imgAlt": "Hyacinthes violet foncé",
         "imgTitle": "Hyacinthes",
-        "imgDescription": "Solitarum captis alimentorum solitarum."
+        "imgDescription": "Solitarum captis alimentorum solitarum.",
+        "price": "50"
     },
     {
         "index": 17,
@@ -133,7 +149,8 @@
         "imgSrc": "../../flowers/orange-4-jonquilles-2.jpeg",
         "imgAlt": "Jonquilles",
         "imgTitle": "Jonquilles",
-        "imgDescription": "Honorem Haec plerisque."
+        "imgDescription": "Honorem Haec plerisque.",
+        "price": "25"
     },
     {
         "index": 18,
@@ -141,7 +158,8 @@
         "imgSrc": "../../flowers/red-4-roses.jpeg",
         "imgAlt": "Roses rouges",
         "imgTitle": "Roses rouges",
-        "imgDescription": "Hannibaliano Constantinus et clandestinos eruditiores."
+        "imgDescription": "Hannibaliano Constantinus et clandestinos eruditiores.",
+        "price": "75"
     },
     {
         "index": 19,
@@ -149,7 +167,8 @@
         "imgSrc": "../../flowers/pink-2-2.jpeg",
         "imgAlt": "bouquet d'étoile égyptienne de couleur rose",
         "imgTitle": "Etoiles égyptiennes",
-        "imgDescription": "Prudens velut retinacula efferatarum et sempiterna."
+        "imgDescription": "Prudens velut retinacula efferatarum et sempiterna.",
+        "price": "80"
     },
     {
         "index": 20,
@@ -157,7 +176,8 @@
         "imgSrc": "../../flowers/red-5-dahlia.jpeg",
         "imgAlt": "Dahlia rouge",
         "imgTitle": "Dahlia rouge",
-        "imgDescription": "Nisu urgentis obstaculo rebus convellere."
+        "imgDescription": "Nisu urgentis obstaculo rebus convellere.",
+        "price": "45"
     },
     {
         "index": 21,
@@ -165,7 +185,8 @@
         "imgSrc": "../../flowers/composition-8-2.jpeg",
         "imgAlt": "bouquet composition perles et améthystes",
         "imgTitle": "Perles et améthystes",
-        "imgDescription": "Opulentis quae spatio Seres priscorum."
+        "imgDescription": "Opulentis quae spatio Seres priscorum.",
+        "price": "60"
     },
     {
         "index": 22,
@@ -173,7 +194,8 @@
         "imgSrc": "../../flowers/composition-2.jpeg",
         "imgAlt": "bouquet composition jardin des fées",
         "imgTitle": "Jardin des fées",
-        "imgDescription": "Omnium Montium termino tribunos adminicula."
+        "imgDescription": "Omnium Montium termino tribunos adminicula.",
+        "price": "75"
     },
     {
         "index": 23,
@@ -181,7 +203,8 @@
         "imgSrc": "../../flowers/purple-3-lilac.jpeg",
         "imgAlt": "Lilas mauve",
         "imgTitle": "Lilas mauve",
-        "imgDescription": "Dicat Latinas quis virtutum delectari."
+        "imgDescription": "Dicat Latinas quis virtutum delectari.",
+        "price": "25"
     },
     {
         "index": 24,
@@ -189,7 +212,8 @@
         "imgSrc": "../../flowers/red-1-tulips.jpg",
         "imgAlt": "Tulipes rouges",
         "imgTitle": "Tulipes rouges",
-        "imgDescription": "Omnium humanitatis nobilium Lotophagi."
+        "imgDescription": "Omnium humanitatis nobilium Lotophagi.",
+        "price": "15"
     },
     {
         "index": 25,
@@ -197,7 +221,8 @@
         "imgSrc": "../../flowers/composition-5-optimised.webp",
         "imgAlt": "bouquet composition Soupirs d'automne",
         "imgTitle": "Soupirs d'automne",
-        "imgDescription": "Isauri  Isaurus inediae quidem."
+        "imgDescription": "Isauri  Isaurus inediae quidem.",
+        "price": "45"
     },
     {
         "index": 26,
@@ -205,7 +230,8 @@
         "imgSrc": "../../flowers/white-3-roses.jpeg",
         "imgAlt": "Roses blanches",
         "imgTitle": "Roses blanches",
-        "imgDescription": "Ipsa infinita natura amicitiae sit potest."
+        "imgDescription": "Ipsa infinita natura amicitiae sit potest.",
+        "price": "60"
     },
     {
         "index": 27,
@@ -213,7 +239,8 @@
         "imgSrc": "../../flowers/purple-4-orchid-2-copie.jpeg",
         "imgAlt": "Orchidées",
         "imgTitle": "Orchidées",
-        "imgDescription": "Obsequiorum diversitate colun turi."
+        "imgDescription": "Obsequiorum diversitate colun turi.",
+        "price": "70"
     },
     {
         "index": 28,
@@ -221,7 +248,8 @@
         "imgSrc": "../../flowers/white-2-lilac-2.webp",
         "imgAlt": "Lilas blanc",
         "imgTitle": "Lilas blanc",
-        "imgDescription": "Meministi consul sermonem dissideret."
+        "imgDescription": "Meministi consul sermonem dissideret.",
+        "price": "35"
     },
     {
         "index": 29,
@@ -229,7 +257,8 @@
         "imgSrc": "../../flowers/red-6-lys.jpeg",
         "imgAlt": "fleurs de lys rouges",
         "imgTitle": "Lys rouge",
-        "imgDescription": "Improborum est sit improborum omninium."
+        "imgDescription": "Improborum est sit improborum omninium.",
+        "price": "85"
     },
     {
         "index": 30,
@@ -237,7 +266,8 @@
         "imgSrc": "../../flowers/composition-7-2.jpeg",
         "imgAlt": "bouquet composition rêves de douceur",
         "imgTitle": "Rêves de douceur",
-        "imgDescription": " Comicus metu quod quidam."
+        "imgDescription": " Comicus metu quod quidam.",
+        "price": "70"
     },
     {
         "index": 31,
@@ -245,7 +275,8 @@
         "imgSrc": "../../flowers/orange-6-dahlia.jpg",
         "imgAlt": "Dahlia jaune",
         "imgTitle": "Dahlia jaune",
-        "imgDescription": "Ferocissimas Mesopotamiam versabili."
+        "imgDescription": "Ferocissimas Mesopotamiam versabili.",
+        "price": "45"
     },
     {
         "index": 32,
@@ -253,7 +284,8 @@
         "imgSrc": "../../flowers/purple-6-hortensias.jpeg",
         "imgAlt": "Hortensias",
         "imgTitle": "Hortensias",
-        "imgDescription": "Celebritati effectu ante celebritati proditus."
+        "imgDescription": "Celebritati effectu ante celebritati proditus.",
+        "price": "85"
     },
     {
         "index": 33,
@@ -261,6 +293,7 @@
         "imgSrc": "../../flowers/orange-5-lys.webp",
         "imgAlt": "fleurs de lys jaunes",
         "imgTitle": "Lys jaunes",
-        "imgDescription": "Diebus praesentibus ipsos 'inquam' memoriae."
+        "imgDescription": "Diebus praesentibus ipsos 'inquam' memoriae.",
+        "price": "90"
     }
 ]
