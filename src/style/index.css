@@ -451,7 +451,7 @@ input[type="submit"] {
   margin-top: 30px;
 }
 
-.AAA {
+.shopping-item-div {
   border: 2px solid white;
   display: flex;
   justify-content: space-between;
@@ -473,7 +473,7 @@ input[type="submit"] {
   }
 }
 
-.KKK {
+.purchase-summary-container {
   border: 2px solid black;
   background-color: white;
   width: 300px;
@@ -485,24 +485,20 @@ input[type="submit"] {
   gap: 17px;
 }
 
-.KKK-title {
-  font-weight: 900;
-}
-
-.KKK-divider {
+.purchase-summary-container-divider {
   border: 1px solid black;
   border-radius: 50px;
   width: 50%;
-  justify-self: center;
 }
 
-.KKK p{
+.purchase-summary-container p{
   font-weight: 900;
 }
 
-.HHH{
+.purchase-summary-txt{
   align-self: flex-start;
 }
+
 .shopping-list {
   display: flex;
   flex-direction: column;

@@ -9,8 +9,7 @@ function ShoppingItem() {
                 shoppingList.map(bouquet => {
                     return (
                         <div key={bouquet.id} id={bouquet.id}>
-                            {/* // FIXME: changer nom classe  */}
-                            <div className="AAA">
+                            <div className="shopping-item-div">
                                 <img src={bouquet.imgSrc} alt={bouquet.imgAlt}
                                     className="saved-bouquet-img" key={bouquet.imgSrc} />
                                 <div className="shopping-list-txt-content">
@@ -18,7 +17,7 @@ function ShoppingItem() {
                                     <p>{bouquet.price}</p>
                                 </div>
                                 <div>
-                                    {/*   // TODO: manque fonction deleteBouquet()      */}
+                                    {/*   // TODO: manque fonction deleteBouquet() */}
                                     <i className="fa-solid fa-trash-can trash-can-icon"></i>
                                 </div>
                             </div>

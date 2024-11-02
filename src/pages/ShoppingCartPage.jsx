@@ -9,15 +9,14 @@ function ShoppingCartPage() {
                 <h1>Mon panier</h1>
             </div>
             <div className="shopping-cart">
-                {/* // FIXME: changer nom classe  */}
-                <div className="ZZZ">
+                <div>
                     <ShoppingItem />
                 </div>
-                <div className="KKK">
-                    <p className="KKK-title">Total</p>
-                    <hr className="KKK-divider"></hr>
-                    <p className="HHH">Sous-total : </p>
-                    <p className="HHH">Livraison : offerte !</p>
+                <div className="purchase-summary-container">
+                    <p>Total</p>
+                    <hr className="purchase-summary-container-divider"></hr>
+                    <p className="purchase-summary-txt">Sous-total : </p>
+                    <p className="purchase-summary-txt">Livraison : offerte !</p>
                     <div>
                         <button className="heart-icon pay-btn" data-testid="pay-btn-test-id">Payer</button>
                     </div>
