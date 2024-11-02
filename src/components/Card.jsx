@@ -37,6 +37,7 @@ function Card() {
                                 // eslint-disable-next-line react/no-unknown-property
                                 description={flower.imgDescription}
                             />
+                            <p className="card-title">{flower.imgTitle}</p>
                         </div>
                     )
                 })
