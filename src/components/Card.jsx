@@ -27,8 +27,6 @@ function Card() {
         let parentDivId = parentDiv.id;
         modalContent.id = `${parentDivId}-modal`;
         dispatch(addColorToHeartIcon({ id: `${modalContent.id}-modal` }));
-
-        // TODO: test : si bouquet dans localStorage --> icône rose, sinon icône grise.
     }
 
     return (
