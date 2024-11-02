@@ -12,17 +12,14 @@ function ShoppingItem() {
                                    {/* // FIXME: changer nom classe  */}
                             <div className="AAA">
                                 <img src={bouquet.imgSrc} alt={bouquet.imgAlt}
-                                    className="saved-bouquet-img" key={bouquet.imgSrc}
-                                />
-                                <div>
-                                    <p>{bouquet.title}</p>
-                                </div>
-                                <div>
-                                    {/*  
-                                   // TODO: manque prix (ShoppinItem.jsx)     
-                                    */}
+                                    className="saved-bouquet-img" key={bouquet.imgSrc} />
+                                <div className="shopping-list-txt-content">
+                                    <p className="shopping-item-title">{bouquet.title}</p>
                                     <p>prix</p>
                                 </div>
+                                {/*  
+                                   // TODO: manque prix (ShoppinItem.jsx)     
+                                    */}
                                 <div>
                                     <i className="fa-solid fa-trash-can trash-can-icon"></i>
                                 </div>
