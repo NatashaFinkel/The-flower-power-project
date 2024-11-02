@@ -424,7 +424,6 @@ input[type="submit"]:active,
   height: 30px;
   width: 100%;
   padding: 0px 30px;
-
 }
 
 .message-div {
@@ -447,7 +446,7 @@ input[type="submit"] {
   padding: 0px 20px;
 }
 
-/* Page savedBouquets */
+/* Page ShoppingCartPage */
 
 .shopping-cart {
   display: flex;
