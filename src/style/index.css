@@ -251,7 +251,10 @@ a p {
 
 .gallery-img,
 .close-modal,
-input[type="submit"] {
+input[type="submit"],
+.add-bouquet-btn,
+.trash-can-icon,
+.pay-btn {
   cursor: pointer;
 }
 
@@ -462,7 +465,7 @@ input[type="submit"] {
   padding-right: 30px;
   min-width: 500px;
   text-align-last: center;
-  
+
   .trash-can-icon,
   p {
     padding-top: 15px;
@@ -491,11 +494,11 @@ input[type="submit"] {
   width: 50%;
 }
 
-.purchase-summary-container p{
+.purchase-summary-container p {
   font-weight: 900;
 }
 
-.purchase-summary-txt{
+.purchase-summary-txt {
   align-self: flex-start;
 }
 
