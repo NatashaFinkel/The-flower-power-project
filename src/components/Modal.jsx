@@ -69,6 +69,12 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
                 <div className="modal-description-div">
                     <p id="modal-description" data-testid="modal-description-test-id">{mDescription}</p>
                 </div>
+                <hr className="modal-divider"></hr>
+                <div className="modal-footer">
+                    {/* //TODO: ajouter mPrice ici  */}
+                    <div className="modal-price-div"><span>35</span> €</div>
+                    <button onClick={handleAddBouquet} className="heart-icon add-bouquet-btn" data-testid="heart-test-id">Ajouter au panier</button>
+                </div>
             </div>
         </div>
     )
