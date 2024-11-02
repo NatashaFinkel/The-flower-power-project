@@ -337,36 +337,38 @@ input[type="submit"] {
 }
 
 .add-bouquet-btn,
-input[type="submit"] {
+input[type="submit"],
+.pay-btn {
   height: 35px;
   box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
   font-weight: 900;
   margin-top: 15%;
   width: 100%;
   background-color: white;
-  border: 1px solid rgb(109, 109, 109);
+  border: 2px solid black;
 }
 
-.add-bouquet-btn {
+.add-bouquet-btn,
+.pay-btn {
   width: 165px;
   margin: 0px;
   font-weight: 400;
-  height: 35px;
-  border: 1px solid black;
   padding: 0 10px;
   background-color: black;
   color: white;
 }
 
 input[type="submit"]:hover,
-.add-bouquet-btn:hover {
+.add-bouquet-btn:hover,
+.pay-btn:hover {
   background: -webkit-linear-gradient(top, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
   border-color: white;
   color: black;
 }
 
 input[type="submit"]:active,
-.add-bouquet-btn:active {
+.add-bouquet-btn:active,
+.pay-btn:active {
   background: -webkit-linear-gradient(bottom, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
 }
 
@@ -445,16 +447,25 @@ input[type="submit"] {
 }
 
 /* Page savedBouquets */
-.ZZZ {
-  width: 40%;
+
+.shopping-cart {
+  display: flex;
+  gap: 77px;
+  margin-top: 30px;
 }
 
 .AAA {
-  border: 1px solid black;
+  border: 2px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 100px;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
+  padding-right: 30px;
+  min-width: 500px;
+  text-align-last: center;
+  
   .trash-can-icon,
   p {
     padding-top: 15px;
@@ -465,6 +476,36 @@ input[type="submit"] {
   }
 }
 
+.KKK {
+  border: 2px solid black;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: fit-content;
+  gap: 17px;
+}
+
+.KKK-title {
+  font-weight: 900;
+}
+
+.KKK-divider {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 50%;
+  justify-self: center;
+}
+
+.KKK p{
+  font-weight: 900;
+}
+
+.HHH{
+  align-self: flex-start;
+}
 .shopping-list {
   display: flex;
   flex-direction: column;
@@ -472,8 +513,19 @@ input[type="submit"] {
 }
 
 .saved-bouquet-img {
-  width: 150px;
+  width: auto;
   height: 100px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+.shopping-list-txt-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.shopping-item-title {
+  font-weight: 900;
+  position: relative;
 }
