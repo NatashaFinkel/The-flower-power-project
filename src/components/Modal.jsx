@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToShoppingList, addColorToHeartIcon } from '../redux/shoppingListSlice';
 import PropTypes from 'prop-types';
 
-function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
+function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     const dispatch = useDispatch();
     const array = useSelector(state => state.addToShoppingList.array);
 
@@ -17,32 +17,33 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
             modalDescription: document.getElementById("modal-description"),
             modal: document.getElementById("bouquet-modal"),
             heartIcon: document.getElementById("heart"),
-
-            // TODO: manque prix + dans .json (Modal.jsx)
+            modalPrice: document.getElementById("modal-price"),
         };
     };
 
     useEffect(() => {
-        const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modal } = getModalElements();
+        const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modalPrice, modal } = getModalElements();
         closeModal.onclick = function () {
             modalContent.id = "";
             modalImg.src = "";
             modalImg.alt = "";
             modalTitle.textContent = "";
             modalDescription.textContent = "";
+            modalPrice.textContent = "";
             modal.style.display = "none";
         };
     });
 
     const handleAddBouquet = () => {
-        const { modalContent, modalTitle, modalImg, modalDescription } = getModalElements();
+        const { modalContent, modalTitle, modalImg, modalDescription, modalPrice } = getModalElements();
         let modalContentId = modalContent.id;
         let modalContentTitleTxtContent = modalTitle.textContent;
         let modalContentImgSrc = modalImg.src;
         let modalContentAlt = modalImg.alt;
         let modalDescriptionTxtContent = modalDescription.textContent;
+        let modalPriceTxtContent = modalPrice.textContent;
 
-        const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent };
+        const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent, price: modalPriceTxtContent };
         console.log(bouquet);
         dispatch(addToShoppingList(bouquet));
         dispatch(addColorToHeartIcon({ id: `${modalContentId}-modal` }));
@@ -71,8 +72,9 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
                 </div>
                 <hr className="modal-divider"></hr>
                 <div className="modal-footer">
-                    {/* //TODO: ajouter mPrice ici  */}
-                    <div className="modal-price-div"><span>35</span> €</div>
+                    <div className="modal-price-div">
+                        <p id="modal-price">{mPrice}</p>
+                    </div>
                     <button onClick={handleAddBouquet} className="heart-icon add-bouquet-btn" data-testid="heart-test-id">Ajouter au panier</button>
                 </div>
             </div>
@@ -85,6 +87,7 @@ Modal.propTypes = {
     mImgAlt: PropTypes.string,
     mTitle: PropTypes.string,
     mDescription: PropTypes.string,
+    mPrice: PropTypes.number,
 }
 
 export default Modal;

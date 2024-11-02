@@ -14,12 +14,14 @@ function Card() {
         let modalTitle = document.getElementById("modal-title");
         let modalDescription = document.getElementById("modal-description");
         let modalContent = document.querySelector(".modal-content");
+        let modalPrice = document.getElementById("modal-price");
 
         modal.style.display = "flex";
         modalImgSrc.src = selectedBouquet.src;
         modalImgSrc.alt = selectedBouquet.alt;
         modalTitle.textContent = selectedBouquet.title;
         modalDescription.textContent = selectedBouquet.getAttribute("description");
+        modalPrice.textContent = selectedBouquet.getAttribute("price");
 
         let parentDiv = selectedBouquet.closest("div");
         let parentDivId = parentDiv.id;
@@ -38,6 +40,8 @@ function Card() {
                             <img src={flower.imgSrc} alt={flower.imgAlt} id={flower.index} className="gallery-img" title={flower.imgTitle}
                                 // eslint-disable-next-line react/no-unknown-property
                                 description={flower.imgDescription}
+                                // eslint-disable-next-line react/no-unknown-property
+                               price={`${flower.price} €`}
                             />
                             <p className="card-title">{flower.imgTitle}</p>
                         </div>
