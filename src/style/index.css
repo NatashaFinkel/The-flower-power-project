@@ -110,7 +110,9 @@ ul,
 .form-btn-div,
 .message-div,
 .gallery,
-.modal-title-div {
+.modal-img-div,
+.modal-title-div,
+.add-bouquet-btn-div {
   display: flex;
   justify-content: center;
 }
@@ -218,23 +220,44 @@ a p {
 
 .card-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 50px;
-  margin-top: 50px;
+  grid-template-columns: auto auto auto auto;
+  gap: 35px;
+}
+
+.card {
+  border: 1px solid black;
+  justify-items: center;
+  width: 100%;
+  box-shadow: 16px 16px 11px rgba(0, 0, 0, 0.5);
+  max-width: 150px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  text-wrap: wrap;
+  font-size: 16px;
+  word-wrap: break-word;
+  margin: 0;
+  text-align: center;
 }
 
 .gallery-img,
 .close-modal,
-.heart-icon,
 input[type="submit"] {
   cursor: pointer;
 }
 
 .gallery-img {
   aspect-ratio: 1 / 1;
-  width: 100px;
   object-fit: cover;
-  box-shadow: 16px 16px 11px rgba(0, 0, 0, 0.5);
+  height: 90px;
+  width: auto;
 }
 
 .modal {
@@ -253,22 +276,21 @@ input[type="submit"] {
 
 .modal-content {
   background-color: #fefefe;
-  padding: 40px;
-  padding-top: 30px;
-  border: 1px solid #888;
-  width: 20%;
-  height: fit-content;
+  padding: 10px 0px 20px;
+  align-content: flex-end;
+  width: 290px;
+  height: auto;
 }
 
 .close-modal-div {
-  height: 17px;
-  margin-bottom: 20px;
+  height: 10px;
+  margin: 0px 12px 15px 0px;
 }
 
 .close-modal {
   color: #aaa;
   float: right;
-  font-size: 29px;
+  font-size: 25px;
   font-weight: bold;
   height: 17px;
   display: flex;
@@ -284,9 +306,11 @@ input[type="submit"] {
 
 .modal-img {
   position: relative;
-  width: 100%;
+  width: 70%;
   object-fit: cover;
-  max-height: 100px;
+  max-height: 150px;
+  aspect-ratio: 1/1;
+  height: auto;
 }
 
 .modal-title-div {
@@ -295,16 +319,84 @@ input[type="submit"] {
 }
 
 .modal-title {
-  margin: 25px 0px;
+  margin: 15px 0px;
+  text-align: center;
+  font-size: 18px;
 }
 
-.heart-icon-div {
+.modal-description-div {
   display: flex;
+  text-align: center;
+  justify-content: center;
+
+  p {
+    width: 60%;
+  }
 }
 
-.heart-icon {
-  font-size: 22px;
-  transition: color 1000ms linear;
+.add-bouquet-btn,
+input[type="submit"] {
+  height: 35px;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
+  font-weight: 900;
+  margin-top: 15%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(109, 109, 109);
+}
+
+.add-bouquet-btn {
+  width: 165px;
+  margin: 0px;
+  font-weight: 400;
+  height: 35px;
+  border: 1px solid black;
+  padding: 0 10px;
+  background-color: black;
+  color: white;
+}
+
+input[type="submit"]:hover,
+.add-bouquet-btn:hover {
+  background: -webkit-linear-gradient(top, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
+  border-color: white;
+  color: black;
+}
+
+input[type="submit"]:active,
+.add-bouquet-btn:active {
+  background: -webkit-linear-gradient(bottom, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
+}
+
+.modal-divider {
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 50px;
+  justify-self: center;
+  margin: 8% 0px;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.modal-price-div {
+  height: 35px;
+  justify-self: center;
+  align-content: center;
+  border: 1px solid black;
+  padding: 0 5px;
+  background-color: white;
+  color: black;
+}
+
+.modal-price-div span {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* Page Contact */
@@ -347,11 +439,7 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-  padding: 0px 15px;
-  background: -webkit-linear-gradient(top, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
-  font-weight: 900;
-  border: solid 2px white;
-  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
+  padding: 0px 20px;
 }
 
 /* Page savedBouquets */
