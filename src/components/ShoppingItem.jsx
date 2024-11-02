@@ -15,7 +15,7 @@ function ShoppingItem() {
                                     className="saved-bouquet-img" key={bouquet.imgSrc} />
                                 <div className="shopping-list-txt-content">
                                     <p className="shopping-item-title">{bouquet.title}</p>
-                                    <p>prix</p>
+                                    <p>{bouquet.price}</p>
                                 </div>
                                 {/*  
                                    // TODO: manque prix (ShoppinItem.jsx)     
