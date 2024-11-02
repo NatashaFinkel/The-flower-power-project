@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
     const dispatch = useDispatch();
     const array = useSelector(state => state.addToShoppingList.array);
-    const heartIconColor = useSelector(state => state.addColorToHeartIcon.iconColor);
 
     const getModalElements = () => {
         return {
@@ -66,10 +65,6 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription }) {
 
                 <div className="modal-title-div">
                     <h2 id="modal-title" data-testid="modal-title-test-id" className="modal-title">{mTitle}</h2>
-
-                    <div className="heart-icon-div">
-                        <i id="heart" data-testid="heart-test-id" className={`fa-solid fa-heart heart-icon`} onClick={handleAddBouquet} style={{ color: heartIconColor }}></i>
-                    </div>
                 </div>
                 <div className="modal-description-div">
                     <p id="modal-description" data-testid="modal-description-test-id">{mDescription}</p>
