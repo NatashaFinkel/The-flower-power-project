@@ -8,9 +8,20 @@ function ShoppingCartPage() {
             <div className="title-div">
                 <h1>Mon panier</h1>
             </div>
-            {/* // FIXME: changer nom classe  */}
-            <div className="ZZZ">
-                <ShoppingItem />
+            <div className="shopping-cart">
+                {/* // FIXME: changer nom classe  */}
+                <div className="ZZZ">
+                    <ShoppingItem />
+                </div>
+                <div className="KKK">
+                    <p className="KKK-title">Total</p>
+                    <hr className="KKK-divider"></hr>
+                    <p className="HHH">Sous-total : </p>
+                    <p className="HHH">Livraison : offerte !</p>
+                    <div>
+                        <button className="heart-icon pay-btn" data-testid="pay-btn-test-id">Payer</button>
+                    </div>
+                </div>
             </div>
         </div>
     )
