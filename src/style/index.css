@@ -373,7 +373,7 @@ input[type="submit"]:active,
 }
 
 .modal-divider {
-  width: 80%;
+  width: 70%;
   border: 1px solid black;
   border-radius: 50px;
   justify-self: center;
@@ -392,13 +392,10 @@ input[type="submit"]:active,
   height: 35px;
   justify-self: center;
   align-content: center;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 0 5px;
   background-color: white;
   color: black;
-}
-
-.modal-price-div span {
   font-size: 20px;
   font-weight: 500;
 }
