@@ -17,10 +17,8 @@ function ShoppingItem() {
                                     <p className="shopping-item-title">{bouquet.title}</p>
                                     <p>{bouquet.price}</p>
                                 </div>
-                                {/*  
-                                   // TODO: manque prix (ShoppinItem.jsx)     
-                                    */}
                                 <div>
+                                    {/*   // TODO: manque fonction deleteBouquet()      */}
                                     <i className="fa-solid fa-trash-can trash-can-icon"></i>
                                 </div>
                             </div>
