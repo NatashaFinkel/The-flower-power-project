@@ -229,10 +229,10 @@ a p {
 .card {
   border: 1px solid black;
   justify-items: center;
-  width: 100%;
+  width: 140px;
   box-shadow: 16px 16px 11px rgba(0, 0, 0, 0.5);
   max-width: 150px;
-  height: 110px;
+  height: 127px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -247,6 +247,7 @@ a p {
   word-wrap: break-word;
   margin: 0;
   text-align: center;
+  padding: 5px;
 }
 
 .gallery-img,
@@ -261,7 +262,7 @@ input[type="submit"],
 .gallery-img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  height: 90px;
+  height: 98px;
   width: auto;
 }
 
@@ -455,7 +456,6 @@ input[type="submit"] {
 }
 
 .shopping-item-div {
-  border: 2px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
