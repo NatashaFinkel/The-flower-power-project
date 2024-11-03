@@ -21,5 +21,5 @@ const shoppingListSlice = createSlice({
     },
 });
 
-export const { addToShoppingList, addColorToHeartIcon } = shoppingListSlice.actions;
+export const { addToShoppingList } = shoppingListSlice.actions;
 export default shoppingListSlice.reducer;
