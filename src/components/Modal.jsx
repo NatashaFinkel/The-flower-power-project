@@ -43,7 +43,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
         let modalDescriptionTxtContent = modalDescription.textContent;
         let modalPriceTxtContent = modalPrice.textContent;
 
-        const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent, price: modalPriceTxtContent };
+        const bouquet = { id: modalContentId, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent, price: modalPriceTxtContent };
         console.log(bouquet);
         dispatch(addToShoppingList(bouquet));
       //  dispatch(addColorToHeartIcon({ id: `${modalContentId}-modal` }));

@@ -22,7 +22,7 @@ function Card() {
 
         let parentDiv = selectedBouquet.closest("div");
         let parentDivId = parentDiv.id;
-        modalContent.id = `${parentDivId}-modal`;
+        modalContent.id = parentDivId;
     }
 
     return (
