@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToShoppingList, addColorToHeartIcon } from '../redux/shoppingListSlice';
+import { addToShoppingList } from '../redux/shoppingListSlice';
 import PropTypes from 'prop-types';
 
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
@@ -46,7 +46,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
         const bouquet = { id: `${modalContentId}-modal`, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent, price: modalPriceTxtContent };
         console.log(bouquet);
         dispatch(addToShoppingList(bouquet));
-        dispatch(addColorToHeartIcon({ id: `${modalContentId}-modal` }));
+      //  dispatch(addColorToHeartIcon({ id: `${modalContentId}-modal` }));
     };
 
     useEffect(() => {
