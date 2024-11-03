@@ -18,8 +18,11 @@ const shoppingListSlice = createSlice({
                 state.array = state.array.filter(bouquet => bouquet.id !== action.payload.id);
             }
         },
+        removeFromShoppingList: (state, action) => {
+            state.array = state.array.filter(bouquet => bouquet.id !== action.payload.id);
+        },
     },
 });
 
-export const { addToShoppingList } = shoppingListSlice.actions;
+export const { addToShoppingList, removeFromShoppingList } = shoppingListSlice.actions;
 export default shoppingListSlice.reducer;
