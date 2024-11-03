@@ -1,8 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromShoppingList } from '../redux/shoppingListSlice';
-import { useState } from 'react';
 
 function ShoppingItem() {
     const dispatch = useDispatch();

@@ -3,6 +3,7 @@ import React from 'react';
 import ShoppingItem from '../components/ShoppingItem';
 
 function ShoppingCartPage() {
+    //TODO : si panier vide --> message + purchase-summary-container (?)
     return (
         <div className="main-div">
             <div className="title-div">
@@ -25,4 +26,5 @@ function ShoppingCartPage() {
         </div>
     )
 }
+
 export default ShoppingCartPage;

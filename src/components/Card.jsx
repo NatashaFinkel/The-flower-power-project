@@ -35,7 +35,7 @@ function Card() {
                                 // eslint-disable-next-line react/no-unknown-property
                                 description={flower.imgDescription}
                                 // eslint-disable-next-line react/no-unknown-property
-                               price={`${flower.price} €`}
+                                price={`${flower.price} €`}
                             />
                             <p className="card-title">{flower.imgTitle}</p>
                         </div>
