@@ -3,7 +3,6 @@ import React from 'react';
 import flowers from '../../flowers.json';
 
 function Card() {
-    const dispatch = useDispatch();
 
     function showModal(event) {
         let selectedBouquet = event.target;
