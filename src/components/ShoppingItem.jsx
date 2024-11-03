@@ -1,14 +1,32 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeFromShoppingList } from '../redux/shoppingListSlice';
+import { useState } from 'react';
 
 function ShoppingItem() {
-    const shoppingList = JSON.parse(localStorage.getItem("shoppingList")) || [];
+    const dispatch = useDispatch();
+    const array = useSelector(state => state.shoppingList.array);
+    const [shoppingList, setShoppingList] = useState(JSON.parse(localStorage.getItem("shoppingList")) || []);
+
+    const removeBouquet = (event) => {
+        let eventTarget = event.target;
+        const updatedShoppingList = shoppingList.filter(bouquet => bouquet.id !== eventTarget.id);
+        dispatch(removeFromShoppingList({ id: eventTarget.id }));
+        localStorage.setItem("shoppingList", JSON.stringify(updatedShoppingList));
+        setShoppingList(updatedShoppingList);
+    };
+
+    useEffect(() => {
+        localStorage.setItem("shoppingList", JSON.stringify(array));
+    }, [array]);
+
     return (
         <div className="shopping-list" key="shopping-list">
             {
                 shoppingList.map(bouquet => {
                     return (
-                        <div key={bouquet.id} id={bouquet.id}>
+                        <div key={bouquet.id} id={`${bouquet.id}-shopping-cart`}>
                             <div className="shopping-item-div">
                                 <img src={bouquet.imgSrc} alt={bouquet.imgAlt}
                                     className="saved-bouquet-img" key={bouquet.imgSrc} />
@@ -17,8 +35,7 @@ function ShoppingItem() {
                                     <p>{bouquet.price}</p>
                                 </div>
                                 <div>
-                                    {/*   // TODO: manque fonction deleteBouquet() */}
-                                    <i className="fa-solid fa-trash-can trash-can-icon"></i>
+                                    <i className="fa-solid fa-trash-can trash-can-icon" id={bouquet.id} onClick={removeBouquet}></i>
                                 </div>
                             </div>
                         </div>
