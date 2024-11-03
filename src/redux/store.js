@@ -3,6 +3,6 @@ import shoppingListReducer from './shoppingListSlice';
 
 export const store = configureStore({
     reducer: {
-        addToShoppingList: shoppingListReducer,
+        shoppingList: shoppingListReducer,
     },
 });

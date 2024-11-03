@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     const dispatch = useDispatch();
-    const array = useSelector(state => state.addToShoppingList.array);
+    const array = useSelector(state => state.shoppingList.array);
 
     const getModalElements = () => {
         return {
