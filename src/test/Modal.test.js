@@ -24,5 +24,14 @@ describe('Modal component', () => {
         );
         const title = screen.getByTestId('modal-title-test-id');
         expect(title.textContent).not.toBe(null);
-      });
+    });
+    test('The modal contains a description', () => {
+        render(
+            <Provider store={store}>
+                <Modal />
+            </Provider>
+        );
+        const description = screen.getByTestId('modal-description-test-id');
+        expect(description.textContent).not.toBe(null);
+    });
 });
