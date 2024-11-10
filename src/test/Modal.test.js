@@ -16,4 +16,13 @@ describe('Modal component', () => {
         const image = screen.getByTestId('modal-title-test-id');
         expect(image.getAttribute('src')).not.toBe('');
     });
+    test('The modal contains a title', () => {
+        render(
+          <Provider store={store}>
+            <Modal />
+          </Provider>
+        );
+        const title = screen.getByTestId('modal-title-test-id');
+        expect(title.textContent).not.toBe(null);
+      });
 });
