@@ -55,7 +55,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     return (
         <div id="bouquet-modal" className="modal">
 
-            <div className="modal-content" id="modal-content">
+            <div className="modal-content" id="modal-content" data-testid="modal-test-id">
                 <div className="close-modal-div">
                     <span className="close-modal" id="close-modal">&times;</span>
                 </div>
