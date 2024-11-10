@@ -12,7 +12,7 @@ describe('Modal component', () => {
                 <Modal />
             </Provider>
         );
-        const image = screen.getByTestId('modal-title-test-id');
+        const image = screen.getByTestId('modal-img-test-id');
         expect(image.getAttribute('src')).not.toBe('');
     });
     test('The modal contains a title', () => {
