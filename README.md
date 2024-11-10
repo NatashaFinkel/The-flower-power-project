@@ -13,8 +13,8 @@ npm run dev
 
 ## Outils utilisés :
 * npm, Vite
-* Vitest
 * React.js
+* Jest
 * Redux, Redux-Toolkit
 * Git, GitHub
 
