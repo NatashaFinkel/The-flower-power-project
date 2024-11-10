@@ -30,7 +30,7 @@ function ShoppingItem() {
                         <p>{bouquet.price}</p>
                     </div>
                     <div>
-                        <i className="fa-solid fa-trash-can trash-can-icon" id={`${bouquet.id}-trash-icon`} onClick={removeBouquet}></i>
+                        <i className="fa-solid fa-trash-can trash-can-icon" id={`${bouquet.id}`} onClick={removeBouquet}></i>
                     </div>
                 </div>
             </div>
