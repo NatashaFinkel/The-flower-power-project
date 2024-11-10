@@ -30,7 +30,7 @@ function Card() {
             {
                 flowers && flowers.map(flower => {
                     return (
-                        <div key={flower.index} id={flower.id} className="card" onClick={showModal}>
+                        <div key={flower.index} id={flower.id} className="card" onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
                             <img src={flower.imgSrc} alt={flower.imgAlt} id={flower.index} className="gallery-img" title={flower.imgTitle}
                                 // eslint-disable-next-line react/no-unknown-property
                                 description={flower.imgDescription}
