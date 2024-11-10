@@ -21,28 +21,21 @@ function ShoppingItem() {
     }, [array]);
 
     return (
-        <div className="shopping-list" key="shopping-list">
-            {
-                shoppingList.map(bouquet => {
-                    return (
-                        <div key={bouquet.id} id={`${bouquet.id}-shopping-cart`}>
-                            <div className="shopping-item-div">
-                                <img src={bouquet.imgSrc} alt={bouquet.imgAlt}
-                                    className="saved-bouquet-img" key={bouquet.imgSrc} />
-                                <div className="shopping-list-txt-content">
-                                    <p className="shopping-item-title">{bouquet.title}</p>
-                                    <p>{bouquet.price}</p>
-                                </div>
-                                <div>
-                                    <i className="fa-solid fa-trash-can trash-can-icon" id={bouquet.id} onClick={removeBouquet}></i>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                })
-            }
-        </div>
-    )
+        shoppingList.map(bouquet => (
+            <div key={bouquet.id} id={`${bouquet.id}-shopping-cart`}>
+                <div className="shopping-item-div">
+                    <img src={bouquet.imgSrc} alt={bouquet.imgAlt} className="saved-bouquet-img" />
+                    <div className="shopping-list-txt-content">
+                        <p className="shopping-item-title">{bouquet.title}</p>
+                        <p>{bouquet.price}</p>
+                    </div>
+                    <div>
+                        <i className="fa-solid fa-trash-can trash-can-icon" id={`${bouquet.id}-trash-icon`} onClick={removeBouquet}></i>
+                    </div>
+                </div>
+            </div>
+        ))
+    );
 }
 
 export default ShoppingItem;

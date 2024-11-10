@@ -13,7 +13,7 @@ function ShoppingCartPage() {
                 <h1>Mon panier</h1>
             </div>
             <div className="shopping-cart">
-                <div>
+                <div className="shopping-list" key="shopping-list" data-testid="shopping-item-container">
                     <ShoppingItem />
                 </div>
                 <div className="purchase-summary-container">
