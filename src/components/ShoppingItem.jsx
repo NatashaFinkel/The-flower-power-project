@@ -24,7 +24,7 @@ function ShoppingItem() {
         shoppingList.map(bouquet => (
             <div key={bouquet.id} id={`${bouquet.id}-shopping-cart`}>
                 <div className="shopping-item-div">
-                    <img src={bouquet.imgSrc} alt={bouquet.imgAlt} className="saved-bouquet-img" />
+                    <img src={bouquet.imgSrc} alt={bouquet.imgAlt} />
                     <div className="shopping-list-txt-content">
                         <p className="shopping-item-title">{bouquet.title}</p>
                         <p className="bouquet-price">{bouquet.price}</p>
