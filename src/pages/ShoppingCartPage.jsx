@@ -16,7 +16,7 @@ function ShoppingCartPage() {
 
         function GetTotalPrice() {
             const allBouquetPrices = document.querySelectorAll('.bouquet-price');
-            const pricesList = Array.from(allBouquetPrices).map(bouquetPrice => bouquetPrice.textContent.slice(0, -2));
+            const pricesList = Array.from(allBouquetPrices).map(bouquetPrice => bouquetPrice.textContent);
             const totalPrice = pricesList.reduce((acc, price) => acc + parseFloat(price), 0);
             return totalPrice;
         }
@@ -30,7 +30,7 @@ function ShoppingCartPage() {
             shoppingItemContainer.style.display = "flex";
             purchaseSummaryContainer.style.display = "flex";
             emptyCartMessage.style.display = "none";
-            subTotal.textContent = "Sous-total : " + subTotalPrice + " €";
+            subTotal.textContent = "Sous-total : " + subTotalPrice;
         }
     }, [array]);
 
