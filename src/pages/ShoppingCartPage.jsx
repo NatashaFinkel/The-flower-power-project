@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import ShoppingItem from '../components/ShoppingItem';
 
 function ShoppingCartPage() {
-    //TODO : si panier vide --> message + purchase-summary-container (?)
 
     //TODO: fonction "sous-total".
 
