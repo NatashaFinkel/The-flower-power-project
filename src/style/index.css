@@ -183,14 +183,15 @@ a p {
   box-shadow: 0px 7px 200px yellow;
 }
 
-.footer div {
-  font-size: 20px;
-}
-
 .footer-contact-shop-div,
 .footer-shop-div,
 .footer-legal-infos-div {
   padding: 25px;
+
+  p:first-child {
+    font-weight: 900;
+    font-size: 22px;
+  }
 }
 
 .footer-contact-shop-div {
@@ -201,11 +202,6 @@ a p {
 .footer-contact-form {
   display: flex;
   gap: 10px;
-}
-
-.footer-title {
-  font-weight: 900;
-  font-size: 22px;
 }
 
 .brand-name {
