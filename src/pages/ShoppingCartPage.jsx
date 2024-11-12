@@ -16,7 +16,7 @@ function ShoppingCartPage() {
                 <div className="shopping-list" key="shopping-list" data-testid="shopping-item-container">
                     <ShoppingItem />
                 </div>
-                <div className="purchase-summary-container">
+                <div className="purchase-summary-container" id="purchase-summary-container" data-testid="purchase-summary-container-test-id">
                     <p>Total</p>
                     <hr className="purchase-summary-container-divider"></hr>
                     <p className="purchase-summary-txt">Sous-total : </p>
