@@ -6,9 +6,6 @@ import PropTypes from 'prop-types';
 import ShoppingItem from '../components/ShoppingItem';
 
 function ShoppingCartPage() {
-
-    //TODO: fonction "sous-total".
-
     const array = useSelector(state => state.shoppingList.array);
 
     useEffect(() => {
