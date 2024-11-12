@@ -403,6 +403,10 @@ input[type="submit"]:active,
   font-weight: 500;
 }
 
+#modal-price::after, .bouquet-price::after, #subTotal::after {
+  content: '€';
+}
+
 /* Page Contact */
 
 .form-input {
