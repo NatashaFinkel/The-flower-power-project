@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromShoppingList } from '../redux/shoppingListSlice';
+import Image from './Image';
 
 function ShoppingItem() {
     const dispatch = useDispatch();
@@ -24,7 +25,7 @@ function ShoppingItem() {
         shoppingList.map(bouquet => (
             <div key={bouquet.id} id={`${bouquet.id}-shopping-cart`}>
                 <div className="shopping-item-div">
-                    <img src={bouquet.imgSrc} alt={bouquet.imgAlt} />
+                    <Image imageSrc={bouquet.imgSrc} imageAlt={bouquet.imgAlt} />
                     <div className="shopping-list-txt-content">
                         <p className="shopping-item-title">{bouquet.title}</p>
                         <p className="bouquet-price">{bouquet.price}</p>

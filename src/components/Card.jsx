@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import flowers from '../../flowers.json';
+import Image from './Image';
 
 function Card() {
 
@@ -31,13 +32,8 @@ function Card() {
                 flowers && flowers.map(flower => {
                     return (
                         <div key={flower.index} id={flower.id} className="card" onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
-                            <img src={flower.imgSrc} alt={flower.imgAlt} id={flower.index} className="gallery-img" title={flower.imgTitle}
-                                // eslint-disable-next-line react/no-unknown-property
-                                description={flower.imgDescription}
-                                // eslint-disable-next-line react/no-unknown-property
-                                price={`${flower.price} €`}
-                            />
-                            <p className="card-title">{flower.imgTitle}</p>
+                            <Image imageSrc={flower.imgSrc} imageAlt={flower.imgAlt} imageId={`card-${flower.index}`} imageClassName="gallery-img" imageTitle={flower.imgTitle} imageDescription={flower.imgDescription} imagePrice={flower.price} />
+                            <p className="card-title">{flower.imgTitle} </p>
                         </div>
                     )
                 })

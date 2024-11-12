@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToShoppingList } from '../redux/shoppingListSlice';
+import Image from './Image';
 import PropTypes from 'prop-types';
 
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
@@ -60,7 +61,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
                     <span className="close-modal" id="close-modal">&times;</span>
                 </div>
                 <div className="modal-img-div">
-                    <img src={mImgSrc} alt={mImgAlt} id="modal-img-src" data-testid="modal-img-test-id" className="modal-img"></img>
+                    <Image src={mImgSrc} imageAlt={mImgAlt} imageId="modal-img-src" imageDataTestid="modal-img-test-id" imageClassName="modal-img" />
                 </div>
 
                 <div className="modal-title-div">
