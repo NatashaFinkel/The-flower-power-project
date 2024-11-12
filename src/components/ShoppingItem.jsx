@@ -27,7 +27,7 @@ function ShoppingItem() {
                     <img src={bouquet.imgSrc} alt={bouquet.imgAlt} className="saved-bouquet-img" />
                     <div className="shopping-list-txt-content">
                         <p className="shopping-item-title">{bouquet.title}</p>
-                        <p>{bouquet.price}</p>
+                        <p className="bouquet-price">{bouquet.price}</p>
                     </div>
                     <div>
                         <i className="fa-solid fa-trash-can trash-can-icon" id={`${bouquet.id}`} onClick={removeBouquet}></i>

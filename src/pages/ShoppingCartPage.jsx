@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import ShoppingItem from '../components/ShoppingItem';
 
 function ShoppingCartPage() {
@@ -14,16 +15,25 @@ function ShoppingCartPage() {
         const shoppingItemContainer = document.getElementById("shopping-item-container");
         const purchaseSummaryContainer = document.getElementById("purchase-summary-container");
         const emptyCartMessage = document.getElementById("empty-cart-message");
+        const subTotal = document.getElementById("subTotal");
+
+        function GetTotalPrice() {
+            const allBouquetPrices = document.querySelectorAll('.bouquet-price');
+            const pricesList = Array.from(allBouquetPrices).map(bouquetPrice => bouquetPrice.textContent.slice(0, -2));
+            const totalPrice = pricesList.reduce((acc, price) => acc + parseFloat(price), 0);
+            return totalPrice;
+        }
 
         if (array.length === 0) {
             shoppingItemContainer.style.display = "none";
             purchaseSummaryContainer.style.display = "none";
             emptyCartMessage.style.display = "flex";
-
         } else {
+            const subTotalPrice = GetTotalPrice();
             shoppingItemContainer.style.display = "flex";
             purchaseSummaryContainer.style.display = "flex";
             emptyCartMessage.style.display = "none";
+            subTotal.textContent = "Sous-total : " + subTotalPrice + " €";
         }
     }, [array]);
 
@@ -43,7 +53,7 @@ function ShoppingCartPage() {
                 <div className="purchase-summary-container" id="purchase-summary-container" data-testid="purchase-summary-container-test-id">
                     <p>Total</p>
                     <hr className="purchase-summary-container-divider"></hr>
-                    <p className="purchase-summary-txt">Sous-total : </p>
+                    <p className="purchase-summary-txt" id="subTotal"></p>
                     <p className="purchase-summary-txt">Livraison : offerte !</p>
                     <div>
                         <button className="heart-icon pay-btn" data-testid="pay-btn-test-id">Payer</button>
@@ -52,6 +62,10 @@ function ShoppingCartPage() {
             </div>
         </div>
     )
+}
+
+ShoppingCartPage.propTypes = {
+    subTotalPrice: PropTypes.number,
 }
 
 export default ShoppingCartPage;
