@@ -342,7 +342,8 @@ input[type="submit"],
 
 .add-bouquet-btn,
 input[type="submit"],
-.pay-btn {
+.pay-btn,
+.empty-cart-link {
   height: 35px;
   box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
   font-weight: 900;
@@ -364,7 +365,8 @@ input[type="submit"],
 
 input[type="submit"]:hover,
 .add-bouquet-btn:hover,
-.pay-btn:hover {
+.pay-btn:hover,
+.empty-cart-link:hover {
   background: -webkit-linear-gradient(top, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
   border-color: white;
   color: black;
@@ -372,7 +374,8 @@ input[type="submit"]:hover,
 
 input[type="submit"]:active,
 .add-bouquet-btn:active,
-.pay-btn:active {
+.pay-btn:active,
+.empty-cart-link:active {
   background: -webkit-linear-gradient(bottom, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
 }
 
@@ -452,6 +455,7 @@ input[type="submit"] {
   display: flex;
   gap: 77px;
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .shopping-item-div {
@@ -502,7 +506,6 @@ input[type="submit"] {
 }
 
 .shopping-list {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -523,4 +526,23 @@ input[type="submit"] {
 .shopping-item-title {
   font-weight: 900;
   position: relative;
+}
+
+.empty-cart-message-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: auto;
+  height: fit-content;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.empty-cart-link {
+  padding: 0px 0px;
+  color: black;
+  margin: 20px;
+  align-content: center;
+  text-align-last: center;
 }
