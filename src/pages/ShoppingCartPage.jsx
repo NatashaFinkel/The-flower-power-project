@@ -14,14 +14,17 @@ function ShoppingCartPage() {
     useEffect(() => {
         const shoppingItemContainer = document.getElementById("shopping-item-container");
         const purchaseSummaryContainer = document.getElementById("purchase-summary-container");
+        const emptyCartMessage = document.getElementById("empty-cart-message");
 
         if (array.length === 0) {
             shoppingItemContainer.style.display = "none";
             purchaseSummaryContainer.style.display = "none";
+            emptyCartMessage.style.display = "flex";
 
         } else {
             shoppingItemContainer.style.display = "flex";
             purchaseSummaryContainer.style.display = "flex";
+            emptyCartMessage.style.display = "none";
         }
     }, [array]);
 
@@ -29,6 +32,10 @@ function ShoppingCartPage() {
         <div className="main-div">
             <div className="title-div">
                 <h1>Mon panier</h1>
+            </div>
+            <div className='empty-cart-message-div'>
+                <p id="empty-cart-message">Il n'y a aucun article dans votre panier !</p>
+                <NavLink to="/" className="empty-cart-link">Cliquez ici pour continuer vos achats. </NavLink>
             </div>
             <div className="shopping-cart" id="shopping-cart">
                 <div className="shopping-list" key="shopping-list" id="shopping-item-container" data-testid="shopping-item-container-test-id">
