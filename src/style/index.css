@@ -227,8 +227,7 @@ a p {
   justify-items: center;
   width: 140px;
   box-shadow: 16px 16px 11px rgba(0, 0, 0, 0.5);
-  max-width: 150px;
-  height: 127px;
+  height: 115px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -237,8 +236,7 @@ a p {
   img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    height: 98px;
-    width: auto;
+    height: 87px;
   }
 
   p {
