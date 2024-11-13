@@ -2,7 +2,7 @@
     {
         "index": 1,
         "id": "white-jasmin",
-        "imgSrc": "../../flowers/white-1-jasmine.jpeg",
+        "imgSrc": "../../flowers/white-1-jasmine.jpg",
         "imgAlt": "Jasmin blanc",
         "imgTitle": "Jasmin blanc",
         "imgDescription": "Memoratur referens Mopsi errore nobilis Mopsuestia.",
@@ -183,8 +183,8 @@
         "index": 21,
         "id": "pearls-and-amethysts",
         "imgSrc": "../../flowers/composition-8-2.jpeg",
-        "imgAlt": "bouquet composition perles et améthystes",
-        "imgTitle": "Perles et améthystes",
+        "imgAlt": "bouquet composition Purple rain",
+        "imgTitle": "Purple rain",
         "imgDescription": "Opulentis quae spatio Seres priscorum.",
         "price": 60
     },
