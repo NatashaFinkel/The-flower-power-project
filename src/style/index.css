@@ -183,7 +183,7 @@ a p {
 .footer-contact-shop-div,
 .footer-shop-div,
 .footer-legal-infos-div {
-  padding: 25px;
+  padding: 20px;
 
   p:first-child {
     font-weight: 900;
@@ -560,11 +560,10 @@ input[type="submit"] {
   }
 
   .card {
-    height: 125px;
-    width: 125px;
-
+width: 130px;
+height: 130px;
     p {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 
@@ -573,7 +572,7 @@ input[type="submit"] {
   .footer-legal-infos-div {
 
     p:first-child {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     i {
@@ -582,7 +581,7 @@ input[type="submit"] {
   }
 
   .brand-name {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   /* page contact */
