@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 function Image({ imageSrc, imageAlt, imageId, imageClassName, imageTitle, imageDescription, imagePrice, imageDataTestid }) {
     return (
+        // eslint-disable-next-line react/no-unknown-property
         <img src={imageSrc} alt={imageAlt} id={imageId} className={imageClassName} title={imageTitle} description={imageDescription} price={imagePrice} data-testid={imageDataTestid}></img>
     )
 }
