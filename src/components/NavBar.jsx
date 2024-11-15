@@ -13,26 +13,16 @@ function NavBar() {
               <p>Accueil</p>
             </NavLink>
           </li>
-
-          <li>
-            <NavLink to="/contact" activeclassname="active">
-              <i className="fa-regular fa-comment-dots nav-bar-icon icon-display-none"></i>
-              <p>Contact</p>
-            </NavLink>
-          </li>
-
           <li>
             <NavLink to="/bouquets-sauvegardés" activeclassname="active">
               <i className="fa-regular fa-heart nav-bar-icon icon-display-none"></i>
               <p>Mon panier</p>
             </NavLink>
           </li>
-
           <li>
-            <NavLink to="/connexion" activeclassname="active">
-
-              <i className="fa-solid fa-person-walking-arrow-right nav-bar-icon icon-display-none"></i>
-              <p>Déconnexion</p>
+            <NavLink to="/contact" activeclassname="active">
+              <i className="fa-regular fa-comment-dots nav-bar-icon icon-display-none"></i>
+              <p>Contact</p>
             </NavLink>
           </li>
         </ul>
