@@ -40,7 +40,7 @@ function ShoppingCartPage() {
                 <h1>Mon panier</h1>
             </div>
             <div className='empty-cart-message-div'>
-                <p id="empty-cart-message">Il n'y a aucun article dans votre panier !</p>
+                <p id="empty-cart-message">Il n&apos;y a aucun article dans votre panier !</p>
                 <NavLink to="/" className="empty-cart-link">Cliquez ici pour continuer vos achats. </NavLink>
             </div>
             <div className="shopping-cart" id="shopping-cart">
