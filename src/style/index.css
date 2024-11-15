@@ -554,15 +554,124 @@ input[type="submit"] {
   text-align-last: center;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
   body {
     background-color: lightblue;
+    font-size: 18px;
+  }
 
+  .footer {
+    padding: 0px 0px;
+  }
+
+  .card-container {
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+  }
+
+  .card {
+    height: 125px;
+    width: 125px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .footer-contact-shop-div,
+  .footer-shop-div,
+  .footer-legal-infos-div {
+    padding: 20px;
+
+    p:first-child {
+      font-size: 18px;
+    }
+
+    i {
+      font-size: 15px;
+    }
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  /* page contact */
+  form {
+    justify-items: center;
+  }
+
+  .form-input {
+    width: 60%;
+
+    i {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  #client-name,
+  #client-email,
+  #password,
+  #user-name,
+  #client-message {
+    height: 25px;
+    font-size: 15px;
+  }
+
+  #client-message {
+    width: 60%;
+    height: 90px;
+  }
+
+  /* Page ShoppingCartPage */
+
+  .shopping-item-div {
+    min-width: 320px;
+
+    img {
+      height: 80px;
+    }
+
+    p {
+      padding-top: 5px;
+    }
+
+    .trash-can-icon {
+      padding: 0px;
+    }
+
+  }
+
+  .purchase-summary-container {
+    width: auto;
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   body {
-    background-color: rgba(240, 128, 128, 0.574);
+    background-color: rgba(128, 240, 188, 0.574);
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-color: rgba(129, 239, 56, 0.461);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: rgba(248, 183, 253, 0.566);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: rgba(46, 60, 250, 0.402);
   }
 }
