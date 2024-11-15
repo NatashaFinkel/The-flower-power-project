@@ -560,8 +560,9 @@ input[type="submit"] {
   }
 
   .card {
-width: 130px;
-height: 130px;
+    width: 130px;
+    height: 130px;
+
     p {
       font-size: 15px;
     }
