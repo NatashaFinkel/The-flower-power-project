@@ -706,10 +706,8 @@ input[type="submit"] {
 
   /* Page ShoppingCartPage */
   .shopping-cart {
-    flex-direction: column-reverse;
-    /*    flex-direction: column; */
+    flex-direction: column;
     align-items: center;
-    margin-top: 0px;
     gap: 20px;
   }
 
@@ -725,12 +723,10 @@ input[type="submit"] {
     flex-direction: column;
     align-items: center;
     padding: 0px 10px;
-    width: 145px;
 
     img {
       height: 60px;
       border-radius: 50%;
-      position: relative;
     }
 
     .trash-can-icon {
@@ -748,6 +744,7 @@ input[type="submit"] {
 
   .pay-btn {
     font-size: 15px;
+    width: auto;
   }
 
 }
