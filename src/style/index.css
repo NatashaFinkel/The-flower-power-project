@@ -553,10 +553,6 @@ input[type="submit"] {
     font-size: 18px;
   }
 
-  /*   .footer {
-    padding: 0px 0px;
-  }
- */
   .card-container {
     grid-template-columns: auto auto auto;
     gap: 50px;
@@ -646,7 +642,6 @@ input[type="submit"] {
 /* Tablettes */
 @media screen and (max-width: 768px) {
   body {
-    background-color: rgba(128, 240, 188, 0.574);
     margin: auto 0;
     font-size: 15px;
   }
@@ -750,23 +745,134 @@ input[type="submit"] {
 }
 
 /* Mobiles (grands) */
-@media only screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
+
   body {
-    background-color: rgba(129, 239, 56, 0.461);
-    background-color: black;
+    padding-bottom: 55px;
+    font-size: 19px;
+  }
+
+  .logo {
+    margin-bottom: 0px;
+  }
+
+  a p {
+    display: none;
+  }
+
+  .router-div {
+    margin-bottom: 25px;
+  }
+
+  .title-div {
+    margin: 30px 0px 10px 0px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .intro-div {
+    width: 80%;
+  }
+
+  .gallery {
+    width: 60%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    width: inherit;
+    height: 230px;
+
+    img {
+      height: 88%;
+    }
+
+    p {
+      font-size: 19px;
+    }
+  }
+
+  .nav-bar-div {
+    position: fixed;
+    bottom: 0;
+    max-width: 425px;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+  }
+
+  nav {
+    margin: 0px;
+    background-color: white;
+    box-shadow: none;
+    height: 50px;
+    align-content: center;
+  }
+
+  ul {
+    align-items: center;
+  }
+
+  .icon-display-none {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  /* Page ShoppingCartPage */
+
+  .shopping-list {
+    flex-direction: column;
+  }
+
+  .shopping-item-div {
+    min-width: 350px;
+    height: 85px;
+    border-radius: 50%;
+    width: inherit;
+    flex-direction: row;
+    padding: 0px 25px;
+  }
+
+  .footer {
+    display: none;
   }
 }
 
 /* Mobiles (moyens) */
 @media only screen and (max-width: 375px) {
-  body {
-    background-color: rgba(248, 183, 253, 0.566);
+
+  .card {
+    height: 190px;
+  }
+
+  /* Page ShoppingCartPage */
+  .empty-cart-link {
+    padding: 0px 5px;
+    width: 80%;
+  }
+
+  .shopping-item-div {
+    min-width: 300px;
   }
 }
 
 /* Mobiles (petits) */
 @media only screen and (max-width: 320px) {
-  body {
-    background-color: rgba(46, 60, 250, 0.402);
+
+  #client-name,
+  #client-email,
+  #password,
+  #user-name,
+  #client-message {
+    padding: 10px;
   }
 }
