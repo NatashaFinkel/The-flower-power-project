@@ -15,7 +15,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink to="/bouquets-sauvegardés" activeclassname="active">
-              <i className="fa-regular fa-heart nav-bar-icon icon-display-none"></i>
+              <i className="fa-solid fa-cart-shopping nav-bar-icon icon-display-none"></i>
               <p>Mon panier</p>
             </NavLink>
           </li>
