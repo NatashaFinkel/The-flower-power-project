@@ -51,4 +51,15 @@ describe('Modal component', () => {
         const testModalDescription = testComponentProps.bouquet.mDescription;
         expect(testModalDescription).toBe('test-description-modal');
     });
+
+    test('The modal contains a price', () => {
+        render(
+            <Provider store={store}>
+                <Modal bouquet={modalTest} />
+            </Provider>
+        );
+
+        const testModalPrice = testComponentProps.bouquet.mPrice;
+        expect(testModalPrice).toBe(30);
+    });
 });
