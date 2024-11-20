@@ -73,7 +73,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
                 <hr className="modal-divider"></hr>
                 <div className="modal-footer">
                     <div className="modal-price-div">
-                        <p id="modal-price">{mPrice}</p>
+                        <p id="modal-price" data-testid="modal-price-test-id">{mPrice}</p>
                     </div>
                     <button onClick={handleAddBouquet} className="add-bouquet-btn" data-testid="add-bouquet-btn-test-id">Ajouter au panier</button>
                 </div>
