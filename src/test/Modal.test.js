@@ -29,4 +29,15 @@ describe('Modal component', () => {
         const testModalImageSrc = testComponentProps.bouquet.mImgSrc;
         expect(testModalImageSrc).toBe('test-imageSrc-modal.jpg');
     });
+
+    test('The modal contains a title', () => {
+        render(
+            <Provider store={store}>
+                <Modal bouquet={modalTest} />
+            </Provider>
+        );
+
+        const testModalTitle = testComponentProps.bouquet.mTitle;
+        expect(testModalTitle).toBe('test-title-modal');
+    });
 });
