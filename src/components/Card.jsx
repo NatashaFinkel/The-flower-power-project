@@ -32,8 +32,8 @@ function Card() {
                 flowers && flowers.map(flower => {
                     return (
                         <div key={flower.index} id={flower.id} className="card" onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
-                            <Image imageSrc={flower.imgSrc} imageAlt={flower.imgAlt} imageId={`card-${flower.index}`} imageClassName="gallery-img" imageTitle={flower.imgTitle} imageDescription={flower.imgDescription} imagePrice={flower.price} />
-                            <p className="card-title">{flower.imgTitle} </p>
+                            <Image imageSrc={flower.imgSrc} imageAlt={flower.imgAlt} imageId={`card-${flower.index}`} imageTitle={flower.imgTitle} imageDescription={flower.imgDescription} imagePrice={flower.price} imageDataTestid={`card-img-${flower.index}-test-id`} />
+                            <p className="card-title">{flower.imgTitle}</p>
                         </div>
                     )
                 })
