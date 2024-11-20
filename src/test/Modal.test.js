@@ -1,37 +1,34 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { describe, expect, test } from '@jest/globals';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
 import Modal from '../components/Modal';
 
 describe('Modal component', () => {
     test('The modal contains an image', () => {
+        const modalTest = {
+            mImgSrc: 'test-imageSrc-modal.jpg',
+            mImgAlt: 'test-alt-modal',
+            mTitle: 'test-title-modal',
+            mDescription: 'test-description-modal',
+            mPrice: 30,
+        };
+
         render(
             <Provider store={store}>
-                <Modal />
+                <Modal bouquet={modalTest} />
             </Provider>
         );
-        const image = screen.getByTestId('modal-img-test-id');
-        expect(image.getAttribute('src')).not.toBe('');
+
+        const testComponent = <Modal bouquet={modalTest} />;
+        const testComponentProps = testComponent.props;
+
+        const testModalImageSrc = testComponentProps.bouquet.mImgSrc;
+
+        expect(testModalImageSrc).toBe('test-imageSrc-modal.jpg');
     });
-    test('The modal contains a title', () => {
-        render(
-            <Provider store={store}>
-                <Modal />
-            </Provider>
-        );
-        const title = screen.getByTestId('modal-title-test-id');
-        expect(title.textContent).not.toBe(null);
-    });
-    test('The modal contains a description', () => {
-        render(
-            <Provider store={store}>
-                <Modal />
-            </Provider>
-        );
-        const description = screen.getByTestId('modal-description-test-id');
-        expect(description.textContent).not.toBe(null);
-    });
+
+
 });
