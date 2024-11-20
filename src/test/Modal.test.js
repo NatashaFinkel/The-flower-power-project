@@ -40,4 +40,15 @@ describe('Modal component', () => {
         const testModalTitle = testComponentProps.bouquet.mTitle;
         expect(testModalTitle).toBe('test-title-modal');
     });
+
+    test('The modal contains a description', () => {
+        render(
+            <Provider store={store}>
+                <Modal bouquet={modalTest} />
+            </Provider>
+        );
+
+        const testModalDescription = testComponentProps.bouquet.mDescription;
+        expect(testModalDescription).toBe('test-description-modal');
+    });
 });
