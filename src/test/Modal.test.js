@@ -7,14 +7,18 @@ import { store } from '../redux/store';
 import Modal from '../components/Modal';
 
 describe('Modal component', () => {
+    const modalTest = {
+        mImgSrc: 'test-imageSrc-modal.jpg',
+        mImgAlt: 'test-alt-modal',
+        mTitle: 'test-title-modal',
+        mDescription: 'test-description-modal',
+        mPrice: 30,
+    };
+
+    const testComponent = <Modal bouquet={modalTest} />;
+    const testComponentProps = testComponent.props;
+
     test('The modal contains an image', () => {
-        const modalTest = {
-            mImgSrc: 'test-imageSrc-modal.jpg',
-            mImgAlt: 'test-alt-modal',
-            mTitle: 'test-title-modal',
-            mDescription: 'test-description-modal',
-            mPrice: 30,
-        };
 
         render(
             <Provider store={store}>
@@ -22,13 +26,7 @@ describe('Modal component', () => {
             </Provider>
         );
 
-        const testComponent = <Modal bouquet={modalTest} />;
-        const testComponentProps = testComponent.props;
-
         const testModalImageSrc = testComponentProps.bouquet.mImgSrc;
-
         expect(testModalImageSrc).toBe('test-imageSrc-modal.jpg');
     });
-
-
 });
