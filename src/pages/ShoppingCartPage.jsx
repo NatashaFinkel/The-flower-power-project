@@ -53,7 +53,7 @@ function ShoppingCartPage() {
                     <p className="purchase-summary-txt" id="subTotal"></p>
                     <p className="purchase-summary-txt">Livraison : offerte !</p>
                     <div>
-                        <button className="heart-icon pay-btn" data-testid="pay-btn-test-id">Payer</button>
+                        <button className="pay-btn" data-testid="pay-btn-test-id">Payer</button>
                     </div>
                 </div>
             </div>

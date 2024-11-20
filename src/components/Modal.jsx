@@ -17,7 +17,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
             modalTitle: document.getElementById("modal-title"),
             modalDescription: document.getElementById("modal-description"),
             modal: document.getElementById("bouquet-modal"),
-            heartIcon: document.getElementById("heart"),
+          /*   heartIcon: document.getElementById("heart"), */
             modalPrice: document.getElementById("modal-price"),
         };
     };
@@ -75,7 +75,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
                     <div className="modal-price-div">
                         <p id="modal-price">{mPrice}</p>
                     </div>
-                    <button onClick={handleAddBouquet} className="heart-icon add-bouquet-btn" data-testid="heart-test-id">Ajouter au panier</button>
+                    <button onClick={handleAddBouquet} className="add-bouquet-btn" data-testid="add-bouquet-btn-test-id">Ajouter au panier</button>
                 </div>
             </div>
         </div>

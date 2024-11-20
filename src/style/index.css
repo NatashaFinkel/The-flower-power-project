@@ -213,7 +213,6 @@ a p {
 }
 
 /* Page d'accueil */
-
 .card-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
