@@ -14,10 +14,6 @@ describe('Modal component', () => {
         price: 65,
     }
 
-    const testComponent = <Modal bouquet={modalTest} />;
-    const testComponentProps = testComponent.props;
-
-    test('The modal contains an image', () => {
     const renderedElement = <Modal modal={testModal} />;
 
     test('the modal contains an image', () => {
