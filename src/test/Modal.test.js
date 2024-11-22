@@ -7,27 +7,30 @@ import { store } from '../redux/store';
 import Modal from '../components/Modal';
 
 describe('Modal component', () => {
-    const modalTest = {
-        mImgSrc: 'test-imageSrc-modal.jpg',
-        mImgAlt: 'test-alt-modal',
-        mTitle: 'test-title-modal',
-        mDescription: 'test-description-modal',
-        mPrice: 30,
-    };
+    const testModal = {
+        src: 'test-modal-imgSrc.jpg',
+        title: 'test-modal-title',
+        description: 'this is the test-modal description !',
+        price: 65,
+    }
 
     const testComponent = <Modal bouquet={modalTest} />;
     const testComponentProps = testComponent.props;
 
     test('The modal contains an image', () => {
+    const renderedElement = <Modal modal={testModal} />;
 
+    test('the modal contains an image', () => {
         render(
             <Provider store={store}>
-                <Modal bouquet={modalTest} />
+                <Modal modal={testModal} />
             </Provider>
         );
 
-        const testModalImageSrc = testComponentProps.bouquet.mImgSrc;
-        expect(testModalImageSrc).toBe('test-imageSrc-modal.jpg');
+        const renderedElementSrc = renderedElement.props.modal.src;
+        const testModalSrc = testModal.src;
+
+        expect(renderedElementSrc).toStrictEqual(testModalSrc);
     });
 
     test('The modal contains a title', () => {
