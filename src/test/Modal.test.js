@@ -42,15 +42,17 @@ describe('Modal component', () => {
         expect(renderedElementTitle).toStrictEqual(testModalTitle);
     });
 
-    test('The modal contains a description', () => {
+    test('the modal contains a description', () => {
         render(
             <Provider store={store}>
-                <Modal bouquet={modalTest} />
+                <Modal modal={testModal} />
             </Provider>
         );
 
-        const testModalDescription = testComponentProps.bouquet.mDescription;
-        expect(testModalDescription).toBe('test-description-modal');
+        const renderedElementDescription = renderedElement.props.modal.description;
+        const testModalDescription = testModal.description;
+
+        expect(renderedElementDescription).toStrictEqual(testModalDescription);
     });
 
     test('The modal contains a price', () => {
