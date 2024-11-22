@@ -67,4 +67,6 @@ describe('Modal component', () => {
 
         expect(renderedElementPrice).toStrictEqual(testModalPrice);
     });
+
+    //TODO: TEST: the bouquet is added to the cart at click  
 });
