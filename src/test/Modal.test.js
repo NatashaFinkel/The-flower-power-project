@@ -1,72 +1,97 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { describe, expect, test } from '@jest/globals';
-import { render } from '@testing-library/react';
+import { describe, test, expect } from '@jest/globals';
+import { render, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
+import HomePage from '../pages/HomePage';
 import Modal from '../components/Modal';
 
 describe('Modal component', () => {
-    const testModal = {
-        src: 'test-modal-imgSrc.jpg',
-        title: 'test-modal-title',
-        description: 'this is the test-modal description !',
-        price: 65,
-    }
-
-    const renderedElement = <Modal modal={testModal} />;
 
     test('the modal contains an image', () => {
         render(
             <Provider store={store}>
-                <Modal modal={testModal} />
+                <HomePage />
             </Provider>
         );
 
-        const renderedElementSrc = renderedElement.props.modal.src;
-        const testModalSrc = testModal.src;
-
-        expect(renderedElementSrc).toStrictEqual(testModalSrc);
+        const allClickableElements = document.querySelectorAll('.clickable');
+        allClickableElements.forEach((element) => {
+            fireEvent.click(element);
+            render(
+                <Provider store={store}>
+                    <Modal />
+                </Provider>
+            );
+            const modalImg = document.querySelector('#modal-img-src');
+            expect(modalImg).toHaveAttribute('src');
+            expect(modalImg.src).not.toBe('');
+        });
     });
 
     test('the modal contains a title', () => {
         render(
             <Provider store={store}>
-                <Modal modal={testModal} />
+                <HomePage />
             </Provider>
         );
 
-        const renderedElementTitle = renderedElement.props.modal.title;
-        const testModalTitle = testModal.title;
+        const allClickableElements = document.querySelectorAll('.clickable');
+        allClickableElements.forEach((element) => {
+            fireEvent.click(element);
+            render(
+                <Provider store={store}>
+                    <Modal />
+                </Provider>
+            );
 
-        expect(renderedElementTitle).toStrictEqual(testModalTitle);
+            const modalTitle = document.querySelector('#modal-title');
+            expect(modalTitle.textContent).not.toBe('');
+        });
     });
 
     test('the modal contains a description', () => {
         render(
             <Provider store={store}>
-                <Modal modal={testModal} />
+                <HomePage />
             </Provider>
         );
 
-        const renderedElementDescription = renderedElement.props.modal.description;
-        const testModalDescription = testModal.description;
+        const allClickableElements = document.querySelectorAll('.clickable');
+        allClickableElements.forEach((element) => {
+            fireEvent.click(element);
+            render(
+                <Provider store={store}>
+                    <Modal />
+                </Provider>
+            );
 
-        expect(renderedElementDescription).toStrictEqual(testModalDescription);
+            const modalDescription = document.querySelector('#modal-description');
+            expect(modalDescription.textContent).not.toBe('');
+        });
     });
 
     test('the modal contains a price', () => {
         render(
             <Provider store={store}>
-                <Modal modal={testModal} />
+                <HomePage />
             </Provider>
         );
 
-        const renderedElementPrice = renderedElement.props.modal.price;
-        const testModalPrice = testModal.price;
+        const allClickableElements = document.querySelectorAll('.clickable');
+        allClickableElements.forEach((element) => {
+            fireEvent.click(element);
+            render(
+                <Provider store={store}>
+                    <Modal />
+                </Provider>
+            );
 
-        expect(renderedElementPrice).toStrictEqual(testModalPrice);
+            const modalPrice = document.querySelector('#modal-price');
+            expect(modalPrice.textContent).not.toBe('');
+        });
     });
-
-    //TODO: TEST: the bouquet is added to the cart at click  
 });
+
+//TODO: TEST: the bouquet is added to the cart at click  
