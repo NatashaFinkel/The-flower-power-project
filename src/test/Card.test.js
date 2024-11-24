@@ -1,47 +1,55 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { test, expect } from '@jest/globals';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { describe, test, expect } from '@jest/globals';
+import { render, fireEvent, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
-import Card from '../components/Card';
 import HomePage from '../pages/HomePage';
 
-test('The card contains an image and a title', () => {
-    const bouquetTest = {
-        imageSrc: 'test-imageSrc-card-1.jpg',
-        imageAlt: 'test alt img card 1',
-        imageId: 'test-id-img-card-1',
-        imageTitle: 'test-title-card-1',
-        imageDescription: 'Test description img card 1',
-        imagePrice: 45,
-        imageDataTestid: 'data-test-id-img-card-1',
-    };
+describe('Card component', () => {
 
-    render(
-        <Card bouquet={bouquetTest} />
-    );
+    test('Each card contains an image', () => {
+        render(
+            <Provider store={store}>
+                <HomePage />
+            </Provider>
+        );
 
-    const testComponent = <Card bouquet={bouquetTest} />;
-    const testComponentProps = testComponent.props;
+        const allCardImg = document.querySelectorAll('.card-img');
+        allCardImg.forEach((image) => {
+            expect(image).toHaveAttribute('src');
+            expect(image.src).not.toBe('');
+        });
+    });
 
-    const testImageSrc = testComponentProps.bouquet.imageSrc;
-    const testImageTitle = testComponentProps.bouquet.imageTitle;
+    test('Each card contains a title', () => {
+        render(
+            <Provider store={store}>
+                <HomePage />
+            </Provider>
+        );
 
-    expect(testImageSrc).toBe('test-imageSrc-card-1.jpg');
-    expect(testImageTitle).toBe('test-title-card-1');
+        const allCardTitles = document.querySelectorAll('.card-title');
+        allCardTitles.forEach((title) => {
+            expect(title.textContent).not.toBe('');
+        });
+    });
+
+    test('When the user clicks on the card, the modal opens', () => {
+        render(
+            <Provider store={store}>
+                <HomePage />
+            </Provider>
+        );
+
+        const modal = screen.getByTestId('modal-test-id');
+        expect(modal.id).toBe('modal-content');
+
+        const allClickableElements = document.querySelectorAll('.clickable');
+        allClickableElements.forEach((element) => {
+            fireEvent.click(element);
+            expect(modal.id).not.toBe('modal-content');
+            expect(modal.id).not.toBe('');
+        });
+    });
 });
-
-test('Opens modal at click on the card', () => {
-    render(
-        <Provider store={store}>
-            <HomePage />
-        </Provider>
-    );
-
-    const cards = screen.getAllByTestId(/card-test-id/);
-    const modal = screen.getByTestId('modal-test-id');
-    fireEvent.click(cards[0]);
-
-    expect(modal).toBeVisible();
-}); 
