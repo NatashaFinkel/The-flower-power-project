@@ -17,7 +17,6 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
             modalTitle: document.getElementById("modal-title"),
             modalDescription: document.getElementById("modal-description"),
             modal: document.getElementById("bouquet-modal"),
-          /*   heartIcon: document.getElementById("heart"), */
             modalPrice: document.getElementById("modal-price"),
         };
     };
@@ -54,7 +53,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     }, [array]);
 
     return (
-        <div id="bouquet-modal" className="modal">
+        <div id="bouquet-modal" className="modal" data-testid="modal-display-test-id">
 
             <div className="modal-content" id="modal-content" data-testid="modal-test-id">
                 <div className="close-modal-div">
