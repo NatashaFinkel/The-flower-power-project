@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { describe, test, expect } from '@jest/globals';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, act } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
+import { addToShoppingList } from '../redux/shoppingListSlice';
 import HomePage from '../pages/HomePage';
 import Modal from '../components/Modal';
 
@@ -92,6 +93,29 @@ describe('Modal component', () => {
             expect(modalPrice.textContent).not.toBe('');
         });
     });
-});
 
-//TODO: TEST: the bouquet is added to the cart at click  
+    test('if the user clicks on the button, the bouquet is added to the cart', () => {
+
+        const testBouquet = {
+            id: 'test-bouquet-forget-me-not',
+            title: 'test-bouquet-Myosotis',
+            imgSrc: '../../flowers/purple-1-opti.jpeg',
+            imgAlt: 'test-bouquet-Myosotis',
+            description: 'Natus e aetatis et vicensimo sorore aetatis.',
+            price: '75'
+        };
+
+        render(
+            <Provider store={store}>
+                <Modal bouquet={testBouquet} />
+            </Provider>
+        );
+
+        const button = document.getElementById("add-bouquet-btn");
+        act(() => {
+            fireEvent.click(button);
+            expect(store.dispatch(addToShoppingList(testBouquet)));
+            //  console.log('Contenu du store de test :', JSON.stringify(store.getState(), null, 2));
+        });
+    });
+});
