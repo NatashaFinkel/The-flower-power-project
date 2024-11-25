@@ -74,7 +74,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
                     <div className="modal-price-div">
                         <p id="modal-price" data-testid="modal-price-test-id">{mPrice}</p>
                     </div>
-                    <button onClick={handleAddBouquet} className="add-bouquet-btn" data-testid="add-bouquet-btn-test-id">Ajouter au panier</button>
+                    <button onClick={handleAddBouquet} className="add-bouquet-btn" id="add-bouquet-btn" data-testid="add-bouquet-btn-test-id">Ajouter au panier</button>
                 </div>
             </div>
         </div>
