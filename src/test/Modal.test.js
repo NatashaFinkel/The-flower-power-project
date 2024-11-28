@@ -115,7 +115,7 @@ describe('Modal component', () => {
         act(() => {
             fireEvent.click(button);
             expect(store.dispatch(addToShoppingList(testBouquet)));
-            //  console.log('Contenu du store de test :', JSON.stringify(store.getState(), null, 2));
+            //  console.log('Contenu du store de test (modal) :', JSON.stringify(store.getState(), null, 2));
         });
     });
 });
