@@ -10,6 +10,4 @@ describe('The App must render properly', () => {
         const logo = screen.getByTestId("logo-test-id");
         expect(logo).toBeInTheDocument();
     });
-
-    //TODO: faire un test pour chaque page ?
 });
