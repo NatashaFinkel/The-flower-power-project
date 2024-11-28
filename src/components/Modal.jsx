@@ -23,16 +23,24 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
 
     useEffect(() => {
         const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modalPrice, modal } = getModalElements();
-        closeModal.onclick = function () {
-            modalContent.id = "";
-            modalImg.src = "";
-            modalImg.alt = "";
-            modalTitle.textContent = "";
-            modalDescription.textContent = "";
-            modalPrice.textContent = "";
-            modal.style.display = "none";
+
+        const handleCloseModal = () => {
+            modalContent.id = ""; modalImg.src = ""; modalImg.alt = ""; modalTitle.textContent = ""; modalDescription.textContent = ""; modalPrice.textContent = ""; modal.style.display = "none";
         };
-    });
+
+        closeModal.onclick = handleCloseModal;
+
+        const closeModalIfClickOutside = (event) => {
+            if (event.target === modal) {
+                handleCloseModal();
+            }
+        };
+
+        window.addEventListener("click", closeModalIfClickOutside);
+        return () => {
+            window.removeEventListener("click", closeModalIfClickOutside);
+        };
+    }, []);
 
     const handleAddBouquet = () => {
         const { modalContent, modalTitle, modalImg, modalDescription, modalPrice } = getModalElements();
