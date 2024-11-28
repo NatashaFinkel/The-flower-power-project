@@ -1,6 +1,7 @@
-const moduleNameMapper = { 
-    '\\.(css|scss|sass)$': 'identity-obj-proxy', 
-'\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/fileMock.js' };
+const moduleNameMapper = {
+    '\\.(css|scss|sass)$': 'identity-obj-proxy',
+    '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/fileMock.js'
+};
 const transform = {
     '^.+\\.(js|jsx)$': 'babel-jest',
 };
