@@ -6,6 +6,6 @@ const config = {
     plugins: [
         '@babel/plugin-transform-modules-commonjs'
     ]
-};    
+};
 
 module.exports = config;
