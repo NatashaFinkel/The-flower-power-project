@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Image from '../components/Image';
-import { NavLink } from 'react-router-dom';
+import AppNavLink from '../components/AppNavLink';
 import errorPageLogo from '../assets/logo-error-page.png';
 
 function ErrorPage() {
@@ -15,7 +15,7 @@ function ErrorPage() {
                 <Image imageSrc={errorPageLogo} imageAlt="logo de la page d'erreur" imageClassName="error-page-logo" id="error-page-logo" />
                 <div className='error-page-txt-div'>
                     <p>La page demandée est introuvable.</p>
-                    <NavLink to="/" className="get-back-btn">Retour à la page d&apos;accueil</NavLink>
+                    <AppNavLink navLinkDirection="/" navLinkClassName="get-back-btn" navLinkTxt="Retour à la page d&apos;accueil" />
                 </div>
             </div>
         </div>
