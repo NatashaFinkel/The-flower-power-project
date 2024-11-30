@@ -105,6 +105,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .logo-div,
@@ -135,6 +136,11 @@ ul {
 
 li {
   list-style-type: none;
+  display: flex;
+
+  .active {
+    font-weight: 900;
+  }
 }
 
 .nav-bar-icon {
@@ -144,16 +150,6 @@ li {
 
 .icon-display-none {
   display: none;
-}
-
-a p {
-  color: black;
-}
-
-.active {
-  p {
-    font-weight: 900;
-  }
 }
 
 .main-div {
@@ -175,7 +171,6 @@ a p {
 
 .footer {
   display: flex;
-  /*   justify-content: space-between; */
   margin-top: 100px;
   background-color: rgba(90, 122, 30, 0.315);
   box-shadow: 0px 7px 200px yellow;
@@ -545,7 +540,7 @@ input[type="submit"] {
 
 .empty-cart-link {
   color: black;
-  margin: 20px;
+  padding: 0px 20px;
   align-content: center;
   text-align-last: center;
 }
@@ -783,6 +778,10 @@ input[type="submit"] {
   body {
     padding-bottom: 55px;
     font-size: 19px;
+  }
+
+  li {
+    width: auto;
   }
 
   .error-page-txt-div,
