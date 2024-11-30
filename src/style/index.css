@@ -785,7 +785,8 @@ input[type="submit"] {
     font-size: 19px;
   }
 
-  .error-page-txt-div, .get-back-btn {
+  .error-page-txt-div,
+  .get-back-btn {
     margin-top: 2%;
   }
 
