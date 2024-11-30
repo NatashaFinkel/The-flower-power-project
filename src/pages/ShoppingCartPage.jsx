@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import AppNavLink from '../components/AppNavLink';
 import PropTypes from 'prop-types';
 import ShoppingItem from '../components/ShoppingItem';
 
@@ -41,7 +41,7 @@ function ShoppingCartPage() {
             </div>
             <div className='empty-cart-message-div'>
                 <p id="empty-cart-message">Il n&apos;y a aucun article dans votre panier !</p>
-                <NavLink to="/" className="empty-cart-link">Cliquez ici pour continuer vos achats. </NavLink>
+                <AppNavLink navLinkDirection="/" navLinkClassName="empty-cart-link" navLinkTxt="Cliquez ici pour continuer vos achats." />
             </div>
             <div className="shopping-cart" id="shopping-cart">
                 <div className="shopping-list" key="shopping-list" id="shopping-item-container" data-testid="shopping-item-container-test-id">
