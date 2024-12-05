@@ -4,6 +4,8 @@ import flowers from '../json/flowers.json';
 import Image from './Image';
 
 function Card() {
+    const baseUrl = window.location.origin;
+    let imageUrl;
 
     function showModal(event) {
         let selectedBouquet = event.target;
@@ -30,11 +32,16 @@ function Card() {
         <div className="card-container" key="cardContainer">
             {
                 flowers && flowers.map(flower => {
+                    if (baseUrl === "https://natashafinkel.github.io") {
+                        imageUrl = `${baseUrl}/The-flower-power-project/${flower.imgSrc}`;
+                    } else {
+                        imageUrl = flower.imgSrc;
+                    };
                     return (
                         // eslint-disable-next-line react/no-unknown-property
                         <div key={flower.index} id={flower.id} className="card clickable" src={flower.imgSrc} alt={flower.imgAlt} title={flower.imgTitle} description={flower.imgDescription} price={flower.price} onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
 
-                            <Image imageId={`card-${flower.index}-img`} imageSrc={flower.imgSrc} imageAlt={flower.imgAlt} imageTitle={flower.imgTitle} imageDescription={flower.imgDescription} imagePrice={flower.price} imageDataTestid={`card-img-${flower.index}-test-id`} imageClassName="card-img clickable" />
+                            <Image imageId={`card-${flower.index}-img`} imageSrc={imageUrl} imageAlt={flower.imgAlt} imageTitle={flower.imgTitle} imageDescription={flower.imgDescription} imagePrice={flower.price} imageDataTestid={`card-img-${flower.index}-test-id`} imageClassName="card-img clickable" />
 
                             {/* eslint-disable-next-line react/no-unknown-property */}
                             <p className="card-title clickable" src={flower.imgSrc} alt={flower.imgAlt} title={flower.imgTitle} description={flower.imgDescription} price={flower.price}>{flower.imgTitle}</p>
