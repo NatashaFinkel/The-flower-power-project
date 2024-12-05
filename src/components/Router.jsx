@@ -9,7 +9,7 @@ import ErrorPage from '../pages/ErrorPage.jsx';
 
 const AppRouter = () => {
     return (
-        <Router>
+        <Router basename='/The-flower-power-project'>
             <NavBar />
             <Routes>
                 <Route path="/" element={<HomePage />} />
