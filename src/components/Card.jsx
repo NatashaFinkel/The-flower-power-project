@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import flowers from '../../flowers.json';
+import flowers from '../json/flowers.json';
 import Image from './Image';
 
 function Card() {
