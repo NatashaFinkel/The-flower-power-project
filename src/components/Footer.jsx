@@ -28,7 +28,7 @@ function Footer() {
                     </div><br></br>
                     <div className="footer-contact-form">
                         <i className="fa-solid fa-envelope enveloppe"></i>
-                        <a href="/contact">Formulaire de contact</a>
+                        <a href="/The-flower-power-project/contact">Formulaire de contact</a>
                     </div>
                 </div>
             </div>
