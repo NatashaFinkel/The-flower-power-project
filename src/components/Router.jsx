@@ -13,7 +13,7 @@ const AppRouter = () => {
             <NavBar />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/bouquets-sauvegardés" element={<ShoppingCartPage />} />
+                <Route path="/panier" element={<ShoppingCartPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>

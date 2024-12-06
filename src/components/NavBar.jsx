@@ -24,7 +24,7 @@ function NavBar() {
               <AppNavLink navLinkDirection="/" navLinkActiveclassname="active" navLinkTxt="Accueil" />
             </li>
             <li>
-              <AppNavLink navLinkDirection="/bouquets-sauvegardés" navLinkActiveclassname="active" navLinkTxt="Mon panier" />
+              <AppNavLink navLinkDirection="/panier" navLinkActiveclassname="active" navLinkTxt="Mon panier" />
             </li>
             <li>
               <AppNavLink navLinkDirection="/contact" navLinkActiveclassname="active" navLinkTxt="Contact" />
@@ -42,7 +42,7 @@ function NavBar() {
             <AppNavLink navLinkDirection="/" navLinkActiveclassname="active" navLinkIconClassName="fa-solid fa-house nav-bar-icon icon-display-none" />
           </li>
           <li>
-            <AppNavLink navLinkDirection="/bouquets-sauvegardés" navLinkActiveclassname="active" navLinkIconClassName="fa-solid fa-cart-shopping nav-bar-icon icon-display-none" />
+            <AppNavLink navLinkDirection="/panier" navLinkActiveclassname="active" navLinkIconClassName="fa-solid fa-cart-shopping nav-bar-icon icon-display-none" />
           </li>
           <li>
             <AppNavLink navLinkDirection="/contact" navLinkActiveclassname="active" navLinkIconClassName="fa-regular fa-comment-dots nav-bar-icon icon-display-none" />
