@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --icon-default-color: #aaa;
+}
+
 *,
 *::before,
 *::after {
@@ -24,15 +30,33 @@ header {
 h1 {
   font-size: 22px;
   margin-bottom: 15%;
+  color: var(--primary-color);
 }
 
 h2 {
   font-size: 20px;
 }
 
-a {
+.close-modal,
+.trash-can-icon {
+  color: var(--icon-default-color);
+}
+
+a,
+.close-modal:hover,
+.close-modal:focus,
+.modal-price-div,
+.trash-can-icon:hover,
+.empty-cart-link,
+input[type="submit"]:hover,
+.add-bouquet-btn:hover,
+.pay-btn:hover,
+.get-back-btn:hover,
+.empty-cart-link:hover,
+.get-back-btn {
   text-decoration: none;
-  color: black;
+  color: var(--primary-color);
+  /* black */
 }
 
 .logo-div,
@@ -71,7 +95,7 @@ li {
 }
 
 .nav-bar-icon {
-  color: black;
+  color: var(--secondary-color);
   font-size: 70px;
 }
 
@@ -128,10 +152,6 @@ li {
   text-decoration: underline;
   padding-bottom: 5px;
   font-size: 21px;
-}
-
-.footer-contact-form a {
-  color: black;
 }
 
 /* Page d'accueil */
@@ -205,7 +225,6 @@ input[type="submit"],
 }
 
 .close-modal {
-  color: #aaa;
   float: right;
   font-size: 25px;
   font-weight: bold;
@@ -213,12 +232,6 @@ input[type="submit"],
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.close-modal:hover,
-.close-modal:focus {
-  color: black;
-  text-decoration: none;
 }
 
 .modal-img {
@@ -270,7 +283,7 @@ input[type="submit"],
   margin: 0px;
   font-weight: 400;
   padding: 5px;
-  background-color: black;
+  background-color: var(--primary-color);
   color: white;
   font-size: 19px;
 }
@@ -278,11 +291,10 @@ input[type="submit"],
 input[type="submit"]:hover,
 .add-bouquet-btn:hover,
 .pay-btn:hover,
-.empty-cart-link:hover,
-.get-back-btn:hover {
+.get-back-btn:hover,
+.empty-cart-link:hover {
   background: -webkit-linear-gradient(top, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
   border-color: white;
-  color: black;
 }
 
 input[type="submit"]:active,
@@ -316,7 +328,6 @@ input[type="submit"]:active,
   border: 2px solid black;
   padding: 0 5px;
   background-color: white;
-  color: black;
   font-weight: 500;
 }
 
@@ -406,11 +417,6 @@ input[type="submit"] {
 
   .trash-can-icon {
     padding-right: 15px;
-    color: #aaa;
-  }
-
-  .trash-can-icon:hover {
-    color: black;
   }
 }
 
@@ -464,7 +470,6 @@ input[type="submit"] {
 }
 
 .empty-cart-link {
-  color: black;
   padding: 0px 20px;
   align-content: center;
   text-align-last: center;
@@ -495,7 +500,6 @@ input[type="submit"] {
   padding: 5px;
   font-size: 16px;
   display: flex;
-  color: black;
   justify-content: center;
 }
 
