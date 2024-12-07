@@ -95,7 +95,7 @@ li {
 }
 
 .nav-bar-icon {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 70px;
 }
 
@@ -165,7 +165,6 @@ li {
   box-shadow: 16px 16px 11px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  background-color: white;
   height: 140px;
   width: 140px;
 
@@ -273,7 +272,6 @@ input[type="submit"],
   font-weight: 900;
   margin-top: 15%;
   width: 100%;
-  background-color: white;
   border: 2px solid black;
 }
 
@@ -284,7 +282,7 @@ input[type="submit"],
   font-weight: 400;
   padding: 5px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   font-size: 19px;
 }
 
@@ -294,7 +292,7 @@ input[type="submit"]:hover,
 .get-back-btn:hover,
 .empty-cart-link:hover {
   background: -webkit-linear-gradient(top, rgb(0 172 255 / 60%), rgb(0 253 255/ 50%), rgb(255, 230, 0));
-  border-color: white;
+  border-color: var(--primary-color);
 }
 
 input[type="submit"]:active,
@@ -321,13 +319,23 @@ input[type="submit"]:active,
   gap: 15px;
 }
 
+.card,
+.modal-price-div,
+input[type="submit"],
+.empty-cart-link,
+.get-back-btn,
+.shopping-item-div,
+.purchase-summary-container {
+  background-color: var(--secondary-color);
+}
+
+
 .modal-price-div {
   height: 35px;
   justify-self: center;
   align-content: center;
   border: 2px solid black;
   padding: 0 5px;
-  background-color: white;
   font-weight: 500;
 }
 
@@ -397,7 +405,6 @@ input[type="submit"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
   box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
   padding-right: 30px;
   min-width: 450px;
@@ -422,7 +429,6 @@ input[type="submit"] {
 
 .purchase-summary-container {
   border: 2px solid black;
-  background-color: white;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -765,19 +771,22 @@ input[type="submit"] {
     }
   }
 
+  .nav-bar-div,
+  nav {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 22px 50px black;
+  }
+
   .nav-bar-div {
     position: fixed;
     bottom: 0;
     max-width: 425px;
     width: 100%;
-    background-color: white;
     z-index: 1000;
   }
 
   nav {
     margin: 0px;
-    background-color: white;
-    box-shadow: none;
     height: 50px;
     align-content: center;
   }
