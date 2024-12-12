@@ -32,9 +32,11 @@ function Card() {
         <div className="card-container" key="cardContainer">
             {
                 flowers && flowers.map(flower => {
+                    //  Pour la version déployée.
                     if (baseUrl === "https://natashafinkel.github.io") {
                         imageUrl = `${baseUrl}/The-flower-power-project/${flower.imgSrc}`;
                     } else {
+                        //  Pour la version locale.
                         imageUrl = flower.imgSrc;
                     };
                     return (
