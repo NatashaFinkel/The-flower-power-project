@@ -12,13 +12,13 @@ function Footer() {
                 </div>
                 <div className="footer-shop-div">
                     <p>Notre boutique :</p><br></br>
-                    <p className="brand-name" itemProp="legalName">Le jardin aux fleurs sauvages</p>
+                    <p className="brand-name" itemProp="name">Le jardin aux fleurs sauvages</p>
                     <p itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                         <span itemProp="streetAddress">1 rue du petit ruisseau</span><br></br>
                         <span itemProp="postalCode">77600 </span>
                         <span itemProp="addressLocality">Bussy-Saint-Georges</span>
                     </p><br></br>
-                    <p>Ouverture du lundi au vendredi, de 10h à 19h.</p>
+                    <p>Ouverture du <span itemProp="openingHours" content="Mo,Tu,We,Th, Fr 10:00-7:00">lundi au vendredi, de 10h à 19h.</span></p>
                 </div>
                 <div className="footer-contact-shop-div">
                     <p>Contact :</p><br></br>
