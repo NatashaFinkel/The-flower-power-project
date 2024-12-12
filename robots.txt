@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://natashafinkel.github.io/The-flower-power-project/sitemap.xml
