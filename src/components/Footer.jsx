@@ -11,8 +11,7 @@ function Footer() {
                     <p>CGV</p>
                 </div>
                 <div className="footer-shop-div">
-                    <h3>Notre boutique :</h3><br></br>
-                    <p className="brand-name" itemProp="name">Le jardin aux fleurs sauvages</p>
+                    <h3 className="brand-name" itemProp="name">Le jardin aux fleurs sauvages</h3>
                     <p itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                         <span itemProp="streetAddress">1 rue du petit ruisseau</span><br></br>
                         <span itemProp="postalCode">77600 </span>
