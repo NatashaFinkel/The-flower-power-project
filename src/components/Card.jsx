@@ -41,12 +41,11 @@ function Card() {
                     };
                     return (
                         // eslint-disable-next-line react/no-unknown-property
-                        <div key={flower.index} id={flower.id} className="card clickable" src={flower.imgSrc} alt={flower.imgAlt} title={flower.imgTitle} description={flower.imgDescription} price={flower.price} onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
+                        <div key={flower.index} id={flower.id} className="card clickable" src={flower.imgSrc} alt={flower.imgAlt} description={flower.imgDescription} price={flower.price} onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
 
-                            <Image imageId={`card-${flower.index}-img`} imageSrc={imageUrl} imageAlt={flower.imgAlt} imageTitle={flower.imgTitle} imageDescription={flower.imgDescription} imagePrice={flower.price} imageDataTestid={`card-img-${flower.index}-test-id`} imageClassName="card-img clickable" />
+                            <Image imageId={`card-${flower.index}-img`} imageSrc={imageUrl} imageAlt={flower.imgAlt} imageDataTestid={`card-img-${flower.index}-test-id`} imageClassName="card-img clickable" />
 
-                            {/* eslint-disable-next-line react/no-unknown-property */}
-                            <p className="card-title clickable" src={flower.imgSrc} alt={flower.imgAlt} title={flower.imgTitle} description={flower.imgDescription} price={flower.price}>{flower.imgTitle}</p>
+                            <p className="card-title clickable">{flower.imgTitle}</p>
 
                         </div>
                     )
