@@ -30,7 +30,7 @@ body {
 
 body,
 h1,
-h2 {
+h2, h3 {
   font-size: 19px;
 }
 
@@ -145,12 +145,6 @@ h2 {
 .footer-shop-div,
 .footer-legal-infos-div {
   padding: 20px;
-}
-
-.footer-contact-shop-div p:first-child,
-.footer-shop-div p:first-child,
-.footer-legal-infos-div p:first-child {
-  font-weight: 900;
 }
 
 .footer-contact-shop-div {
@@ -502,7 +496,7 @@ form {
 
   body,
   h1,
-  h2 {
+  h2, h3 {
     font-size: 18px;
   }
 
@@ -580,7 +574,7 @@ form {
 
   body,
   h1,
-  h2 {
+  h2, h3 {
     font-size: 15px;
   }
 
