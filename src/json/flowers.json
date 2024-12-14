@@ -3,7 +3,7 @@
         "index": 1,
         "id": "white-jasmin",
         "imgSrc": "/assets/flowers/white-1-jasmine.webp",
-        "imgAlt": "Jasmin blanc",
+        "imgAlt": "Bouquet 1 : jasmin blanc",
         "imgTitle": "Jasmin blanc",
         "imgDescription": "Memoratur referens Mopsi errore nobilis Mopsuestia.",
         "price": 25
@@ -12,7 +12,7 @@
         "index": 2,
         "id": "wild-flowers",
         "imgSrc": "/assets/flowers/composition-1.webp",
-        "imgAlt": "bouquet composition fleurs des champs",
+        "imgAlt": "bouquet 2 : composition Fleurs des champs",
         "imgTitle": "Fleurs des champs",
         "imgDescription": "Abiecto tamquam imitatus pertinacius superbiam.",
         "price": 40
@@ -21,7 +21,7 @@
         "index": 3,
         "id": "pink-roses",
         "imgSrc": "/assets/flowers/pink-1-roses.webp",
-        "imgAlt": "Roses rose pâle bordé de fuchsia",
+        "imgAlt": "Bouquet 3 : roses rose pâle et fuschia",
         "imgTitle": "Roses fuschia",
         "imgDescription": "Aeternam intentum urbem modum ad praefecti.",
         "price": 70
@@ -30,7 +30,7 @@
         "index": 4,
         "id": "purple-pansies",
         "imgSrc": "/assets/flowers/purple-5-pensees.webp",
-        "imgAlt": "bouquet de pensées",
+        "imgAlt": "bouquet 4 : pensées",
         "imgTitle": "Pensées",
         "imgDescription": "Viderit celeberrimos in ob ad suspicentur.",
         "price": 25
@@ -39,7 +39,7 @@
         "index": 5,
         "id": "pink-dahlia",
         "imgSrc": "/assets/flowers/pink-5-dahlia.webp",
-        "imgAlt": "dahlia de couleur rose hollywood",
+        "imgAlt": "Bouquet 5 : dahlia rose",
         "imgTitle": "Dahlia rose",
         "imgDescription": "libertate istarum existiment ut velit est.",
         "price": 40
@@ -48,7 +48,7 @@
         "index": 6,
         "id": "orange-tulips",
         "imgSrc": "/assets/flowers/orange-3-tulips.webp",
-        "imgAlt": "Tulipes oranges",
+        "imgAlt": "Bouquet 6 : tulipes oranges",
         "imgTitle": "Tulipes oranges",
         "imgDescription": "Ne Syriam sollicitari quem conspiraret se Caesare.",
         "price": 15
@@ -57,7 +57,7 @@
         "index": 7,
         "id": "sunflowers",
         "imgSrc": "/assets/flowers/orange-1-sunflowers.webp",
-        "imgAlt": "Tournesols",
+        "imgAlt": "Bouquet 7 : tournesols",
         "imgTitle": "Tournesols",
         "imgDescription": "Nefariis expediendum Luscus heiulans homines ad.",
         "price": 45
@@ -66,7 +66,7 @@
         "index": 8,
         "id": "chrysanthemums",
         "imgSrc": "/assets/flowers/red-3-chrysanthemum.webp",
-        "imgAlt": "Chrysanthèmes",
+        "imgAlt": "Bouquet 8 : Chrysanthèmes",
         "imgTitle": "Chrysanthèmes",
         "imgDescription": "Aliquem virum exoptatus si tenuem ut ideo.",
         "price": 30
@@ -75,7 +75,7 @@
         "index": 9,
         "id": "white-tulips",
         "imgSrc": "/assets/flowers/white-4-tulips-2.webp",
-        "imgAlt": "Tulipes blanches",
+        "imgAlt": "Bouquet 9 : tulipes blanches",
         "imgTitle": "Tulipes blanches",
         "imgDescription": "Divites Caesaris divites his in et noscere circulis.",
         "price": 90
@@ -84,7 +84,7 @@
         "index": 10,
         "id": "light-rose-roses",
         "imgSrc": "/assets/flowers/pink-4-roses.webp",
-        "imgAlt": "Roses pâles",
+        "imgAlt": "Bouquet 10 : roses rose pâle",
         "imgTitle": "Roses pâles",
         "imgDescription": "Amoris primumsit ita magis.",
         "price": 25
@@ -93,7 +93,7 @@
         "index": 11,
         "id": "lilies-of-the-valley",
         "imgSrc": "/assets/flowers/white-5-lilies-of-the-valley.webp",
-        "imgAlt": "Muguet",
+        "imgAlt": "Bouquet 11 : muguet",
         "imgTitle": "Muguet",
         "imgDescription": "Amicitias frui sed ne sua rerum satis.",
         "price": 10
@@ -102,7 +102,7 @@
         "index": 12,
         "id": "forget-me-not",
         "imgSrc": "/assets/flowers/purple-1-myosotis.webp",
-        "imgAlt": "Myosotis",
+        "imgAlt": "Bouquet 12 : myosotis",
         "imgTitle": "Myosotis",
         "imgDescription": "Natus e aetatis et vicensimo sorore aetatis.",
         "price": 75
@@ -111,7 +111,7 @@
         "index": 13,
         "id": "orange-roses",
         "imgSrc": "/assets/flowers/orange-2-roses.webp",
-        "imgAlt": "Roses de couleur orange",
+        "imgAlt": "Bouquet 13 : Roses orange",
         "imgTitle": "Roses oranges",
         "imgDescription": "El Honoratus orientis ordinis Honoratus.",
         "price": 15
@@ -120,7 +120,7 @@
         "index": 14,
         "id": "cactus",
         "imgSrc": "/assets/flowers/cactus.webp",
-        "imgAlt": "Cactus",
+        "imgAlt": "Bouquet 14 : Cactus",
         "imgTitle": "Cactus",
         "imgDescription": "Perspicere aliquod quasi natura amoris.",
         "price": 5
@@ -129,7 +129,7 @@
         "index": 15,
         "id": "wedding-bouquet",
         "imgSrc": "/assets/flowers/composition-11.webp",
-        "imgAlt": "bouquet de mariage",
+        "imgAlt": "Bouquet 15 : composition Mariage heureux",
         "imgTitle": "Mariage heureux",
         "imgDescription": "Aerario et stipe cum inops ille subsidiis est.",
         "price": 90
@@ -138,7 +138,7 @@
         "index": 16,
         "id": "purple-hyacinths",
         "imgSrc": "/assets/flowers/purple-2-hyacinths.webp",
-        "imgAlt": "Hyacinthes violet foncé",
+        "imgAlt": "Bouquet 16 : hyacinthes violet foncé",
         "imgTitle": "Hyacinthes",
         "imgDescription": "Solitarum captis alimentorum solitarum.",
         "price": 50
@@ -147,7 +147,7 @@
         "index": 17,
         "id": "daffodils",
         "imgSrc": "/assets/flowers/orange-4-jonquilles.webp",
-        "imgAlt": "Jonquilles",
+        "imgAlt": "Bouquet 17 : jonquilles",
         "imgTitle": "Jonquilles",
         "imgDescription": "Honorem Haec plerisque.",
         "price": 25
@@ -156,7 +156,7 @@
         "index": 18,
         "id": "red-roses",
         "imgSrc": "/assets/flowers/red-4-roses.webp",
-        "imgAlt": "Roses rouges",
+        "imgAlt": "Bouquet 18 : Roses rouges",
         "imgTitle": "Roses rouges",
         "imgDescription": "Hannibaliano Constantinus et clandestinos eruditiores.",
         "price": 75
@@ -165,7 +165,7 @@
         "index": 19,
         "id": "Egyptian-starcluster",
         "imgSrc": "/assets/flowers/pink-2-egyptian-starcluster.webp",
-        "imgAlt": "bouquet d'étoile égyptienne de couleur rose",
+        "imgAlt": "Bouquet 19 : étoiles égyptiennes",
         "imgTitle": "Etoiles égyptiennes",
         "imgDescription": "Prudens velut retinacula efferatarum et sempiterna.",
         "price": 80
@@ -174,7 +174,7 @@
         "index": 20,
         "id": "red-dahlia",
         "imgSrc": "/assets/flowers/red-5-dahlia.webp",
-        "imgAlt": "Dahlia rouge",
+        "imgAlt": "Bouquet 20 : dahlia rouge",
         "imgTitle": "Dahlia rouge",
         "imgDescription": "Nisu urgentis obstaculo rebus convellere.",
         "price": 45
@@ -183,7 +183,7 @@
         "index": 21,
         "id": "pearls-and-amethysts",
         "imgSrc": "/assets/flowers/composition-8.webp",
-        "imgAlt": "bouquet composition Purple rain",
+        "imgAlt": "Bouquet 21 : composition Purple rain",
         "imgTitle": "Purple rain",
         "imgDescription": "Opulentis quae spatio Seres priscorum.",
         "price": 60
@@ -192,7 +192,7 @@
         "index": 22,
         "id": "fairy-garden",
         "imgSrc": "/assets/flowers/composition-2.webp",
-        "imgAlt": "bouquet composition jardin des fées",
+        "imgAlt": "Bouquet 22 : composition Jardin des fées",
         "imgTitle": "Jardin des fées",
         "imgDescription": "Omnium Montium termino tribunos adminicula.",
         "price": 75
@@ -201,7 +201,7 @@
         "index": 23,
         "id": "purple-lilac",
         "imgSrc": "/assets/flowers/purple-3-lilac.webp",
-        "imgAlt": "Lilas mauve",
+        "imgAlt": "Bouquet 23 : lilas mauve",
         "imgTitle": "Lilas mauve",
         "imgDescription": "Dicat Latinas quis virtutum delectari.",
         "price": 25
@@ -210,7 +210,7 @@
         "index": 24,
         "id": "red-tulips",
         "imgSrc": "/assets/flowers/red-1-tulips.webp",
-        "imgAlt": "Tulipes rouges",
+        "imgAlt": "Bouquet 24 : tulipes rouges",
         "imgTitle": "Tulipes rouges",
         "imgDescription": "Omnium humanitatis nobilium Lotophagi.",
         "price": 15
@@ -219,7 +219,7 @@
         "index": 25,
         "id": "autumn-sighs",
         "imgSrc": "/assets/flowers/composition-5.webp",
-        "imgAlt": "bouquet composition Soupirs d'automne",
+        "imgAlt": "Bouquet 25 : composition Soupirs d'automne",
         "imgTitle": "Soupirs d'automne",
         "imgDescription": "Isauri  Isaurus inediae quidem.",
         "price": 45
@@ -228,7 +228,7 @@
         "index": 26,
         "id": "white-roses",
         "imgSrc": "/assets/flowers/white-3-roses.webp",
-        "imgAlt": "Roses blanches",
+        "imgAlt": "Bouquet 26 : roses blanches",
         "imgTitle": "Roses blanches",
         "imgDescription": "Ipsa infinita natura amicitiae sit potest.",
         "price": 60
@@ -237,7 +237,7 @@
         "index": 27,
         "id": "purple-orchids",
         "imgSrc": "/assets/flowers/purple-4-orchid.webp",
-        "imgAlt": "Orchidées",
+        "imgAlt": "Bouquet 27 : orchidées",
         "imgTitle": "Orchidées",
         "imgDescription": "Obsequiorum diversitate colun turi.",
         "price": 70
@@ -246,7 +246,7 @@
         "index": 28,
         "id": "white-lilac",
         "imgSrc": "/assets/flowers/white-2-lilac-2.webp",
-        "imgAlt": "Lilas blanc",
+        "imgAlt": "Bouquet 28 : lilas blanc",
         "imgTitle": "Lilas blanc",
         "imgDescription": "Meministi consul sermonem dissideret.",
         "price": 35
@@ -255,7 +255,7 @@
         "index": 29,
         "id": "red-lily",
         "imgSrc": "/assets/flowers/red-6-lys.webp",
-        "imgAlt": "fleurs de lys rouges",
+        "imgAlt": "Bouquet 29 : lys rouges",
         "imgTitle": "Lys rouge",
         "imgDescription": "Improborum est sit improborum omninium.",
         "price": 85
@@ -264,7 +264,7 @@
         "index": 30,
         "id": "dreams-of-sweetness",
         "imgSrc": "/assets/flowers/composition-7.webp",
-        "imgAlt": "bouquet composition rêves de douceur",
+        "imgAlt": "Bouquet 30 : composition Rêves de douceur",
         "imgTitle": "Rêves de douceur",
         "imgDescription": " Comicus metu quod quidam.",
         "price": 70
@@ -273,7 +273,7 @@
         "index": 31,
         "id": "orange-dahlia",
         "imgSrc": "/assets/flowers/orange-6-dahlia.webp",
-        "imgAlt": "Dahlia jaune",
+        "imgAlt": "Bouquet 31 : dahlia jaune",
         "imgTitle": "Dahlia jaune",
         "imgDescription": "Ferocissimas Mesopotamiam versabili.",
         "price": 45
@@ -282,7 +282,7 @@
         "index": 32,
         "id": "blue-hortensias",
         "imgSrc": "/assets/flowers/purple-6-hortensias.webp",
-        "imgAlt": "Hortensias",
+        "imgAlt": "Bouquet 32 : hortensias",
         "imgTitle": "Hortensias",
         "imgDescription": "Celebritati effectu ante celebritati proditus.",
         "price": 85
@@ -291,7 +291,7 @@
         "index": 33,
         "id": "yellow-lily",
         "imgSrc": "/assets/flowers/orange-5-lys.webp",
-        "imgAlt": "fleurs de lys jaunes",
+        "imgAlt": "Bouquet 33 : lys jaunes",
         "imgTitle": "Lys jaunes",
         "imgDescription": "Diebus praesentibus ipsos 'inquam' memoriae.",
         "price": 90
