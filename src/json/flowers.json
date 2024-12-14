@@ -11,7 +11,7 @@
     {
         "index": 2,
         "id": "wild-flowers",
-        "imgSrc": "/assets/flowers/composition-1.jpeg",
+        "imgSrc": "/assets/flowers/composition-1.webp",
         "imgAlt": "bouquet composition fleurs des champs",
         "imgTitle": "Fleurs des champs",
         "imgDescription": "Abiecto tamquam imitatus pertinacius superbiam.",
@@ -20,7 +20,7 @@
     {
         "index": 3,
         "id": "pink-roses",
-        "imgSrc": "/assets/flowers/pink-1-roses.jpeg",
+        "imgSrc": "/assets/flowers/pink-1-roses.webp",
         "imgAlt": "Roses rose pâle bordé de fuchsia",
         "imgTitle": "Roses fuschia",
         "imgDescription": "Aeternam intentum urbem modum ad praefecti.",
@@ -29,7 +29,7 @@
     {
         "index": 4,
         "id": "purple-pansies",
-        "imgSrc": "/assets/flowers/purple-5-pensees.jpeg",
+        "imgSrc": "/assets/flowers/purple-5-pensees.webp",
         "imgAlt": "bouquet de pensées",
         "imgTitle": "Pensées",
         "imgDescription": "Viderit celeberrimos in ob ad suspicentur.",
@@ -38,7 +38,7 @@
     {
         "index": 5,
         "id": "pink-dahlia",
-        "imgSrc": "/assets/flowers/pink-5-dahlia.jpeg",
+        "imgSrc": "/assets/flowers/pink-5-dahlia.webp",
         "imgAlt": "dahlia de couleur rose hollywood",
         "imgTitle": "Dahlia rose",
         "imgDescription": "libertate istarum existiment ut velit est.",
@@ -56,7 +56,7 @@
     {
         "index": 7,
         "id": "sunflowers",
-        "imgSrc": "/assets/flowers/orange-1-sunflowers-2.jpeg",
+        "imgSrc": "/assets/flowers/orange-1-sunflowers-2.webp",
         "imgAlt": "Tournesols",
         "imgTitle": "Tournesols",
         "imgDescription": "Nefariis expediendum Luscus heiulans homines ad.",
@@ -65,7 +65,7 @@
     {
         "index": 8,
         "id": "chrysanthemums",
-        "imgSrc": "/assets/flowers/red-3-chrysanthemum.jpeg",
+        "imgSrc": "/assets/flowers/red-3-chrysanthemum.webp",
         "imgAlt": "Chrysanthèmes",
         "imgTitle": "Chrysanthèmes",
         "imgDescription": "Aliquem virum exoptatus si tenuem ut ideo.",
@@ -110,7 +110,7 @@
     {
         "index": 13,
         "id": "orange-roses",
-        "imgSrc": "/assets/flowers/orange-2-roses-2.jpeg",
+        "imgSrc": "/assets/flowers/orange-2-roses-2.webp",
         "imgAlt": "Roses de couleur orange",
         "imgTitle": "Roses oranges",
         "imgDescription": "El Honoratus orientis ordinis Honoratus.",
@@ -155,7 +155,7 @@
     {
         "index": 18,
         "id": "red-roses",
-        "imgSrc": "/assets/flowers/red-4-roses.jpeg",
+        "imgSrc": "/assets/flowers/red-4-roses.webp",
         "imgAlt": "Roses rouges",
         "imgTitle": "Roses rouges",
         "imgDescription": "Hannibaliano Constantinus et clandestinos eruditiores.",
@@ -182,7 +182,7 @@
     {
         "index": 21,
         "id": "pearls-and-amethysts",
-        "imgSrc": "/assets/flowers/composition-8-2.jpeg",
+        "imgSrc": "/assets/flowers/composition-8-2.webp",
         "imgAlt": "bouquet composition Purple rain",
         "imgTitle": "Purple rain",
         "imgDescription": "Opulentis quae spatio Seres priscorum.",
@@ -191,7 +191,7 @@
     {
         "index": 22,
         "id": "fairy-garden",
-        "imgSrc": "/assets/flowers/composition-2.jpeg",
+        "imgSrc": "/assets/flowers/composition-2.webp",
         "imgAlt": "bouquet composition jardin des fées",
         "imgTitle": "Jardin des fées",
         "imgDescription": "Omnium Montium termino tribunos adminicula.",
@@ -200,7 +200,7 @@
     {
         "index": 23,
         "id": "purple-lilac",
-        "imgSrc": "/assets/flowers/purple-3-lilac.jpeg",
+        "imgSrc": "/assets/flowers/purple-3-lilac.webp",
         "imgAlt": "Lilas mauve",
         "imgTitle": "Lilas mauve",
         "imgDescription": "Dicat Latinas quis virtutum delectari.",
@@ -209,7 +209,7 @@
     {
         "index": 24,
         "id": "red-tulips",
-        "imgSrc": "/assets/flowers/red-1-tulips.jpg",
+        "imgSrc": "/assets/flowers/red-1-tulips.webp",
         "imgAlt": "Tulipes rouges",
         "imgTitle": "Tulipes rouges",
         "imgDescription": "Omnium humanitatis nobilium Lotophagi.",
@@ -227,7 +227,7 @@
     {
         "index": 26,
         "id": "white-roses",
-        "imgSrc": "/assets/flowers/white-3-roses.jpeg",
+        "imgSrc": "/assets/flowers/white-3-roses.webp",
         "imgAlt": "Roses blanches",
         "imgTitle": "Roses blanches",
         "imgDescription": "Ipsa infinita natura amicitiae sit potest.",
@@ -236,7 +236,7 @@
     {
         "index": 27,
         "id": "purple-orchids",
-        "imgSrc": "/assets/flowers/purple-4-orchid-2-copie.jpeg",
+        "imgSrc": "/assets/flowers/purple-4-orchid-2-copie.webp",
         "imgAlt": "Orchidées",
         "imgTitle": "Orchidées",
         "imgDescription": "Obsequiorum diversitate colun turi.",
@@ -254,7 +254,7 @@
     {
         "index": 29,
         "id": "red-lily",
-        "imgSrc": "/assets/flowers/red-6-lys.jpeg",
+        "imgSrc": "/assets/flowers/red-6-lys.webp",
         "imgAlt": "fleurs de lys rouges",
         "imgTitle": "Lys rouge",
         "imgDescription": "Improborum est sit improborum omninium.",
@@ -272,7 +272,7 @@
     {
         "index": 31,
         "id": "orange-dahlia",
-        "imgSrc": "/assets/flowers/orange-6-dahlia.jpg",
+        "imgSrc": "/assets/flowers/orange-6-dahlia.webp",
         "imgAlt": "Dahlia jaune",
         "imgTitle": "Dahlia jaune",
         "imgDescription": "Ferocissimas Mesopotamiam versabili.",
@@ -281,7 +281,7 @@
     {
         "index": 32,
         "id": "blue-hortensias",
-        "imgSrc": "/assets/flowers/purple-6-hortensias.jpeg",
+        "imgSrc": "/assets/flowers/purple-6-hortensias.webp",
         "imgAlt": "Hortensias",
         "imgTitle": "Hortensias",
         "imgDescription": "Celebritati effectu ante celebritati proditus.",
