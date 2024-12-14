@@ -2,7 +2,7 @@
     {
         "index": 1,
         "id": "white-jasmin",
-        "imgSrc": "/assets/flowers/white-1-jasmine.jpg",
+        "imgSrc": "/assets/flowers/white-1-jasmine.webp",
         "imgAlt": "Jasmin blanc",
         "imgTitle": "Jasmin blanc",
         "imgDescription": "Memoratur referens Mopsi errore nobilis Mopsuestia.",
@@ -74,7 +74,7 @@
     {
         "index": 9,
         "id": "white-tulips",
-        "imgSrc": "/assets/flowers/white-4-tulips-2.jpeg",
+        "imgSrc": "/assets/flowers/white-4-tulips-2.webp",
         "imgAlt": "Tulipes blanches",
         "imgTitle": "Tulipes blanches",
         "imgDescription": "Divites Caesaris divites his in et noscere circulis.",
@@ -92,7 +92,7 @@
     {
         "index": 11,
         "id": "lilies-of-the-valley",
-        "imgSrc": "/assets/flowers/white-5-lilies-of-the-valley.jpeg",
+        "imgSrc": "/assets/flowers/white-5-lilies-of-the-valley.webp",
         "imgAlt": "Muguet",
         "imgTitle": "Muguet",
         "imgDescription": "Amicitias frui sed ne sua rerum satis.",
@@ -101,7 +101,7 @@
     {
         "index": 12,
         "id": "forget-me-not",
-        "imgSrc": "/assets/flowers/purple-1-opti.jpeg",
+        "imgSrc": "/assets/flowers/purple-1-opti.webp",
         "imgAlt": "Myosotis",
         "imgTitle": "Myosotis",
         "imgDescription": "Natus e aetatis et vicensimo sorore aetatis.",
@@ -128,7 +128,7 @@
     {
         "index": 15,
         "id": "wedding-bouquet",
-        "imgSrc": "/assets/flowers/composition-11.jpeg",
+        "imgSrc": "/assets/flowers/composition-11.webp",
         "imgAlt": "bouquet de mariage",
         "imgTitle": "Mariage heureux",
         "imgDescription": "Aerario et stipe cum inops ille subsidiis est.",
@@ -137,7 +137,7 @@
     {
         "index": 16,
         "id": "purple-hyacinths",
-        "imgSrc": "/assets/flowers/purple-2-hyacinths-copie.jpeg",
+        "imgSrc": "/assets/flowers/purple-2-hyacinths-copie.webp",
         "imgAlt": "Hyacinthes violet foncé",
         "imgTitle": "Hyacinthes",
         "imgDescription": "Solitarum captis alimentorum solitarum.",
@@ -164,7 +164,7 @@
     {
         "index": 19,
         "id": "Egyptian-starcluster",
-        "imgSrc": "/assets/flowers/pink-2-2.jpeg",
+        "imgSrc": "/assets/flowers/pink-2-2.webp",
         "imgAlt": "bouquet d'étoile égyptienne de couleur rose",
         "imgTitle": "Etoiles égyptiennes",
         "imgDescription": "Prudens velut retinacula efferatarum et sempiterna.",
@@ -173,7 +173,7 @@
     {
         "index": 20,
         "id": "red-dahlia",
-        "imgSrc": "/assets/flowers/red-5-dahlia.jpeg",
+        "imgSrc": "/assets/flowers/red-5-dahlia.webp",
         "imgAlt": "Dahlia rouge",
         "imgTitle": "Dahlia rouge",
         "imgDescription": "Nisu urgentis obstaculo rebus convellere.",
