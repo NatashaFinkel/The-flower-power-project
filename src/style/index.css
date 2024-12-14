@@ -10,6 +10,8 @@
   --primary-border-radius: 50%;
 
   --primary-box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.379);
+
+  --primary-display: flex;
 }
 
 *,
@@ -26,6 +28,12 @@ body {
   font-size: 19px;
 }
 
+body,
+h1,
+h2 {
+  font-size: 19px;
+}
+
 header {
   bottom: 50px;
   position: relative;
@@ -36,13 +44,8 @@ header {
 }
 
 h1 {
-  font-size: 22px;
   margin-bottom: 15%;
   color: var(--primary-color);
-}
-
-h2 {
-  font-size: 20px;
 }
 
 .close-modal,
@@ -73,7 +76,7 @@ ul,
 .modal-img-div,
 .modal-title-div,
 .add-bouquet-btn-div {
-  display: flex;
+  display: var(--primary-display);
   justify-content: center;
 }
 
@@ -92,7 +95,7 @@ ul {
 
 li {
   list-style-type: none;
-  display: flex;
+  display: var(--primary-display);
 }
 
 li .active {
@@ -109,7 +112,7 @@ li .active {
 }
 
 .main-div {
-  display: flex;
+  display: var(--primary-display);
   flex-direction: column;
   align-items: center;
 }
@@ -125,8 +128,12 @@ li .active {
   margin: 10px 0px;
 }
 
+h2 {
+  margin-top: 30px;
+}
+
 .footer {
-  display: flex;
+  display: var(--primary-display);
   margin-top: 100px;
   background-color: rgba(90, 122, 30, 0.315);
   box-shadow: 0px 7px 200px yellow;
@@ -152,7 +159,7 @@ li .active {
 
 .footer-telephone-div,
 .footer-contact-form {
-  display: flex;
+  display: var(--primary-display);
   gap: 10px;
 }
 
@@ -170,7 +177,7 @@ li .active {
 
 .card {
   box-shadow: 16px 16px 11px rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: var(--primary-display);
   flex-direction: column;
   height: 140px;
   width: 140px;
@@ -183,7 +190,7 @@ li .active {
 }
 
 .card p {
-  display: flex;
+  display: var(--primary-display);
   justify-content: center;
   text-wrap: wrap;
   font-size: 16px;
@@ -235,7 +242,7 @@ input[type="submit"],
   font-size: 25px;
   font-weight: bold;
   height: 17px;
-  display: flex;
+  display: var(--primary-display);
   align-items: center;
   position: relative;
 }
@@ -260,7 +267,7 @@ input[type="submit"],
 }
 
 .modal-description-div {
-  display: flex;
+  display: var(--primary-display);
   text-align: center;
   justify-content: center;
 }
@@ -282,7 +289,7 @@ input[type="submit"],
 }
 
 .empty-cart-link {
-  display: flex;
+  display: var(--primary-display);
   border: var(--secondary-border-style);
 }
 
@@ -301,7 +308,6 @@ input[type="submit"]:active,
 .empty-cart-link:active,
 .get-back-btn:active {
   background: linear-gradient(to bottom, rgba(0, 172, 255, 0.6), rgba(0, 253, 255, 0.5), rgb(255, 230, 0));
-
 }
 
 .modal-divider {
@@ -313,7 +319,7 @@ input[type="submit"]:active,
 }
 
 .modal-footer {
-  display: flex;
+  display: var(--primary-display);
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
@@ -347,7 +353,7 @@ form {
 }
 
 .form-input {
-  display: flex;
+  display: var(--primary-display);
   align-items: center;
   gap: 3%;
   margin-bottom: 30px;
@@ -384,7 +390,7 @@ form {
 
 /* Page ShoppingCartPage */
 .shopping-cart {
-  display: flex;
+  display: var(--primary-display);
   gap: 5%;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -393,7 +399,7 @@ form {
 }
 
 .shopping-item-div {
-  display: flex;
+  display: var(--primary-display);
   justify-content: space-between;
   align-items: center;
   box-shadow: var(--primary-box-shadow);
@@ -447,7 +453,7 @@ form {
 }
 
 .shopping-list-txt-content {
-  display: flex;
+  display: var(--primary-display);
   flex-direction: column;
   position: relative;
 }
@@ -458,7 +464,7 @@ form {
 }
 
 .empty-cart-message-div {
-  display: flex;
+  display: var(--primary-display);
   flex-direction: column;
   gap: 20px;
   position: relative;
@@ -486,14 +492,17 @@ form {
 }
 
 .get-back-btn {
-  display: flex;
+  display: var(--primary-display);
   border: var(--secondary-border-style);
   margin-top: 5%;
 }
 
 /* Ordinateurs portables */
 @media only screen and (max-width: 1024px) {
-  body {
+
+  body,
+  h1,
+  h2 {
     font-size: 18px;
   }
 
@@ -567,6 +576,11 @@ form {
 @media screen and (max-width: 768px) {
   body {
     margin: auto 0;
+  }
+
+  body,
+  h1,
+  h2 {
     font-size: 15px;
   }
 
@@ -579,7 +593,6 @@ form {
   }
 
   h1 {
-    font-size: 16px;
     margin-top: 5%;
   }
 
@@ -655,9 +668,14 @@ form {
 /* Mobiles (grands) */
 @media screen and (max-width: 425px) {
 
+  body,
+  h1,
+  h2 {
+    font-size: 19px;
+  }
+
   body {
     padding-bottom: 55px;
-    font-size: 19px;
   }
 
   li {
@@ -685,12 +703,9 @@ form {
     margin: 30px 0px 10px 0px;
   }
 
-  h1 {
-    font-size: 20px;
-  }
-
   .intro-div {
-    width: 80%;
+    width: 100%;
+    padding: 0px 10%;
   }
 
   .gallery {
@@ -698,7 +713,7 @@ form {
   }
 
   .card-container {
-    display: flex;
+    display: var(--primary-display);
     flex-direction: column;
     width: 100%;
     align-items: center;
