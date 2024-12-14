@@ -56,7 +56,7 @@
     {
         "index": 7,
         "id": "sunflowers",
-        "imgSrc": "/assets/flowers/orange-1-sunflowers-2.webp",
+        "imgSrc": "/assets/flowers/orange-1-sunflowers.webp",
         "imgAlt": "Tournesols",
         "imgTitle": "Tournesols",
         "imgDescription": "Nefariis expediendum Luscus heiulans homines ad.",
@@ -101,7 +101,7 @@
     {
         "index": 12,
         "id": "forget-me-not",
-        "imgSrc": "/assets/flowers/purple-1-opti.webp",
+        "imgSrc": "/assets/flowers/purple-1-myosotis.webp",
         "imgAlt": "Myosotis",
         "imgTitle": "Myosotis",
         "imgDescription": "Natus e aetatis et vicensimo sorore aetatis.",
@@ -110,7 +110,7 @@
     {
         "index": 13,
         "id": "orange-roses",
-        "imgSrc": "/assets/flowers/orange-2-roses-2.webp",
+        "imgSrc": "/assets/flowers/orange-2-roses.webp",
         "imgAlt": "Roses de couleur orange",
         "imgTitle": "Roses oranges",
         "imgDescription": "El Honoratus orientis ordinis Honoratus.",
@@ -137,7 +137,7 @@
     {
         "index": 16,
         "id": "purple-hyacinths",
-        "imgSrc": "/assets/flowers/purple-2-hyacinths-copie.webp",
+        "imgSrc": "/assets/flowers/purple-2-hyacinths.webp",
         "imgAlt": "Hyacinthes violet foncé",
         "imgTitle": "Hyacinthes",
         "imgDescription": "Solitarum captis alimentorum solitarum.",
@@ -146,7 +146,7 @@
     {
         "index": 17,
         "id": "daffodils",
-        "imgSrc": "/assets/flowers/orange-4-jonquilles-2.jpeg",
+        "imgSrc": "/assets/flowers/orange-4-jonquilles.webp",
         "imgAlt": "Jonquilles",
         "imgTitle": "Jonquilles",
         "imgDescription": "Honorem Haec plerisque.",
@@ -164,7 +164,7 @@
     {
         "index": 19,
         "id": "Egyptian-starcluster",
-        "imgSrc": "/assets/flowers/pink-2-2.webp",
+        "imgSrc": "/assets/flowers/pink-2-egyptian-starcluster.webp",
         "imgAlt": "bouquet d'étoile égyptienne de couleur rose",
         "imgTitle": "Etoiles égyptiennes",
         "imgDescription": "Prudens velut retinacula efferatarum et sempiterna.",
@@ -182,7 +182,7 @@
     {
         "index": 21,
         "id": "pearls-and-amethysts",
-        "imgSrc": "/assets/flowers/composition-8-2.webp",
+        "imgSrc": "/assets/flowers/composition-8.webp",
         "imgAlt": "bouquet composition Purple rain",
         "imgTitle": "Purple rain",
         "imgDescription": "Opulentis quae spatio Seres priscorum.",
@@ -218,7 +218,7 @@
     {
         "index": 25,
         "id": "autumn-sighs",
-        "imgSrc": "/assets/flowers/composition-5-optimised.webp",
+        "imgSrc": "/assets/flowers/composition-5.webp",
         "imgAlt": "bouquet composition Soupirs d'automne",
         "imgTitle": "Soupirs d'automne",
         "imgDescription": "Isauri  Isaurus inediae quidem.",
@@ -236,7 +236,7 @@
     {
         "index": 27,
         "id": "purple-orchids",
-        "imgSrc": "/assets/flowers/purple-4-orchid-2-copie.webp",
+        "imgSrc": "/assets/flowers/purple-4-orchid.webp",
         "imgAlt": "Orchidées",
         "imgTitle": "Orchidées",
         "imgDescription": "Obsequiorum diversitate colun turi.",
@@ -263,7 +263,7 @@
     {
         "index": 30,
         "id": "dreams-of-sweetness",
-        "imgSrc": "/assets/flowers/composition-7-2.jpeg",
+        "imgSrc": "/assets/flowers/composition-7.webp",
         "imgAlt": "bouquet composition rêves de douceur",
         "imgTitle": "Rêves de douceur",
         "imgDescription": " Comicus metu quod quidam.",
