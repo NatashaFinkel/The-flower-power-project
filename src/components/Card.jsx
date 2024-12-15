@@ -1,11 +1,26 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import flowers from '../json/flowers.json';
 import Image from './Image';
 
 function Card() {
+    const array = useSelector(state => state.shoppingList.array);
     const baseUrl = window.location.origin;
     let imageUrl;
+
+    useEffect(() => {
+        const allCards = document.querySelectorAll('[class^="card clickable"]');
+        array.map(arrayElement => {
+            allCards.forEach(card => {
+                if (card.id === arrayElement.id) {
+                    //  Ceci ajoute du style si le bouquet est déjà dans le panier.
+                    card.classList.add("sepia-style");
+                    card.style.pointerEvents = 'none';
+                }
+            });
+        });
+    }, [array]);
 
     function showModal(event) {
         let selectedBouquet = event.currentTarget;

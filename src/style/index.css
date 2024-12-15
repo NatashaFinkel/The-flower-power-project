@@ -30,7 +30,8 @@ body {
 
 body,
 h1,
-h2, h3 {
+h2,
+h3 {
   font-size: 19px;
 }
 
@@ -158,7 +159,7 @@ h2 {
 }
 
 .brand-name {
-  width:fit-content;
+  width: fit-content;
   padding: 5px;
   background-color: rgba(127, 255, 212, 0.35);
   box-shadow: 0px 0px 10px yellow;
@@ -205,6 +206,18 @@ input[type="submit"],
 .pay-btn,
 .get-back-btn {
   cursor: pointer;
+}
+
+.card,
+.modal-price-div,
+.shopping-item-div,
+.purchase-summary-container {
+  background-color: var(--secondary-color);
+}
+
+.sepia-style {
+  filter: sepia(100%) brightness(100%) contrast(110%);
+  transition: filter 380ms ease;
 }
 
 .modal {
@@ -323,12 +336,7 @@ input[type="submit"]:active,
   gap: 15px;
 }
 
-.card,
-.modal-price-div,
-.shopping-item-div,
-.purchase-summary-container {
-  background-color: var(--secondary-color);
-}
+
 
 .modal-price-div {
   justify-self: center;
@@ -499,7 +507,8 @@ form {
 
   body,
   h1,
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 18px;
   }
 
@@ -577,7 +586,8 @@ form {
 
   body,
   h1,
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 15px;
   }
 
