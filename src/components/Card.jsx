@@ -8,7 +8,7 @@ function Card() {
     let imageUrl;
 
     function showModal(event) {
-        let selectedBouquet = event.target;
+        let selectedBouquet = event.currentTarget;
         let modal = document.getElementById("bouquet-modal");
         let modalImgSrc = document.getElementById("modal-img-src");
         let modalTitle = document.getElementById("modal-title");
@@ -19,7 +19,7 @@ function Card() {
         modal.style.display = "flex";
         modalImgSrc.src = selectedBouquet.getAttribute("src");
         modalImgSrc.alt = selectedBouquet.alt;
-        modalTitle.textContent = selectedBouquet.title;
+        modalTitle.textContent = selectedBouquet.getAttribute("titlecontent");
         modalDescription.textContent = selectedBouquet.getAttribute("description");
         modalPrice.textContent = selectedBouquet.getAttribute("price");
 
@@ -41,12 +41,11 @@ function Card() {
                     };
                     return (
                         // eslint-disable-next-line react/no-unknown-property
-                        <div key={flower.index} id={flower.id} className="card clickable" src={flower.imgSrc} alt={flower.imgAlt} description={flower.imgDescription} price={flower.price} onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
+                        <div key={flower.index} id={flower.id} className="card clickable" src={flower.imgSrc} alt={flower.imgAlt} titlecontent={flower.imgTitle} description={flower.imgDescription} price={flower.price} onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
 
                             <Image imageId={`card-${flower.index}-img`} imageSrc={imageUrl} imageAlt={flower.imgAlt} imageDataTestid={`card-img-${flower.index}-test-id`} imageClassName="card-img clickable" />
 
                             <p className="card-title clickable">{flower.imgTitle}</p>
-
                         </div>
                     )
                 })
