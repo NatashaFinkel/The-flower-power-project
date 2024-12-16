@@ -22,6 +22,14 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     };
 
     useEffect(() => {
+        const { modalImg } = getModalElements();
+        //  Pour éviter l'erreur accessibilité "No alternative text" à l'ouverture de la page (puisque la modale est fermée par défaut).
+        if (!modalImg.src) {
+            modalImg.alt = "modale fermée";
+        }
+    });
+
+    useEffect(() => {
         const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modalPrice, modal } = getModalElements();
 
         const handleCloseModal = () => {
