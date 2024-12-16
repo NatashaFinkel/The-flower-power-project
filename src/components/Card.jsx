@@ -33,7 +33,7 @@ function Card() {
 
         modal.style.display = "flex";
         modalImgSrc.src = selectedBouquet.getAttribute("src");
-        modalImgSrc.alt = selectedBouquet.alt;
+        modalImgSrc.alt = selectedBouquet.getAttribute("alt");
         modalTitle.textContent = selectedBouquet.getAttribute("titlecontent");
         modalDescription.textContent = selectedBouquet.getAttribute("description");
         modalPrice.textContent = selectedBouquet.getAttribute("price");
