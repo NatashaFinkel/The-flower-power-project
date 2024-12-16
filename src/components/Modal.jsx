@@ -22,10 +22,11 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     };
 
     useEffect(() => {
-        const { modalImg } = getModalElements();
+        const { modalImg, modalTitle } = getModalElements();
         //  Pour éviter l'erreur accessibilité "No alternative text" à l'ouverture de la page (puisque la modale est fermée par défaut).
         if (!modalImg.src) {
-            modalImg.alt = "modale fermée";
+            modalImg.alt = "modal : image alt par défaut";
+            modalTitle.textContent = "modal : titre par défaut";
         }
     });
 
@@ -33,7 +34,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
         const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modalPrice, modal } = getModalElements();
 
         const handleCloseModal = () => {
-            modalContent.id = ""; modalImg.src = ""; modalImg.alt = "modale fermée"; modalTitle.textContent = ""; modalDescription.textContent = ""; modalPrice.textContent = ""; modal.style.display = "none";
+            modalContent.id = ""; modalImg.src = ""; modalImg.alt = "modal : image alt par défaut"; modalTitle.textContent = "modal : titre par défaut"; modalDescription.textContent = ""; modalPrice.textContent = ""; modal.style.display = "none";
         };
 
         closeModal.onclick = handleCloseModal;
