@@ -33,7 +33,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
         const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modalPrice, modal } = getModalElements();
 
         const handleCloseModal = () => {
-            modalContent.id = ""; modalImg.src = ""; modalImg.alt = ""; modalTitle.textContent = ""; modalDescription.textContent = ""; modalPrice.textContent = ""; modal.style.display = "none";
+            modalContent.id = ""; modalImg.src = ""; modalImg.alt = "modale fermée"; modalTitle.textContent = ""; modalDescription.textContent = ""; modalPrice.textContent = ""; modal.style.display = "none";
         };
 
         closeModal.onclick = handleCloseModal;
