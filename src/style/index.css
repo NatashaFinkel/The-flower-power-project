@@ -1,7 +1,7 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
-  --icon-default-color: #aaa;
+  --icon-default-color: grey;
 
   --primary-border-style: 2px solid var(--primary-color);
   --secondary-border-style: 2px solid var(--icon-default-color);
