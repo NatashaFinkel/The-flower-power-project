@@ -3,12 +3,12 @@ import React, { useEffect } from 'react';
 import FormLabel from '../components/FormLabel';
 import FormInput from '../components/FormInput';
 import PopUp from '../components/PopUp';
-import contactPagePopUpImg from '/assets/logo-3.webp';
+import contactPagePopUpImg from '/assets/contact-logo-2.png';
 
 function ContactPage() {
     useEffect(() => {
         document.getElementById("client-email").setAttribute("inputPattern", '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}$');
-    })
+    });
 
     useEffect(() => {
         const form = document.getElementById("contact-form");
@@ -76,7 +76,7 @@ function ContactPage() {
                     </div>
                 </form>
             </div>
-            <PopUp popUpImgSrc={contactPagePopUpImg} popUpImgAlt="logo du popUp" popUpImgClassName="contact-page-popup-img" popUpMessage="Votre message a été envoyé avec succès !" />
+            <PopUp popUpImgSrc={contactPagePopUpImg} popUpImgAlt="logo du popUp de la page contact" popUpImgClassName="contact-page-popup-img" popUpMessage="Votre message a été envoyé avec succès !" />
         </div>
     );
 }
