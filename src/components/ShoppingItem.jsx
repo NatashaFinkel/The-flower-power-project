@@ -27,7 +27,7 @@ function ShoppingItem() {
                 <div className="shopping-item-div">
                     <Image imageSrc={bouquet.imgSrc} imageAlt={bouquet.imgAlt} />
                     <div className="shopping-list-txt-content">
-                        <p className="shopping-item-title">{bouquet.title}</p>
+                        <h2 className="shopping-item-title">{bouquet.title}</h2>
                         <p className="bouquet-price">{bouquet.price}</p>
                     </div>
                     <div>

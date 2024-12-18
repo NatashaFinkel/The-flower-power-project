@@ -48,10 +48,10 @@ function ShoppingCartPage() {
                     <ShoppingItem />
                 </div>
                 <div className="purchase-summary-container" id="purchase-summary-container" data-testid="purchase-summary-container-test-id">
-                    <p>Total</p>
+                    <h3>Total</h3>
                     <hr className="purchase-summary-container-divider"></hr>
-                    <p className="purchase-summary-txt" id="subTotal"></p>
-                    <p className="purchase-summary-txt">Livraison : offerte !</p>
+                    <h4 className="purchase-summary-txt" id="subTotal"></h4>
+                    <h4 className="purchase-summary-txt">Livraison : offerte !</h4>
                     <div>
                         <button className="pay-btn" data-testid="pay-btn-test-id">Payer</button>
                     </div>
