@@ -15,8 +15,7 @@ function ContactPage() {
             </div>
             <div>
                 <form>
-                    <FormLabel inputId="client-name" />
-
+                    <FormLabel inputId="client-name" inputValue="nom et prénom :" />
                     <FormInput
                         inputClassName="form-input"
                         iconClassName="fa-solid fa-user contact-icon"
@@ -25,7 +24,7 @@ function ContactPage() {
                         inputPlaceholder="Nom et prénom"
                     />
 
-                    <FormLabel inputClassName="flex-div" inputId="client-email" />
+                    <FormLabel inputClassName="flex-div" inputId="client-email" inputValue="email :" />
 
                     <FormInput
                         inputClassName="form-input"
@@ -36,7 +35,7 @@ function ContactPage() {
                     />
 
                     <div className="message-div">
-                        <FormLabel inputId="client-message" />
+                        <FormLabel inputId="client-message" inputValue="On répondra vite, promis !" />
                         <textarea
                             id="client-message"
                             name="client-message"
