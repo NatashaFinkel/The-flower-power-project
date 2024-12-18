@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from '../components/Image';
 import AppNavLink from '../components/AppNavLink';
-import errorPageLogo from '/assets/logo-error-page.png';
+import errorPageLogo from '/assets/erreur-logo-1.png';
 
 function ErrorPage() {
 
