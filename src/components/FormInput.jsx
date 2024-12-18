@@ -9,7 +9,6 @@ function FormInput({
     inputId,
     inputValue,
     inputBackgroundColor,
-    inputPlaceholder,
     inputClassName,
     inputAutoComplete,
     inputPattern,
@@ -23,7 +22,6 @@ function FormInput({
                 id={inputId}
                 name={inputId}
                 value={inputValue}
-                placeholder={inputPlaceholder}
                 autoComplete={inputAutoComplete}
                 style={{ backgroundColor: inputBackgroundColor }}
                 pattern={inputPattern}
@@ -39,7 +37,6 @@ FormInput.propTypes = {
     inputId: PropTypes.string,
     inputValue: PropTypes.string,
     inputBackgroundColor: PropTypes.string,
-    inputPlaceholder: PropTypes.string,
     inputClassName: PropTypes.string,
     inputAutoComplete: PropTypes.string,
     inputPattern: PropTypes.string,

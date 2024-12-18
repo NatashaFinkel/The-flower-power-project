@@ -21,7 +21,6 @@ function ContactPage() {
                         iconClassName="fa-solid fa-user contact-icon"
                         inputType="text"
                         inputId="client-name"
-                        inputPlaceholder="Nom et prénom"
                     />
 
                     <FormLabel inputClassName="flex-div" inputId="client-email" inputValue="email :" />
