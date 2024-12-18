@@ -2,11 +2,35 @@
 import React, { useEffect } from 'react';
 import FormLabel from '../components/FormLabel';
 import FormInput from '../components/FormInput';
+import PopUp from '../components/PopUp';
+import contactPagePopUpImg from '/assets/logo-3.webp';
 
 function ContactPage() {
     useEffect(() => {
         document.getElementById("client-email").setAttribute("inputPattern", '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}$');
     })
+
+    useEffect(() => {
+        const form = document.getElementById("contact-form");
+        const popup = document.getElementById("popup");
+        const overlay = document.getElementById("overlay");
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (form.checkValidity()) {
+                popup.style.display = 'block';
+                overlay.style.display = 'block';
+
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                    overlay.style.display = 'none';
+                }, 1000);
+
+                form.reset();
+            }
+        });
+    });
 
     return (
         <div className="main-div">
@@ -14,7 +38,7 @@ function ContactPage() {
                 <h1>Contactez-nous !</h1>
             </div>
             <div>
-                <form>
+                <form id="contact-form">
                     <FormLabel inputId="client-name" inputValue="nom et prénom :" />
                     <FormInput
                         inputClassName="form-input"
@@ -52,6 +76,7 @@ function ContactPage() {
                     </div>
                 </form>
             </div>
+            <PopUp popUpImgSrc={contactPagePopUpImg} popUpImgAlt="logo du popUp" popUpImgClassName="contact-page-popup-img" popUpMessage="Votre message a été envoyé avec succès !" />
         </div>
     );
 }
