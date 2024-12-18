@@ -853,6 +853,12 @@ form {
 /* Mobiles (petits) */
 @media only screen and (max-width: 320px) {
 
+  body,
+  h1,
+  h2 {
+    font-size: 17px;
+  }
+
   #client-name,
   #client-email,
   #password,
