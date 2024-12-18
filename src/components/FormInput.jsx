@@ -12,6 +12,8 @@ function FormInput({
     inputPlaceholder,
     inputClassName,
     inputAutoComplete,
+    inputPattern,
+    inputRequirement,
 }) {
     return (
         <div className={inputClassName}>
@@ -24,6 +26,8 @@ function FormInput({
                 placeholder={inputPlaceholder}
                 autoComplete={inputAutoComplete}
                 style={{ backgroundColor: inputBackgroundColor }}
+                pattern={inputPattern}
+               required={inputRequirement}
             ></input>
         </div>
     );
@@ -38,6 +42,8 @@ FormInput.propTypes = {
     inputPlaceholder: PropTypes.string,
     inputClassName: PropTypes.string,
     inputAutoComplete: PropTypes.string,
+    inputPattern: PropTypes.string,
+    inputRequirement: PropTypes.bool,
 }
 
 export default FormInput;

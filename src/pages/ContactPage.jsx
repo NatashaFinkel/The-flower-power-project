@@ -1,9 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useEffect } from 'react';
 import FormLabel from '../components/FormLabel';
 import FormInput from '../components/FormInput';
 
 function ContactPage() {
+    useEffect(() => {
+        document.getElementById("client-email").setAttribute("inputPattern", '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}$');
+    })
+
     return (
         <div className="main-div">
             <div className="title-div">
@@ -28,7 +32,7 @@ function ContactPage() {
                         iconClassName="fa-solid fa-square-envelope contact-icon"
                         inputType="email"
                         inputId="client-email"
-                        inputPlaceholder="Adresse e-mail"
+                        inputRequirement={true}
                     />
 
                     <div className="message-div">
