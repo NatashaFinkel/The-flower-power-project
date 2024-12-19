@@ -113,7 +113,7 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
                     <button onClick={handleAddBouquet} className="add-bouquet-btn" id="add-bouquet-btn" data-testid="add-bouquet-btn-test-id">Ajouter au panier</button>
                 </div>
             </div>
-            <PopUp popUpImgSrc={addedToCartConfirmationPopUpImg} popUpImgAlt="logo du popUp de confirmation d'ajout au panier" popUpImgClassName="added-to-cart-confirmation-message-popup-img" popUpMessage="Votre bouquet a été ajouté !" />
+            <PopUp popUpImgSrc={addedToCartConfirmationPopUpImg} popUpImgClassName="added-to-cart-confirmation-message-popup-img" popUpMessage="Votre bouquet a été ajouté !" />
         </div>
     )
 }

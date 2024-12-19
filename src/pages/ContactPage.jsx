@@ -76,7 +76,7 @@ function ContactPage() {
                     </div>
                 </form>
             </div>
-            <PopUp popUpImgSrc={contactPagePopUpImg} popUpImgAlt="logo du popUp de la page contact" popUpImgClassName="contact-page-popup-img" popUpMessage="Votre message a été envoyé avec succès !" />
+            <PopUp popUpImgSrc={contactPagePopUpImg} popUpImgClassName="contact-page-popup-img" popUpMessage="Votre message a été envoyé avec succès !" />
         </div>
     );
 }

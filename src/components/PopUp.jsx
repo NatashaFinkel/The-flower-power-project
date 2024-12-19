@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import Image from './Image';
 
-function PopUp({ popUpImgSrc, popUpImgAlt, popUpImgClassName, popUpMessage }) {
+function PopUp({ popUpImgSrc, popUpImgClassName, popUpMessage }) {
     return (
         <div>
             <div id="overlay"></div>
             <div id="popup">
                 <div>
-                    <Image imageSrc={popUpImgSrc} alt={popUpImgAlt} imageClassName={popUpImgClassName} />
+                    <Image imageSrc={popUpImgSrc} alt="logo du popUp" imageClassName={popUpImgClassName} imageId="popUp-img" imageAlt="Logo du popUp" />
                 </div>
-                <p>{popUpMessage}</p>
+                <h2>{popUpMessage}</h2>
             </div>
         </div>
     )
@@ -18,7 +18,6 @@ function PopUp({ popUpImgSrc, popUpImgAlt, popUpImgClassName, popUpMessage }) {
 PopUp.propTypes = {
     popUpMessage: PropTypes.string,
     popUpImgSrc: PropTypes.string,
-    popUpImgAlt: PropTypes.string,
     popUpImgClassName: PropTypes.string,
 }
 
