@@ -25,6 +25,7 @@ function ShoppingCartPage() {
             shoppingItemContainer.style.display = "none";
             purchaseSummaryContainer.style.display = "none";
             emptyCartMessage.style.display = "flex";
+            subTotal.textContent = "sous-total : 0";
         } else {
             const subTotalPrice = GetTotalPrice();
             shoppingItemContainer.style.display = "flex";
@@ -40,7 +41,7 @@ function ShoppingCartPage() {
                 <h1>Mon panier</h1>
             </div>
             <div className='empty-cart-message-div'>
-                <p id="empty-cart-message">Il n&apos;y a aucun article dans votre panier !</p>
+                <h2 id="empty-cart-message">Il n&apos;y a aucun article dans votre panier !</h2>
                 <AppNavLink navLinkDirection="/" navLinkClassName="empty-cart-link" navLinkTxt="Cliquez ici pour continuer vos achats." />
             </div>
             <div className="shopping-cart" id="shopping-cart">

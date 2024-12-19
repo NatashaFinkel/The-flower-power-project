@@ -506,6 +506,10 @@ form {
   align-items: center;
 }
 
+.empty-cart-message-div h2 {
+  font-weight: 400;
+}
+
 /* Page d'erreur */
 .error-page-main-container {
   padding: 20px;
