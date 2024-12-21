@@ -56,7 +56,7 @@ function Card() {
                     }
                     return (
 
-                        <div
+                        <div itemScope itemType="http://schema.org/Product"
                             key={flower.index}
                             id={flower.id}
                             className="card clickable"
@@ -77,8 +77,9 @@ function Card() {
                                 imageAlt={flower.imgAlt}
                                 imageDataTestid={`card-img-${flower.index}-test-id`}
                                 imageClassName="card-img clickable"
+                                imageItemProp="image"
                             />
-                            <p className="card-title clickable">{flower.imgTitle}</p>
+                            <p className="card-title clickable" itemProp='name'>{flower.imgTitle}</p>
                         </div>
                     );
                 })}
