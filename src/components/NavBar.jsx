@@ -21,13 +21,25 @@ function NavBar() {
         <nav>
           <ul>
             <li>
-              <AppNavLink navLinkDirection="/" navLinkActiveclassname="active" navLinkTxt="Accueil" />
+              <AppNavLink
+                navLinkDirection="/"
+                navLinkActiveclassname="active"
+                navLinkTxt="Accueil"
+              />
             </li>
             <li>
-              <AppNavLink navLinkDirection="/panier" navLinkActiveclassname="active" navLinkTxt="Mon panier" />
+              <AppNavLink
+                navLinkDirection="/panier"
+                navLinkActiveclassname="active"
+                navLinkTxt="Mon panier"
+              />
             </li>
             <li>
-              <AppNavLink navLinkDirection="/contact" navLinkActiveclassname="active" navLinkTxt="Contact" />
+              <AppNavLink
+                navLinkDirection="/contact"
+                navLinkActiveclassname="active"
+                navLinkTxt="Contact"
+              />
             </li>
           </ul>
         </nav>
@@ -39,18 +51,30 @@ function NavBar() {
       <nav>
         <ul>
           <li>
-            <AppNavLink navLinkDirection="/" navLinkActiveclassname="active" navLinkIconClassName="fa-solid fa-house nav-bar-icon icon-display-none" />
+            <AppNavLink
+              navLinkDirection="/"
+              navLinkActiveclassname="active"
+              navLinkIconClassName="fa-solid fa-house nav-bar-icon icon-display-none"
+            />
           </li>
           <li>
-            <AppNavLink navLinkDirection="/panier" navLinkActiveclassname="active" navLinkIconClassName="fa-solid fa-cart-shopping nav-bar-icon icon-display-none" />
+            <AppNavLink
+              navLinkDirection="/panier"
+              navLinkActiveclassname="active"
+              navLinkIconClassName="fa-solid fa-cart-shopping nav-bar-icon icon-display-none"
+            />
           </li>
           <li>
-            <AppNavLink navLinkDirection="/contact" navLinkActiveclassname="active" navLinkIconClassName="fa-regular fa-comment-dots nav-bar-icon icon-display-none" />
+            <AppNavLink
+              navLinkDirection="/contact"
+              navLinkActiveclassname="active"
+              navLinkIconClassName="fa-regular fa-comment-dots nav-bar-icon icon-display-none"
+            />
           </li>
         </ul>
       </nav>
     </div>
-  )
+  );
 }
 
 export default NavBar;

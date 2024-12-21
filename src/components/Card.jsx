@@ -5,18 +5,18 @@ import flowers from '../json/flowers.json';
 import Image from './Image';
 
 function Card() {
-    const array = useSelector(state => state.shoppingList.array);
+    const array = useSelector((state) => state.shoppingList.array);
     const baseUrl = window.location.origin;
     let imageUrl;
 
     useEffect(() => {
         const allCards = document.querySelectorAll('[class^="card clickable"]');
-        array.map(arrayElement => {
-            allCards.forEach(card => {
+        array.map((arrayElement) => {
+            allCards.forEach((card) => {
                 if (card.id === arrayElement.id) {
                     //  Ceci ajoute du style si le bouquet est déjà dans le panier.
                     card.classList.add("sepia-style");
-                    card.style.pointerEvents = 'none';
+                    card.style.pointerEvents = "none";
                 }
             });
         });
@@ -45,28 +45,45 @@ function Card() {
 
     return (
         <div className="card-container" key="cardContainer">
-            {
-                flowers && flowers.map(flower => {
+            {flowers &&
+                flowers.map((flower) => {
                     //  Pour la version déployée.
                     if (baseUrl === "https://natashafinkel.github.io") {
                         imageUrl = `${baseUrl}/The-flower-power-project/${flower.imgSrc}`;
                     } else {
                         //  Pour la version locale.
                         imageUrl = flower.imgSrc;
-                    };
+                    }
                     return (
-                        // eslint-disable-next-line react/no-unknown-property
-                        <div key={flower.index} id={flower.id} className="card clickable" src={flower.imgSrc} alt={flower.imgAlt} titlecontent={flower.imgTitle} description={flower.imgDescription} price={flower.price} onClick={showModal} data-testid={`card-test-id-${flower.index}`}>
 
-                            <Image imageId={`card-${flower.index}-img`} imageSrc={imageUrl} imageAlt={flower.imgAlt} imageDataTestid={`card-img-${flower.index}-test-id`} imageClassName="card-img clickable" />
-
+                        <div
+                            key={flower.index}
+                            id={flower.id}
+                            className="card clickable"
+                            src={flower.imgSrc}
+                            alt={flower.imgAlt}
+                            // eslint-disable-next-line react/no-unknown-property
+                            titlecontent={flower.imgTitle}
+                            // eslint-disable-next-line react/no-unknown-property
+                            description={flower.imgDescription}
+                            // eslint-disable-next-line react/no-unknown-property
+                            price={flower.price}
+                            onClick={showModal}
+                            data-testid={`card-test-id-${flower.index}`}
+                        >
+                            <Image
+                                imageId={`card-${flower.index}-img`}
+                                imageSrc={imageUrl}
+                                imageAlt={flower.imgAlt}
+                                imageDataTestid={`card-img-${flower.index}-test-id`}
+                                imageClassName="card-img clickable"
+                            />
                             <p className="card-title clickable">{flower.imgTitle}</p>
                         </div>
-                    )
-                })
-            }
+                    );
+                })}
         </div>
-    )
+    );
 }
 
 export default Card;

@@ -3,13 +3,25 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
-function AppNavLink({ navLinkDirection, navLinkClassName, navLinkActiveclassname, navLinkIconClassName, navLinkTxt }) {
+function AppNavLink({
+    navLinkDirection,
+    navLinkClassName,
+    navLinkActiveclassname,
+    navLinkIconClassName,
+    navLinkTxt,
+}) {
     return (
         <div>
-            <NavLink to={navLinkDirection} className={navLinkClassName} activeclassname={navLinkActiveclassname}>{navLinkTxt}<i className={navLinkIconClassName}></i>
+            <NavLink
+                to={navLinkDirection}
+                className={navLinkClassName}
+                activeclassname={navLinkActiveclassname}
+            >
+                {navLinkTxt}
+                <i className={navLinkIconClassName}></i>
             </NavLink>
         </div>
-    )
+    );
 }
 
 AppNavLink.propTypes = {
@@ -18,5 +30,5 @@ AppNavLink.propTypes = {
     navLinkActiveclassname: PropTypes.string,
     navLinkIconClassName: PropTypes.string,
     navLinkTxt: PropTypes.string,
-}
+};
 export default AppNavLink;

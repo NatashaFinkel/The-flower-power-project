@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../style/index.css';
 
 function FormInput({
     iconClassName,
@@ -25,7 +24,7 @@ function FormInput({
                 autoComplete={inputAutoComplete}
                 style={{ backgroundColor: inputBackgroundColor }}
                 pattern={inputPattern}
-               required={inputRequirement}
+                required={inputRequirement}
             ></input>
         </div>
     );
@@ -41,6 +40,6 @@ FormInput.propTypes = {
     inputAutoComplete: PropTypes.string,
     inputPattern: PropTypes.string,
     inputRequirement: PropTypes.bool,
-}
+};
 
 export default FormInput;

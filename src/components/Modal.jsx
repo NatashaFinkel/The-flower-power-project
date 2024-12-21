@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     const dispatch = useDispatch();
-    const array = useSelector(state => state.shoppingList.array);
+    const array = useSelector((state) => state.shoppingList.array);
 
     const getModalElements = () => {
         return {
@@ -33,10 +33,24 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     });
 
     useEffect(() => {
-        const { closeModal, modalContent, modalImg, modalTitle, modalDescription, modalPrice, modal } = getModalElements();
+        const {
+            closeModal,
+            modalContent,
+            modalImg,
+            modalTitle,
+            modalDescription,
+            modalPrice,
+            modal,
+        } = getModalElements();
 
         const handleCloseModal = () => {
-            modalContent.id = ""; modalImg.src = ""; modalImg.alt = "modal : image alt par défaut"; modalTitle.textContent = "modal : titre par défaut"; modalDescription.textContent = ""; modalPrice.textContent = ""; modal.style.display = "none";
+            modalContent.id = "";
+            modalImg.src = "";
+            modalImg.alt = "modal : image alt par défaut";
+            modalTitle.textContent = "modal : titre par défaut";
+            modalDescription.textContent = "";
+            modalPrice.textContent = "";
+            modal.style.display = "none";
         };
 
         closeModal.onclick = handleCloseModal;
@@ -54,7 +68,14 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     }, []);
 
     const handleAddBouquet = () => {
-        const { modalContent, modalTitle, modalImg, modalDescription, modalPrice, modal } = getModalElements();
+        const {
+            modalContent,
+            modalTitle,
+            modalImg,
+            modalDescription,
+            modalPrice,
+            modal,
+        } = getModalElements();
         let modalContentId = modalContent.id;
         let modalContentTitleTxtContent = modalTitle.textContent;
         let modalContentImgSrc = modalImg.src;
@@ -64,21 +85,34 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
 
         function AddedToCartConfirmationMessageAndCloseModal() {
             setTimeout(() => {
-                modalContent.id = ""; modalImg.src = ""; modalImg.alt = "modal : image alt par défaut"; modalTitle.textContent = "modal : titre par défaut"; modalDescription.textContent = ""; modalPrice.textContent = ""; modal.style.display = "none";
+                modalContent.id = "";
+                modalImg.src = "";
+                modalImg.alt = "modal : image alt par défaut";
+                modalTitle.textContent = "modal : titre par défaut";
+                modalDescription.textContent = "";
+                modalPrice.textContent = "";
+                modal.style.display = "none";
             }, 700);
 
             const popup = document.getElementById("popup");
             const overlay = document.getElementById("overlay");
-            popup.style.display = 'block';
-            overlay.style.display = 'block';
+            popup.style.display = "block";
+            overlay.style.display = "block";
 
             setTimeout(() => {
-                popup.style.display = 'none';
-                overlay.style.display = 'none';
+                popup.style.display = "none";
+                overlay.style.display = "none";
             }, 700);
-        };
+        }
 
-        const bouquet = { id: modalContentId, title: modalContentTitleTxtContent, imgSrc: modalContentImgSrc, imgAlt: modalContentAlt, description: modalDescriptionTxtContent, price: modalPriceTxtContent };
+        const bouquet = {
+            id: modalContentId,
+            title: modalContentTitleTxtContent,
+            imgSrc: modalContentImgSrc,
+            imgAlt: modalContentAlt,
+            description: modalDescriptionTxtContent,
+            price: modalPriceTxtContent,
+        };
 
         dispatch(addToShoppingList(bouquet));
         AddedToCartConfirmationMessageAndCloseModal();
@@ -89,33 +123,69 @@ function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {
     }, [array]);
 
     return (
-        <div id="bouquet-modal" className="modal" data-testid="modal-display-test-id">
-
-            <div className="modal-content" id="modal-content" data-testid="modal-test-id">
+        <div
+            id="bouquet-modal"
+            className="modal"
+            data-testid="modal-display-test-id"
+        >
+            <div
+                className="modal-content"
+                id="modal-content"
+                data-testid="modal-test-id"
+            >
                 <div className="close-modal-div">
-                    <span className="close-modal" id="close-modal">&times;</span>
+                    <span className="close-modal" id="close-modal">
+                        &times;
+                    </span>
                 </div>
                 <div className="modal-img-div">
-                    <Image src={mImgSrc} imageAlt={mImgAlt} imageId="modal-img-src" imageDataTestid="modal-img-test-id" imageClassName="modal-img" />
+                    <Image
+                        src={mImgSrc}
+                        imageAlt={mImgAlt}
+                        imageId="modal-img-src"
+                        imageDataTestid="modal-img-test-id"
+                        imageClassName="modal-img"
+                    />
                 </div>
 
                 <div className="modal-title-div">
-                    <h2 id="modal-title" data-testid="modal-title-test-id" className="modal-title">{mTitle}</h2>
+                    <h2
+                        id="modal-title"
+                        data-testid="modal-title-test-id"
+                        className="modal-title"
+                    >
+                        {mTitle}
+                    </h2>
                 </div>
                 <div className="modal-description-div">
-                    <p id="modal-description" data-testid="modal-description-test-id">{mDescription}</p>
+                    <p id="modal-description" data-testid="modal-description-test-id">
+                        {mDescription}
+                    </p>
                 </div>
                 <hr className="modal-divider"></hr>
                 <div className="modal-footer">
                     <div className="modal-price-div">
-                        <p id="modal-price" data-testid="modal-price-test-id">{mPrice}</p>
+                        <p id="modal-price" data-testid="modal-price-test-id">
+                            {mPrice}
+                        </p>
                     </div>
-                    <button onClick={handleAddBouquet} className="add-bouquet-btn" id="add-bouquet-btn" data-testid="add-bouquet-btn-test-id">Ajouter au panier</button>
+                    <button
+                        onClick={handleAddBouquet}
+                        className="add-bouquet-btn"
+                        id="add-bouquet-btn"
+                        data-testid="add-bouquet-btn-test-id"
+                    >
+                        Ajouter au panier
+                    </button>
                 </div>
             </div>
-            <PopUp popUpImgSrc={addedToCartConfirmationPopUpImg} popUpImgClassName="added-to-cart-confirmation-message-popup-img" popUpMessage="Votre bouquet a été ajouté !" />
+            <PopUp
+                popUpImgSrc={addedToCartConfirmationPopUpImg}
+                popUpImgClassName="added-to-cart-confirmation-message-popup-img"
+                popUpMessage="Votre bouquet a été ajouté !"
+            />
         </div>
-    )
+    );
 }
 
 Modal.propTypes = {
@@ -124,6 +194,6 @@ Modal.propTypes = {
     mTitle: PropTypes.string,
     mDescription: PropTypes.string,
     mPrice: PropTypes.number,
-}
+};
 
 export default Modal;

@@ -7,9 +7,14 @@ function Header() {
     return (
         <header>
             <div className="logo-div">
-                <Image imageSrc={LogoImage} imageClassName="logo" imageAlt="Logo de l'application" imageDataTestid="logo-test-id" />
+                <Image
+                    imageSrc={LogoImage}
+                    imageClassName="logo"
+                    imageAlt="Logo de l'application"
+                    imageDataTestid="logo-test-id"
+                />
             </div>
         </header>
-    )
+    );
 }
 export default Header;
