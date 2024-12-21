@@ -10,5 +10,5 @@ root.render(
     React.StrictMode,
     null,
     React.createElement(AppWrapper, null)
-  ),
+  )
 );
