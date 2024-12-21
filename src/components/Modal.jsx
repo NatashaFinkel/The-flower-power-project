@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToShoppingList } from '../redux/shoppingListSlice';
 import Image from './Image';
 import PopUp from './PopUp';
-import addedToCartConfirmationPopUpImg from '/assets/added-to-cart-confirmation-popUp-img.png';
+import addedToCartConfirmationPopUpImg from '/assets/added-to-cart-confirmation-popUp-img.webp';
 import PropTypes from 'prop-types';
 
 function Modal({ mImgSrc, mImgAlt, mTitle, mDescription, mPrice }) {

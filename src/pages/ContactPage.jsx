@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import FormLabel from '../components/FormLabel';
 import FormInput from '../components/FormInput';
 import PopUp from '../components/PopUp';
-import contactPagePopUpImg from '/assets/message-sent-confirmation-popUp-img.png';
+import contactPagePopUpImg from '/assets/message-sent-confirmation-popUp-img.webp';
 
 function ContactPage() {
     useEffect(() => {
