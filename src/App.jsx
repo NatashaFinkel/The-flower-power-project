@@ -8,12 +8,12 @@ function App() {
   return (
     <div>
       <Header />
-      <div className='router-div'>
+      <div className="router-div">
         <AppRouter />
       </div>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
