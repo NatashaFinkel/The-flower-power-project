@@ -7,7 +7,12 @@ import contactPagePopUpImg from '/assets/message-sent-confirmation-popUp-img.web
 
 function ContactPage() {
     useEffect(() => {
-        document.getElementById("client-email").setAttribute("inputPattern", '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}$');
+        document
+            .getElementById("client-email")
+            .setAttribute(
+                "inputPattern",
+                "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}$",
+            );
     });
 
     useEffect(() => {
@@ -15,16 +20,16 @@ function ContactPage() {
         const popup = document.getElementById("popup");
         const overlay = document.getElementById("overlay");
 
-        form.addEventListener('submit', function (event) {
+        form.addEventListener("submit", function (event) {
             event.preventDefault();
 
             if (form.checkValidity()) {
-                popup.style.display = 'block';
-                overlay.style.display = 'block';
+                popup.style.display = "block";
+                overlay.style.display = "block";
 
                 setTimeout(() => {
-                    popup.style.display = 'none';
-                    overlay.style.display = 'none';
+                    popup.style.display = "none";
+                    overlay.style.display = "none";
                 }, 1000);
 
                 form.reset();
@@ -47,7 +52,11 @@ function ContactPage() {
                         inputId="client-name"
                     />
 
-                    <FormLabel inputClassName="flex-div" inputId="client-email" inputValue="email :" />
+                    <FormLabel
+                        inputClassName="flex-div"
+                        inputId="client-email"
+                        inputValue="email :"
+                    />
 
                     <FormInput
                         inputClassName="form-input"
@@ -58,7 +67,10 @@ function ContactPage() {
                     />
 
                     <div className="message-div">
-                        <FormLabel inputId="client-message" inputValue="On répondra vite, promis !" />
+                        <FormLabel
+                            inputId="client-message"
+                            inputValue="On répondra vite, promis !"
+                        />
                         <textarea
                             id="client-message"
                             name="client-message"
@@ -76,7 +88,11 @@ function ContactPage() {
                     </div>
                 </form>
             </div>
-            <PopUp popUpImgSrc={contactPagePopUpImg} popUpImgClassName="contact-page-popup-img" popUpMessage="Votre message a été envoyé avec succès !" />
+            <PopUp
+                popUpImgSrc={contactPagePopUpImg}
+                popUpImgClassName="contact-page-popup-img"
+                popUpMessage="Votre message a été envoyé avec succès !"
+            />
         </div>
     );
 }
