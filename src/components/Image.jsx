@@ -10,7 +10,6 @@ function Image({
     imageDescription,
     imagePrice,
     imageDataTestid,
-    imageItemProp,
 }) {
     return (
         <img
@@ -23,7 +22,6 @@ function Image({
             // eslint-disable-next-line react/no-unknown-property
             price={imagePrice}
             data-testid={imageDataTestid}
-            itemProp={imageItemProp}
         ></img>
     );
 }
@@ -36,7 +34,6 @@ Image.propTypes = {
     imageDescription: PropTypes.string,
     imagePrice: PropTypes.number,
     imageDataTestid: PropTypes.string,
-    imageItemProp: PropTypes.string,
 };
 
 export default Image;
