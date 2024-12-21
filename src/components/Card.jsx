@@ -60,7 +60,7 @@ function Card() {
                             key={flower.index}
                             id={flower.id}
                             className="card clickable"
-                            src={flower.imgSrc}
+                            src={imageUrl}
                             alt={flower.imgAlt}
                             // eslint-disable-next-line react/no-unknown-property
                             titlecontent={flower.imgTitle}
