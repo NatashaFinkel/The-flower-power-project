@@ -384,7 +384,9 @@ input[type="submit"]:active,
 
 /* Page Contact */
 form {
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-input {
@@ -564,10 +566,6 @@ form {
   }
 
   /* page contact */
-  form {
-    justify-items: center;
-  }
-
   .form-input {
     width: 60%;
   }
