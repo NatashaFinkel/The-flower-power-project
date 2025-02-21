@@ -2,8 +2,9 @@
 
 ## Description
 
-The-flower-power-project est un projet développé en parallèle de la formation OpenClassRooms :
-"Développeur intégrateur web".
+The-flower-power-project est un projet développé en parallèle de la formation OpenClassRooms : "Développeur intégrateur web".
+
+C'est le site-vitrine d’un fleuriste (fictif).
 
 ## Installation
 
