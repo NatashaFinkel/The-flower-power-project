@@ -17,9 +17,9 @@ npm run dev
 ## Outils utilisés :
 
 - npm, Vite
-- React.js
-- Jest
+- React.js, React router
 - Redux, Redux-Toolkit
+- Jest
 - Git, GitHub
 
 ## Contact
